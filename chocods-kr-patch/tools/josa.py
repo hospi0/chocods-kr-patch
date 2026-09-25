@@ -2,6 +2,7 @@
 r"""조사 자동 선택 — ARM9 글리프 번호 함수(NNS GetGlyphIndex 꼴, 0x2031178: r0 글꼴, r1 글자 코드)에 훅.
 
 번역문에 «조사 표시 코드»(사용자 영역 U+E000‥)를 쓰면, 훅이 «직전에 조회한 글자»의 받침을 보고 알맞은 조사 글자로 바꿔 원래 함수로 넘긴다.
+한글은 빌드 때 쓰는 음절만 U+F000‥ 으로 옮겨 적는다(assign — [받침 없음][ㄹ 받침][그 밖] 순서, 글꼴도 같은 코드) → 훅은 경계 비교만.
 대사(UTF-8)·SJIS(아이템 등)·메뉴 모든 글자 경로가 이 함수를 거친다(ov2 0x2094784 → 0x2031178 등).
 폭 재기와 그리기가 같은 순서로 이 함수를 부르므로 두 번 모두 같은 조사가 나온다.
 
@@ -39,7 +40,30 @@ FREE_START = row_addr(0xEB)
 FREE_END = row_addr(0xED)      # 0xEB·0xEC 두 줄 = 768 B (0xED·0xEE 는 NEC 선정 IBM 확장 한자로 차 있음)
 
 
-def build():
+PUA_BASE = 0xF000             # 한글 음절을 옮겨 적는 사용자 영역(글꼴 CMAP 방식 0 한 블록 — nftr.rebuild)
+
+
+def jong_class(ch):
+    """0 = 받침 없음 · 1 = ㄹ 받침 · 2 = 그 밖 받침"""
+    j = (ord(ch) - 0xAC00) % 28
+    return 0 if j == 0 else 1 if j == 8 else 2
+
+
+def assign(used):
+    """쓰는 한글 음절 → 사용자 영역 코드. [받침 없음][ㄹ][그 밖] 순서로 붙여 훅이 경계 두 개로 받침을 가린다.
+    돌려줌: (한글→코드 dict, 받침 없음 수 a, a+ㄹ 수 al, 전체 n)"""
+    used = set(used) | {c for pr in PAIRS for c in pr if c}
+    order = sorted(used, key=lambda c: (jong_class(c), ord(c)))
+    remap = {c: PUA_BASE + k for k, c in enumerate(order)}
+    a = sum(1 for c in order if jong_class(c) == 0)
+    al = a + sum(1 for c in order if jong_class(c) == 1)
+    return remap, a, al, len(order)
+
+
+def build(pua):
+    """pua = assign(...) 결과. 직전 글자 코드 x = 직전 − PUA_BASE: x ≥ n(부호 없는 비교, 음수 포함) 또는 x < a → 받침 없음,
+    x < al → ㄹ(8), 그 밖 → 받침 있음(1). 조사 표 = 옮겨 적은 코드."""
+    remap, a, al, n = pua
     hook = FREE_START
     asm = f'''
         push {{r3, lr}}
@@ -48,17 +72,18 @@ def build():
         cmp  r2, #7
         bhs  store
         ldr  r12, [r3]
-        sub  r12, r12, #0xAC00
-        cmp  r12, #0
-        blt  nojong
-        ldr  lr, lim
+        ldr  lr, base
+        sub  r12, r12, lr
+        ldr  lr, cnt_n
         cmp  r12, lr
         bhs  nojong
-        ldr  lr, magic
-        mul  lr, r12, lr
-        lsr  lr, lr, #18
-        rsb  lr, lr, lr, lsl #3
-        sub  r12, r12, lr, lsl #2
+        ldr  lr, cnt_a
+        cmp  r12, lr
+        blo  nojong
+        ldr  lr, cnt_al
+        cmp  r12, lr
+        movlo r12, #8
+        movhs r12, #1
         b    have
     nojong:
         mov  r12, #0
@@ -75,29 +100,30 @@ def build():
         str  r1, [r3]
         b    {RESUME:#x}
     state_p: .word 0
-    lim:     .word 11172
-    magic:   .word 9363
+    base:    .word {PUA_BASE}
+    cnt_n:   .word {n}
+    cnt_a:   .word {a}
+    cnt_al:  .word {al}
     ptable:
     '''
     ks = keystone.Ks(keystone.KS_ARCH_ARM, keystone.KS_MODE_ARM)
     enc, _ = ks.asm(asm, hook)
     code = bytearray(enc)
-    for a, b in PAIRS:
-        code += struct.pack('<HH', ord(a), ord(b) if b else NULL)
+    for x, y in PAIRS:
+        code += struct.pack('<HH', remap[x], remap[y] if y else NULL)
     state = hook + len(code)
     code += bytes(4)
-    # state_p 채우기: 'state_p' 는 ptable 앞 12 바이트
-    sp_off = len(enc) - 12
+    sp_off = len(enc) - 20                 # state_p 는 ptable 앞 다섯 번째 워드
     struct.pack_into('<I', code, sp_off, state)
     assert hook + len(code) <= FREE_END
     return hook, bytes(code)
 
 
-def patch_arm9(arm9):
+def patch_arm9(arm9, pua):
     a = bytearray(arm9)
     s, e = FREE_START - ARM9, FREE_END - ARM9
     assert not any(a[s:e]), '빈 행이 비어 있지 않음'
-    hook, code = build()
+    hook, code = build(pua)
     a[hook - ARM9:hook - ARM9 + len(code)] = code
     off = HOOK_SITE - ARM9
     assert a[off:off + 4] == bytes.fromhex('08402de9'), a[off:off + 4].hex()   # push {r3, lr}
@@ -114,7 +140,7 @@ def expand(s):
 
 
 def simulate(prev, mark):
-    """검산용 파이썬 판정(훅과 같은 규칙)"""
+    """검산용 파이썬 판정(한글 기준 — 훅과 같은 규칙)"""
     idx = mark - 0xE000
     x = ord(prev) - 0xAC00 if prev else -1
     jong = x % 28 if 0 <= x < 11172 else 0
@@ -128,11 +154,10 @@ def simulate(prev, mark):
 if __name__ == '__main__':
     import sys
     sys.stdout.reconfigure(encoding='utf-8')
-    h, c = build()
+    pua = assign('발톱안장칼초코보물')
+    h, c = build(pua)
     print(hex(h), len(c))
     import capstone
     md = capstone.Cs(capstone.CS_ARCH_ARM, capstone.CS_MODE_ARM)
-    for i in md.disasm(c[:-4 - 4 * len(PAIRS) - 12], h):
+    for i in md.disasm(c[:-4 - 4 * len(PAIRS) - 20], h):
         print(hex(i.address), i.mnemonic, i.op_str)
-    for w in ('발톱', '안장', '칼', '초코보', '물', '3'):
-        print(w, ''.join(simulate(w[-1], m) for m in range(0xE000, 0xE007)))

@@ -24,8 +24,9 @@ from collections import Counter, defaultdict
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'work', 'alltext.tsv')
 KO_DIR = os.path.join(ROOT, 'work', 'ko')
-FONT_SLOTS = 606          # dsr_fnt 한자 칸(nftr.replace_kanji) — docs §15
-FONT_SLOTS_KANA = 880     # 가나 칸까지 갈아 끼울 때(docs §19)
+# 글꼴 한도 어림(방식 0 한 블록, 한 자 16 B — nftr.rebuild · docs/00 §6). 정확한 수는 build.py --dry 가 원본 글꼴로 잰다.
+FONT_SLOTS = 880          # 가나 전부 남김(한자 606 × 20 B + 늘릴 수 있는 2,000 B)
+FONT_SLOTS_KANA = 1050    # 가나까지 뺌(+ 가나 177 × 16 B)
 JOSA = {'{을}': '을를', '{이}': '이가', '{은}': '은는', '{과}': '과와', '{으}': '으', '{아}': '아야', '{이다}': '이'}
 
 # 상자 폭(반각 0.5 단위 합) — 원문 표의 줄 폭 분포에서(보통 최댓값). 없는 표는 그 표 원문 최대 줄 폭.
@@ -275,7 +276,7 @@ def main():
     for x in errs:
         print('✗', x)
     n = len(syl)
-    print('번역 %d줄 · 오류 %d · 음절 %d (한자 칸 %d%s / 가나 포함 %d%s)' % (
+    print('번역 %d줄 · 오류 %d · 음절 %d (어림 한도: 가나 남김 ≈%d%s / 가나 뺌 ≈%d%s)' % (
         len(done), len(errs), n, FONT_SLOTS, ' 넘음' if n > FONT_SLOTS else '', FONT_SLOTS_KANA,
         ' 넘음' if n > FONT_SLOTS_KANA else ''))
     if '--todo' in sys.argv:

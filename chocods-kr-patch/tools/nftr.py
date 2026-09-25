@@ -130,3 +130,95 @@ def replace_kanji(f, items, keep=frozenset()):
         f.glyphs[idx] = bytes(bm)
         f.widths[idx] = tuple(width)
     return len(items)
+
+
+# ── 글자 목록 구조 바꾸기(docs §9 뒤 «연속 범위» 안) ──────────────────────────────
+# 한글은 쓰는 음절만 사용자 영역 U+F000‥ 에 차례로 붙여(텍스트 쪽 코드도 build 가 같이 바꿈) CMAP 방식 0 한 블록으로 —
+# 글자당 CMAP 쌍 4 B 가 없어져 비트맵 + 폭 만(dsr_fnt 13 + 3 = 16 B). 버리는 글자(한자·가나 등)는 글리프째 뺀다.
+# NNS 글자 찾기는 CMAP 사슬을 앞에서부터 보고 «범위에 드는 첫 블록»에서 끝낸다 → 블록마다 원래 범위를 그대로 두고
+# 버린 코드는 방식 1 표의 0xFFFF(없음)로, 새 한글 블록은 사슬 맨 앞(범위가 다른 블록과 안 겹치게 — 0‥FFFF 방식 2 는 뒤).
+
+NOT_FOUND = 0xFFFF
+FINF_ALT = 0x0A          # FINF 구획 안 대체 글자 번호 u16 (NNS: 머리 8 · 종류 u8 · 줄 간격 s8 · 대체 글자 u16)
+
+
+def code_map(f):
+    """코드 → 글리프 번호(첫 블록 우선, NNS 와 같은 순서)"""
+    out = {}
+    for first, last, typ, data in f.cmaps:
+        if typ == 0:
+            base = struct.unpack_from('<H', data, 0)[0]
+            items = ((c, base + c - first) for c in range(first, last + 1))
+        elif typ == 1:
+            items = ((c, struct.unpack_from('<H', data, 2 * (c - first))[0]) for c in range(first, last + 1))
+        else:
+            items = iter(data)
+        for c, i in items:
+            if i != NOT_FOUND and c not in out and first <= c <= last:
+                out[c] = i
+    return out
+
+
+def lookup_nns(f, code):
+    """NNS 방식 검산: 범위에 드는 첫 블록에서 끝"""
+    for first, last, typ, data in f.cmaps:
+        if first <= code <= last:
+            if typ == 0:
+                return struct.unpack_from('<H', data, 0)[0] + code - first
+            if typ == 1:
+                return struct.unpack_from('<H', data, 2 * (code - first))[0]
+            return next((i for c, i in data if c == code), NOT_FOUND)
+    return NOT_FOUND
+
+
+def rebuild(f, drop, base, glyphs, extra=()):
+    """drop: 버릴 코드 집합 · glyphs: [(비트맵, 폭)] → 코드 base, base+1, … (방식 0 블록, 사슬 맨 앞)
+    extra: [(코드, 비트맵, 폭)] → 마지막 0‥FFFF 방식 2 블록에 쌍으로(조사 «없음» 빈 글리프 등).
+    제자리에서 f 를 고친다. 돌려줌 = (버린 글리프 수, 새 한글 첫 번호, 번호가 바뀐 남은 글리프 수)
+    (게임이 글리프를 코드 아닌 번호로 직접 그리는 곳이 있으면 «번호가 바뀐» 글리프가 틀어진다 — 실기에서 확인할 것)"""
+    cmap = code_map(f)
+    alt = struct.unpack_from('<H', f.finf, FINF_ALT)[0]
+    keep_idx = {i for c, i in cmap.items() if c not in drop} | {alt}
+    n_old = len(f.glyphs)
+    order = [i for i in range(n_old) if i in keep_idx]
+    new = {o: n for n, o in enumerate(order)}
+    f.glyphs = [f.glyphs[i] for i in order]
+    f.widths = [f.widths[i] for i in order]
+    struct.pack_into('<H', f.finf, FINF_ALT, new[alt])
+    blocks = []
+    for first, last, typ, data in f.cmaps:
+        if typ == 2:
+            blocks.append([first, last, 2, [(c, new[i]) for c, i in data if c not in drop and i in new]])
+            continue
+        if typ == 0:
+            b0 = struct.unpack_from('<H', data, 0)[0]
+            idx = [b0 + c - first for c in range(first, last + 1)]
+        else:
+            idx = list(struct.unpack_from('<%dH' % (last - first + 1), data, 0))
+        codes = range(first, last + 1)
+        nidx = [NOT_FOUND if (c in drop or i == NOT_FOUND or i not in new) else new[i] for c, i in zip(codes, idx)]
+        if typ == 0 and NOT_FOUND not in nidx and nidx == list(range(nidx[0], nidx[0] + len(nidx))):
+            blocks.append([first, last, 0, struct.pack('<HH', nidx[0], 0)])
+        else:
+            blocks.append([first, last, 1, struct.pack('<%dH' % len(nidx), *nidx)])
+    h0 = len(f.glyphs)
+    if glyphs:
+        end = base + len(glyphs) - 1
+        clash = [b for b in blocks if b[1] - b[0] < 0xFFFF and not (end < b[0] or b[1] < base)]
+        assert not clash, '새 한글 범위 %04X‥%04X 가 기존 블록과 겹침 %s' % (base, end, [(hex(b[0]), hex(b[1])) for b in clash])
+        assert not any(base <= c <= end for c in cmap if c not in drop), '새 한글 범위에 이미 쓰는 코드'
+        for bm, w in glyphs:
+            assert len(bm) == f.tsize
+            f.glyphs.append(bytes(bm))
+            f.widths.append(tuple(w))
+        blocks.insert(0, [base, end, 0, struct.pack('<HH', h0, 0)])
+    if extra:
+        cat = blocks[-1]
+        assert cat[2] == 2 and cat[0] == 0 and cat[1] == 0xFFFF, '마지막 블록이 0‥FFFF 방식 2 가 아님'
+        for code, bm, w in extra:
+            assert code not in {c for c, _ in cat[3]}, '이미 있는 코드 %04X' % code
+            cat[3].append((code, len(f.glyphs)))
+            f.glyphs.append(bytes(bm))
+            f.widths.append(tuple(w))
+    f.cmaps = blocks
+    return n_old - len(order), h0, sum(1 for o, n in new.items() if o != n)

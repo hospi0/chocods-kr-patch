@@ -6,6 +6,9 @@ r"""시드와 초코보 DS+ 한글 빌드
 번역 TSV: 파일<TAB>txtbin 안쪽 경로<TAB>번호<TAB>번역  또는 머리줄 「@<TAB>파일<TAB>안쪽 경로」 아래 「번호<TAB>번역」  ( \n 줄바꿈 · {ESC}=0x1B · {13}=0x13 쪽 끝 · {XX}=바이트 )
 처리: 원본 md5 확인 → 파일마다 LZ 해제 → FBC 펼쳐 txtbin 문자열 교체(인코딩은 그 txtbin 원래 것: UTF-8/Shift-JIS)
       → FBC 다시 조립 → LZ11 재압축 → NitroFS 교체(ndspy) · 글꼴 dsr_fnt 에 갈무리9 한글 덧붙임.
+한글 코드: 쓰는 음절만 U+F000‥ 으로 옮겨 적는다(josa.assign) — UTF-8 대사·SJIS 변환 표·조사 훅·글꼴(방식 0 한 블록)이 같은 코드.
+글꼴: 한자 전부 + 가나(--kana all: 남김 / text: 번역 안 한 글에 남은 가나만 남김)를 글리프째 빼고 한글을 붙인다(nftr.rebuild).
+  python tools/build.py work/ko --dry [--kana all|text]
 """
 import glob
 import hashlib
@@ -24,6 +27,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ORIG = r'C:\claude\roms\nds\Cid to Chocobo no Fushigi na Dungeon - Toki Wasure no Meikyuu DS+ (Japan).nds'
 ORIG_MD5 = '97f8e08589adc30f4f026b64b88b5d48'
 FONT_PATH = 'romdata/FONT/dsr_fnt.NFTR'
+TEXT_REMAP = {}          # 한글 → 사용자 영역 코드 글자(main 에서 josa.assign 으로 채움) — UTF-8 txtbin 에만
 HUD_PATH = 'romdata/UI/UPSSTAT/ui_common.FBC.z'
 GALMURI9 = r'C:\claude\utils\font\Galmuri-v2.40.3\Galmuri9.bdf'
 LOGO_PNG = os.path.join(ROOT, 'work', 'logo', 'v13.png')          # 사용자 확정 한글 로고(docs §12)
@@ -89,10 +93,14 @@ def patch_fbc(d, repl, prefix=''):
             enc = 'utf-8' if enc == 'ascii' else enc
             for idx, text in repl.pop(path).items():
                 assert idx < len(strs), '%s %d 번호 없음' % (path, idx)
-                strs[idx] = sjiskr.encode(text) if enc == 'cp932' else text.encode(enc)   # SJIS 한글 = 변환 표 배정 코드
+                strs[idx] = sjiskr.encode(text) if enc == 'cp932' else remap_text(text).encode(enc)   # SJIS 한글 = 변환 표 배정 코드
             b = fbc.txtbin_build(strs)
         new.append((name, b))
     return fbc.build(new)
+
+
+def remap_text(text):
+    return ''.join(TEXT_REMAP.get(c, c) for c in text)
 
 
 def replace_nested(d, repl, prefix=''):
@@ -298,23 +306,52 @@ def hangul_set():
 FONT_GROW_MAX = 2000   # SYS 힙(149,448 B) 여유가 원본 실행 중 4,416 B 뿐 → 글꼴은 이만큼만 늘릴 수 있다(docs §9)
 
 
-def build_font(orig, used):
+KANJI = [(0x3400, 0x9FFF), (0xF900, 0xFAFF)]
+KANA = [(0x3041, 0x30FA), (0x30FD, 0x30FF), (0xFF66, 0xFF9F)]      # ・(30FB)·ー(30FC) 는 부호로 늘 남김
+
+
+def in_ranges(c, ranges):
+    return any(a <= c <= b for a, b in ranges)
+
+
+def leftover_text(rows):
+    """번역 안 한 본편 글(work/alltext.tsv 중 rows 에 없는 줄, ダミー 빼고)"""
+    out = []
+    for line in open(os.path.join(ROOT, 'work', 'alltext.tsv'), encoding='utf-8'):
+        f = line.rstrip('\n').split('\t')
+        if len(f) < 5 or f[4] == 'ダミー':
+            continue
+        if int(f[2]) not in rows.get(f[0], {}).get(f[1], {}):
+            out.append(f[4])
+    return out
+
+
+def glyph_of(G, asc, f, ch):
+    arr, adv = bdf.render(G, asc, ord(ch), f.cw, f.ch, 10)   # 가나처럼 1‥9 행
+    bits = ''.join(str(v) for row in arr for v in row)
+    bits += '0' * (-len(bits) % 8)
+    bm = bytes(int(bits[i:i + 8], 2) for i in range(0, len(bits), 8))
+    return bm + bytes(f.tsize - len(bm)), (0, 9, 10)
+
+
+def build_font(orig, pua, keep_kana):
+    """keep_kana: 남길 가나 코드 집합(None = 전부). → (새 글꼴, 한글 수, 보고 문자열)"""
+    remap, a, al, n = pua
     f = nftr.Nftr(orig)
     G, asc = bdf.load(GALMURI9)
-    n = 0
-    items = []
-    for ch in sorted(used):
-        arr, adv = bdf.render(G, asc, ord(ch), f.cw, f.ch, 10)   # 가나처럼 1‥9 행
-        bits = ''.join(str(v) for row in arr for v in row)
-        bits += '0' * (-len(bits) % 8)
-        bm = bytes(int(bits[i:i + 8], 2) for i in range(0, len(bits), 8))
-        bm = bm + bytes(f.tsize - len(bm))
-        items.append((ord(ch), bm, (0, 9, 10)))
-    items.append((josa.NULL, bytes(f.tsize), (0, 0, 0)))   # 조사 «없음» = 폭 0 빈 글리프
-    n = nftr.replace_kanji(f, items)          # 한자 칸을 한글로 갈아 끼움(글꼴 크기 불변)
+    order = sorted(remap, key=remap.get)
+    assert [remap[c] for c in order] == list(range(josa.PUA_BASE, josa.PUA_BASE + n))
+    glyphs = [glyph_of(G, asc, f, ch) for ch in order]
+    codes = nftr.code_map(f)
+    drop = {c for c in codes if in_ranges(c, KANJI) or (in_ranges(c, KANA) and keep_kana is not None and c not in keep_kana)}
+    dropped, h0, moved = nftr.rebuild(f, drop, josa.PUA_BASE, glyphs, extra=[(josa.NULL, bytes(f.tsize), (0, 0, 0))])
     out = f.build()
-    assert len(out) - len(orig) <= FONT_GROW_MAX, '글꼴이 %d B 늘어남 — SYS 힙 한도 초과' % (len(out) - len(orig))
-    return out, n
+    per = f.tsize + 3
+    room = FONT_GROW_MAX - (len(out) - len(orig))
+    msg = '한자·가나 %d자 뺌 · 한글 %d자 · %d → %d B (%+d, 한도 +%d) · 여유 %d B = 한글 약 %d자 %s · 번호 바뀐 글리프 %d' % (
+        dropped, n, len(orig), len(out), len(out) - len(orig), FONT_GROW_MAX, room, abs(room) // per,
+        '더' if room >= 0 else '넘음', moved)
+    return out, n, msg
 
 
 def main():
@@ -329,7 +366,20 @@ def main():
         for name, sub in folder.folders:
             walk(sub, pre + name + '/')
     walk(rom.filenames)
+    kana_mode = sys.argv[sys.argv.index('--kana') + 1] if '--kana' in sys.argv else 'all'
+    assert kana_mode in ('all', 'text'), kana_mode
     rows = read_tsv(tsv)
+    used = {c for r in rows.values() for m in r.values() for t in m.values() for c in t if 0xAC00 <= ord(c) <= 0xD7A3}
+    used |= {c for _, ko in OV0_STRINGS for c in ko if 0xAC00 <= ord(c) <= 0xD7A3}
+    missing = used - set(hangul_set())
+    assert not missing, 'KS X 1001 밖 음절 %s' % ''.join(sorted(missing))
+    pua = josa.assign(used)                       # 한글 → U+F000‥ (받침 없음·ㄹ·그 밖 순)
+    TEXT_REMAP.update({k: chr(v) for k, v in pua[0].items()})
+    left = leftover_text(rows)
+    left_kana = {ord(c) for t in left for c in t if in_ranges(ord(c), KANA)}
+    left_kanji = sorted({c for t in left for c in t if in_ranges(ord(c), KANJI)})
+    if left_kanji:
+        print('  ! 번역 안 한 글에 남은 한자 %d자(글꼴에서 빠짐): %s' % (len(left_kanji), ''.join(left_kanji[:40])))
     for path, repl in rows.items():
         fid = ids[path]
         d = rom.files[fid]
@@ -343,8 +393,8 @@ def main():
             assert lz11.decompress(nd) == patch_fbc(unz(rom.files[fid])[0], read_tsv(tsv)[path])
         rom.files[fid] = nd
         print('  %s  %d → %d B' % (path, len(rom.files[fid]) if False else len(d), len(nd)))
-    rom.arm9 = sjiskr.patch_arm9(rom.arm9)        # SJIS→유니코드 표의 한자 칸 2,350 개 = 한글
-    rom.arm9, hook, hlen = josa.patch_arm9(rom.arm9)   # 조사 자동 선택 훅(글리프 번호 함수)
+    rom.arm9 = sjiskr.patch_arm9(rom.arm9, pua[0])   # SJIS→유니코드 표의 한자 칸 2,350 개 = 한글(옮겨 적은 코드)
+    rom.arm9, hook, hlen = josa.patch_arm9(rom.arm9, pua)   # 조사 자동 선택 훅(글리프 번호 함수)
     print('  ARM9 조사 훅 0x%X (%d B)' % (hook, hlen))
     print('  ARM9 SJIS 변환 표 한글 %d칸' % len(sjiskr.SLOT))
     fid = ids[HUD_PATH]                           # 위 화면 HUD 그림 글자(チョコボ·おなか)
@@ -362,12 +412,17 @@ def main():
     import pudbuild                                  # 카드 게임(PUD): 그림·카드 표·카드 게임 글꼴
     pudbuild.patch_pud(rom, ids)
     fid = ids[FONT_PATH]
-    used = {c for r in read_tsv(tsv).values() for m in r.values() for t in m.values() for c in t if 0xAC00 <= ord(c) <= 0xD7A3}
-    used |= {c for pr in josa.PAIRS for c in pr if c}      # 조사 글자는 늘 넣는다
-    missing = used - set(hangul_set())
-    assert not missing, 'KS X 1001 밖 음절 %s' % ''.join(sorted(missing))
-    font, n = build_font(rom.files[fid], used)
-    print('  글꼴 %s +%d자  %d → %d B' % (FONT_PATH, n, len(rom.files[fid]), len(font)))
+    orig_font = rom.files[fid]
+    results = {}
+    for mode, keep in (('all', None), ('text', left_kana)):     # 두 방식 다 재서 보여 준다(쓰는 건 --kana)
+        try:
+            results[mode] = build_font(orig_font, pua, keep)
+            print('  글꼴[가나 %s] %s' % ('전부 남김' if keep is None else '남은 글의 %d자만' % len(keep), results[mode][2]))
+        except AssertionError as e:
+            print('  글꼴[가나 %s] 안 됨: %s' % (mode, e))
+    font, n, msg = results[kana_mode]
+    assert len(font) - len(orig_font) <= FONT_GROW_MAX, '글꼴이 %d B 늘어남 — SYS 힙 한도 초과(docs §9)' % (len(font) - len(orig_font))
+    print('  글꼴 %s 가나 %s 로 씀' % (FONT_PATH, kana_mode))
     rom.files[fid] = font
     if out == '--dry':                            # 예행: 모든 변환·검사만 하고 ROM 은 안 쓴다
         print('예행 완료(ROM 안 씀)')

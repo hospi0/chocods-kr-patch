@@ -42,13 +42,13 @@ def table_off(lead, trail):
     return TABLE_RAM - ARM9_RAM + 2 * (row * 0xC0 + trail) - 0x80
 
 
-def patch_arm9(arm9):
-    """변환 표의 한글 칸 2,350 개를 고쳐 쓴 새 ARM9 바이트"""
+def patch_arm9(arm9, remap=None):
+    """변환 표의 한글 칸 2,350 개를 고쳐 쓴 새 ARM9 바이트. remap: 한글 → 옮겨 적은 코드(josa.assign) — 없으면 한글 유니코드"""
     a = bytearray(arm9)
     assert a[table_off(0x81, 0x40):table_off(0x81, 0x40) + 4] == b'\x00\x30\x01\x30', '변환 표 위치 불일치'
     for ch, (lead, trail) in SLOT.items():
         o = table_off(lead, trail)
-        a[o:o + 2] = ord(ch).to_bytes(2, 'little')
+        a[o:o + 2] = (remap or {}).get(ch, ord(ch)).to_bytes(2, 'little')
     return bytes(a)
 
 
