@@ -1,0 +1,2010 @@
+{
+ "romdata/PUD/wifi/ja/wf_sprite_lower.pobj.z": {
+  "1": "결정",
+  "6": [
+   "뒤로",
+   null,
+   null,
+   "plate2",
+   "white",
+   null,
+   null
+  ],
+  "7": "친구 목록",
+  "10": "친구 설정",
+  "12": "친구 대전",
+  "13": "비슷한 레이트 우선",
+  "14": "아무하고나 대전",
+  "15": "친구 목록",
+  "16": "친구 코드 등록",
+  "17": "친구 코드 확인",
+  "23": [
+   "통산 성적",
+   null,
+   null,
+   null,
+   "white"
+  ],
+  "24": "데이터 삭제",
+  "37": [
+   "장",
+   [
+    0,
+    0,
+    24,
+    16
+   ],
+   "Galmuri11",
+   "outline"
+  ],
+  "38": [
+   "승",
+   [
+    0,
+    0,
+    16,
+    16
+   ],
+   "Galmuri11",
+   "outline"
+  ],
+  "39": [
+   "패",
+   [
+    0,
+    0,
+    16,
+    16
+   ],
+   "Galmuri11",
+   "outline"
+  ],
+  "40": [
+   "전",
+   [
+    0,
+    0,
+    16,
+    16
+   ],
+   "Galmuri11",
+   "outline"
+  ],
+  "41": [
+   "레이팅",
+   null,
+   null,
+   null,
+   "grad"
+  ],
+  "52": "카드 덱",
+  "53": "카드 덱",
+  "61": [
+   "패스워드",
+   null,
+   null,
+   null,
+   "white"
+  ],
+  "62": [
+   "패스워드",
+   null,
+   null,
+   null,
+   "white"
+  ],
+  "63": "이름",
+  "64": [
+   "중단",
+   null,
+   null,
+   null,
+   "grad"
+  ],
+  "66": [
+   "저장 중입니다",
+   null,
+   null,
+   null,
+   "grad"
+  ]
+ },
+ "romdata/PUD/wifi/ja/wf_sprite_upper.pobj.z": {
+  "3": [
+   "팝업 듀얼",
+   [
+    48,
+    0,
+    144,
+    16
+   ],
+   null,
+   null,
+   null,
+   "left"
+  ],
+  "4": "친구 설정",
+  "5": "친구 목록",
+  "6": "친구 코드 등록",
+  "7": "친구 코드 확인",
+  "13": [
+   "그림책 게임",
+   null,
+   "Galmuri9",
+   null,
+   "grad:15"
+  ],
+  "14": [
+   "팝업 듀얼",
+   null,
+   null,
+   null,
+   "grad:15"
+  ],
+  "15": [
+   "Wi-Fi 대전",
+   null,
+   null,
+   null,
+   "grad"
+  ],
+  "26": [
+   "승",
+   [
+    0,
+    0,
+    16,
+    16
+   ],
+   "Galmuri11",
+   "outline"
+  ],
+  "27": [
+   "패",
+   [
+    0,
+    0,
+    16,
+    16
+   ],
+   "Galmuri11",
+   "outline"
+  ],
+  "30": [
+   "팝업 듀얼은",
+   [
+    37,
+    0,
+    168,
+    12
+   ],
+   "Galmuri9",
+   null,
+   "white",
+   "left"
+  ],
+  "30#2": [
+   "30턴으로 종료됩니다",
+   [
+    0,
+    12,
+    168,
+    24
+   ],
+   "Galmuri9",
+   null,
+   "white",
+   "left"
+  ],
+  "31": [
+   "플레이어 정보",
+   null,
+   null,
+   null,
+   "lum:g",
+   null,
+   1
+  ]
+ },
+ "romdata/PUD/multiplay/ja/mp_sprite_main.POBJ.z": {
+  "2": [
+   "무선",
+   null,
+   "Galmuri14",
+   null,
+   "gradb",
+   null,
+   1
+  ],
+  "3": [
+   "무선 플레이",
+   [
+    0,
+    0,
+    78,
+    16
+   ],
+   "Galmuri9",
+   null,
+   "flat",
+   "right:4"
+  ],
+  "3#2": [
+   "그림책 게임",
+   [
+    79,
+    0,
+    141,
+    16
+   ],
+   "Galmuri9",
+   null,
+   "flat",
+   "left"
+  ],
+  "4": "",
+  "5": "",
+  "5#2": [
+   "팝업 듀얼",
+   [
+    78,
+    0,
+    172,
+    16
+   ],
+   "Galmuri9",
+   null,
+   "flat",
+   "left"
+  ],
+  "51": [
+   "승",
+   [
+    0,
+    0,
+    16,
+    16
+   ],
+   "Galmuri11",
+   "outline"
+  ],
+  "52": [
+   "패",
+   [
+    0,
+    0,
+    16,
+    16
+   ],
+   "Galmuri11",
+   "outline"
+  ],
+  "53": "",
+  "54": [
+   "전적",
+   null,
+   "Galmuri9",
+   "rewrap",
+   "grad"
+  ]
+ },
+ "romdata/PUD/multiplay/ja/mp_sprite_sub.POBJ.z": {
+  "1": [
+   "마감",
+   null,
+   null,
+   null,
+   "white",
+   null,
+   null
+  ],
+  "2": [
+   "마감",
+   null,
+   null,
+   null,
+   "white",
+   null,
+   null
+  ],
+  "3": "결정",
+  "4": "결정",
+  "9": [
+   "뒤로",
+   null,
+   null,
+   "plate2",
+   "white",
+   null,
+   null
+  ],
+  "10": [
+   "무선 플레이",
+   [
+    19,
+    0,
+    94,
+    16
+   ],
+   "Galmuri9",
+   null,
+   "flat",
+   "right:4"
+  ],
+  "10#2": [
+   "그림책 게임",
+   [
+    94,
+    0,
+    156,
+    16
+   ],
+   "Galmuri9",
+   null,
+   "flat",
+   "left"
+  ],
+  "11": "",
+  "12": [
+   "팝업 듀얼",
+   [
+    94,
+    0,
+    188,
+    16
+   ],
+   "Galmuri9",
+   null,
+   "flat",
+   "left"
+  ],
+  "14": [
+   "참가할 그룹을 골라 줘",
+   null,
+   null,
+   null,
+   "white",
+   null,
+   null
+  ],
+  "27": [
+   "모집",
+   null,
+   null,
+   null,
+   "white",
+   null,
+   null
+  ],
+  "45": "",
+  "62": [
+   "스타트!",
+   null,
+   null,
+   null,
+   "white",
+   null,
+   null
+  ],
+  "63": [
+   "스타트!",
+   null,
+   null,
+   null,
+   "white",
+   null,
+   null
+  ],
+  "67": [
+   "카드 덱",
+   null,
+   null,
+   null,
+   "white",
+   null,
+   null
+  ],
+  "68": [
+   "카드 덱",
+   null,
+   null,
+   null,
+   "white",
+   null,
+   null
+  ],
+  "69": [
+   "잠시 기다려 주세요",
+   null,
+   null,
+   "outline",
+   "white",
+   null,
+   null,
+   "common"
+  ],
+  "71": [
+   "대전 상대 모집 중",
+   null,
+   null,
+   null,
+   "white",
+   null,
+   null
+  ]
+ },
+ "relayout:romdata/PUD/pub/pubmain/ja/PUB_stUI.pobj.z": {
+  "52": {
+   "text": "팝업 |페이즈"
+  },
+  "53": {
+   "text": "엔드 |페이즈"
+  },
+  "57": {
+   "text": "선공!",
+   "font": "Galmuri14"
+  },
+  "58": {
+   "text": "후공!",
+   "font": "Galmuri14"
+  },
+  "59": {
+   "text": "어택 |성공!"
+  },
+  "60": {
+   "text": "가드 |성공!"
+  },
+  "61": {
+   "text": "어택 1/2 |성공!"
+  },
+  "62": {
+   "text": "선"
+  },
+  "63": {
+   "text": "후"
+  },
+  "87": {
+   "text": "상대의 패",
+   "font": "Galmuri7",
+   "edge": 0
+  },
+  "94": {
+   "text": "가드 브레이크 |성공!"
+  },
+  "95": {
+   "text": "가드 브레이크 |실패!"
+  },
+  "96": {
+   "text": "분위기가\n긴장되었다!",
+   "align": "left"
+  },
+  "97": {
+   "text": "분위기가\n과열되었다!",
+   "align": "left"
+  }
+ },
+ "romdata/PUD/pub/pubresult/ja/re_sprite_main.pobj.z": {
+  "12": [
+   "지금까지의 전적",
+   null,
+   null,
+   null,
+   "flat",
+   null,
+   1
+  ],
+  "21": [
+   "멀티 플레이",
+   null,
+   null,
+   null,
+   "flat",
+   null,
+   1
+  ],
+  "22": [
+   "Wi-Fi 커넥션",
+   null,
+   null,
+   null,
+   "flat",
+   null,
+   1
+  ]
+ },
+ "romdata/PUD/pub/pubresult/ja/re_sprite_sub.pobj.z": {
+  "27": [
+   "승",
+   [
+    0,
+    0,
+    16,
+    16
+   ],
+   "Galmuri11",
+   "outline"
+  ],
+  "28": [
+   "패",
+   [
+    0,
+    0,
+    16,
+    16
+   ],
+   "Galmuri11",
+   "outline"
+  ],
+  "52": [
+   "재도전",
+   null,
+   null,
+   [
+    95,
+    36
+   ],
+   "white"
+  ],
+  "81": [
+   "그만두기",
+   null,
+   null,
+   [
+    95,
+    36
+   ],
+   "white"
+  ],
+  "82": [
+   "계속하기",
+   null,
+   null,
+   [
+    109,
+    35
+   ],
+   "white"
+  ],
+  "89": [
+   "친구 목록에 추가",
+   null,
+   null,
+   null,
+   "white"
+  ],
+  "93": [
+   "레이팅",
+   null,
+   null,
+   null,
+   "grad",
+   null,
+   1
+  ],
+  "95": [
+   "팝업",
+   [
+    0,
+    0,
+    71,
+    24
+   ],
+   null,
+   null,
+   [
+    136,
+    149,
+    163
+   ],
+   "right:2",
+   1
+  ],
+  "100": [
+   "저장 중입니다",
+   null,
+   null,
+   null,
+   "grad",
+   null,
+   1
+  ],
+  "101": [
+   "잠시 기다려 주세요",
+   null,
+   null,
+   null,
+   "white"
+  ],
+  "111": [
+   "코멘트 결정",
+   null,
+   null,
+   null,
+   "white"
+  ],
+  "112": [
+   "코멘트 결정",
+   null,
+   null,
+   null,
+   "white"
+  ],
+  "95#2": [
+   "듀얼",
+   [
+    71,
+    0,
+    120,
+    24
+   ],
+   null,
+   null,
+   [
+    245
+   ],
+   "left",
+   1
+  ]
+ },
+ "romdata/PUD/deck/graph/dc_sprite_upper_ja.POBJ.z": {
+  "1": [
+   "카드 덱",
+   null,
+   null,
+   null,
+   "flat"
+  ],
+  "2": [
+   "모은\n카드",
+   "",
+   "Galmuri9",
+   "rewrap",
+   "grad"
+  ],
+  "13": [
+   "장",
+   [
+    0,
+    0,
+    24,
+    16
+   ],
+   "Galmuri11",
+   "outline"
+  ]
+ },
+ "romdata/PUD/deck/graph/dc_sprite_lower_ja.POBJ.z": {
+  "1": [
+   "카드 컬렉션",
+   null,
+   null,
+   null,
+   "flat"
+  ],
+  "2": [
+   "덱 편집",
+   null,
+   null,
+   null,
+   "flat"
+  ],
+  "3": [
+   "덱 만들기",
+   null,
+   null,
+   null,
+   "flat"
+  ],
+  "4": [
+   "클리어",
+   null,
+   null,
+   null,
+   "white"
+  ],
+  "5": [
+   "클리어",
+   null,
+   null,
+   null,
+   "white"
+  ],
+  "6": [
+   "이름",
+   null,
+   null,
+   null,
+   "white"
+  ],
+  "7": [
+   "이름",
+   null,
+   null,
+   null,
+   "white"
+  ],
+  "8": [
+   "결정",
+   null,
+   null,
+   "plate2",
+   "white",
+   null,
+   null
+  ],
+  "9": [
+   "결정",
+   null,
+   null,
+   "plate2",
+   "white",
+   null,
+   null
+  ],
+  "10": [
+   "스타트!",
+   null,
+   null,
+   "plate2",
+   "white",
+   null,
+   null
+  ],
+  "11": [
+   "스타트!",
+   null,
+   null,
+   "plate2",
+   "white",
+   null,
+   null
+  ],
+  "12": [
+   "뒤로",
+   null,
+   null,
+   "plate2",
+   "white",
+   null,
+   null
+  ],
+  "64": [
+   "취소",
+   null,
+   null,
+   "plate2",
+   "white",
+   null,
+   null
+  ],
+  "66": [
+   "터치하면 덱에서 뺀다",
+   null,
+   null,
+   null,
+   "white"
+  ],
+  "67": [
+   "편집",
+   null,
+   null,
+   "plate2",
+   "white",
+   null,
+   null
+  ],
+  "68": [
+   "편집",
+   null,
+   null,
+   "plate2",
+   "white",
+   null,
+   null
+  ],
+  "77": [
+   "덱",
+   null,
+   null,
+   "plate2",
+   "white",
+   null,
+   null
+  ],
+  "78": [
+   "덱",
+   null,
+   null,
+   "plate2",
+   "white",
+   null,
+   null
+  ],
+  "79": [
+   "덱",
+   null,
+   null,
+   "plate2",
+   "white",
+   null,
+   null
+  ],
+  "80": [
+   "덱",
+   null,
+   null,
+   "plate2",
+   "white",
+   null,
+   null
+  ],
+  "81": [
+   "덱",
+   null,
+   null,
+   "plate2",
+   "white",
+   null,
+   null
+  ],
+  "82": [
+   "덱",
+   null,
+   null,
+   "plate2",
+   "white",
+   null,
+   null
+  ],
+  "95": [
+   "컬렉션율",
+   null,
+   null,
+   null,
+   "white"
+  ],
+  "96": [
+   "뺄 카드를 골라 줘",
+   null,
+   null,
+   null,
+   "hgrad"
+  ],
+  "99": [
+   "저장 중입니다",
+   null,
+   null,
+   null,
+   "grad",
+   null,
+   1
+  ],
+  "100": [
+   "저장 중입니다",
+   null,
+   null,
+   null,
+   "grad",
+   null,
+   1
+  ],
+  "101": [
+   "저장하고",
+   [
+    8,
+    2,
+    56,
+    16
+   ],
+   "Galmuri9",
+   [
+    33,
+    81
+   ],
+   "white"
+  ],
+  "101#2": [
+   "뒤로",
+   [
+    8,
+    16,
+    56,
+    30
+   ],
+   "Galmuri9",
+   [
+    33,
+    81
+   ],
+   "white"
+  ],
+  "102": [
+   "잠시 기다려 주세요",
+   null,
+   null,
+   null,
+   "white"
+  ]
+ },
+ "romdata/PUD/pub/pubtopmenu/pubtopmenu_ja_.narc@3": {
+  "1": [
+   "무선",
+   [
+    42,
+    10,
+    88,
+    30
+   ],
+   null,
+   [
+    161,
+    162,
+    163,
+    166,
+    167,
+    169,
+    171,
+    172,
+    173,
+    176,
+    177,
+    179
+   ],
+   [
+    222
+   ]
+  ],
+  "2": [
+   "트레이닝",
+   [
+    24,
+    10,
+    88,
+    30
+   ],
+   null,
+   [
+    161,
+    162,
+    163,
+    166,
+    167,
+    169,
+    171,
+    172,
+    173,
+    176,
+    177,
+    179
+   ],
+   [
+    222
+   ]
+  ],
+  "3": [
+   "카드 덱",
+   [
+    24,
+    10,
+    88,
+    30
+   ],
+   null,
+   [
+    161,
+    162,
+    163,
+    166,
+    167,
+    169,
+    171,
+    172,
+    173,
+    176,
+    177,
+    179
+   ],
+   [
+    222
+   ]
+  ],
+  "4": [
+   "플레이어 정보",
+   [
+    24,
+    10,
+    88,
+    30
+   ],
+   null,
+   [
+    161,
+    162,
+    163,
+    166,
+    167,
+    169,
+    171,
+    172,
+    173,
+    176,
+    177,
+    179
+   ],
+   [
+    222
+   ]
+  ],
+  "5": [
+   "튜토리얼",
+   [
+    24,
+    10,
+    88,
+    30
+   ],
+   null,
+   [
+    161,
+    162,
+    163,
+    166,
+    167,
+    169,
+    171,
+    172,
+    173,
+    176,
+    177,
+    179
+   ],
+   [
+    222
+   ]
+  ],
+  "6": [
+   "끝내기",
+   [
+    26,
+    17,
+    88,
+    39
+   ],
+   null,
+   [
+    139,
+    145,
+    146,
+    152,
+    153,
+    160,
+    163,
+    170,
+    171,
+    176,
+    178,
+    179
+   ],
+   [
+    125
+   ]
+  ]
+ },
+ "romdata/PUD/pub/pubtopmenu/pubtopmenu_ja_.narc@4": {
+  "0": [
+   "팝업",
+   [
+    52,
+    38,
+    150,
+    64
+   ],
+   "Galmuri14",
+   [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    84,
+    88,
+    89,
+    90,
+    91,
+    93
+   ],
+   [
+    43,
+    42,
+    41,
+    40,
+    60,
+    59,
+    39,
+    58,
+    57,
+    29,
+    56,
+    55,
+    54,
+    50,
+    53,
+    51,
+    47,
+    49,
+    48,
+    36,
+    46,
+    35,
+    44,
+    34,
+    33
+   ],
+   null,
+   1,
+   [
+    10,
+    97
+   ]
+  ],
+  "0#2": [
+   "듀얼",
+   [
+    64,
+    65,
+    142,
+    92
+   ],
+   "Galmuri14",
+   [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    84,
+    88,
+    89,
+    90,
+    91,
+    93
+   ],
+   [
+    209,
+    135,
+    228,
+    225,
+    167,
+    200,
+    197
+   ],
+   null,
+   1,
+   [
+    10,
+    97
+   ]
+  ]
+ },
+ "romdata/PUD/pub/pubmain/ja/PUB_stUI.pobj.z": {
+  "26": [
+   "미",
+   null,
+   "Galmuri7",
+   "glyph",
+   null
+  ],
+  "27": [
+   "스",
+   null,
+   "Galmuri7",
+   "glyph",
+   null
+  ],
+  "39": [
+   "미",
+   null,
+   "Galmuri7",
+   "glyph",
+   "white"
+  ],
+  "40": [
+   "스",
+   null,
+   "Galmuri7",
+   "glyph",
+   "white"
+  ]
+ },
+ "romdata/PUD/skb/ja/n_sprite_lower.POBJ.z": {
+  "0": [
+   "취소",
+   null,
+   null,
+   "plate2",
+   "white"
+  ],
+  "1": [
+   "결정",
+   null,
+   null,
+   "plate2",
+   "white"
+  ],
+  "2": [
+   "결정",
+   null,
+   null,
+   "plate2",
+   "white"
+  ],
+  "52": [
+   "저장 중입니다",
+   null,
+   null,
+   null,
+   "grad",
+   null,
+   1
+  ]
+ },
+ "romdata/PUD/skb/ja/n_sprite_upper.POBJ.z": {
+  "1": [
+   "카드 덱",
+   null,
+   null,
+   null,
+   "grad3",
+   null,
+   1
+  ]
+ },
+ "romdata/PUD/pubtutorial/ja/tr_sprite_lower.pobj.z": {
+  "3": [
+   "팝업 듀얼이란!?",
+   null,
+   "Galmuri11-Bold",
+   null,
+   "white"
+  ],
+  "4": [
+   "카드 보는 법",
+   null,
+   "Galmuri11-Bold",
+   null,
+   "white"
+  ],
+  "5": [
+   "팝업&턴",
+   null,
+   "Galmuri11-Bold",
+   null,
+   "white"
+  ],
+  "6": [
+   "매칭!!",
+   null,
+   "Galmuri11-Bold",
+   null,
+   "white"
+  ],
+  "7": [
+   "어빌리티",
+   null,
+   "Galmuri11-Bold",
+   null,
+   "white"
+  ],
+  "8": [
+   "엔드 페이즈",
+   null,
+   "Galmuri11-Bold",
+   null,
+   "white"
+  ],
+  "9": [
+   "크리스탈 포인트",
+   null,
+   "Galmuri11-Condensed",
+   null,
+   "white"
+  ],
+  "10": [
+   "크리스탈 어빌리티",
+   null,
+   "Galmuri11-Condensed",
+   null,
+   "white"
+  ],
+  "11": [
+   "새 시스템",
+   null,
+   "Galmuri11-Bold",
+   null,
+   "white"
+  ],
+  "12": [
+   "듀얼의 비결",
+   null,
+   "Galmuri11-Bold",
+   null,
+   "white"
+  ],
+  "13": [
+   "뒤로",
+   null,
+   null,
+   "plate2",
+   "white"
+  ],
+  "14": [
+   "룰과 조작을 익히자!",
+   null,
+   null,
+   null,
+   "flat"
+  ]
+ },
+ "romdata/PUD/pub/pubsub/ja/card_effect.pobj.z": {
+  "31": [
+   "덱",
+   [
+    0,
+    0,
+    32,
+    16
+   ],
+   "Galmuri9!",
+   "outline",
+   "white"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/ep_sprite1.POBJ.z": {
+  "0": [
+   "스타트!",
+   null,
+   null,
+   "plate2",
+   "white"
+  ],
+  "1": [
+   "스타트!",
+   null,
+   null,
+   "plate2",
+   "white"
+  ],
+  "2": [
+   "뒤로",
+   null,
+   null,
+   "plate2",
+   "white"
+  ],
+  "10": [
+   "그림책 읽기",
+   [
+    48,
+    0,
+    112,
+    32
+   ],
+   null,
+   null,
+   "flat"
+  ],
+  "11": [
+   "배틀!",
+   [
+    80,
+    0,
+    120,
+    32
+   ],
+   null,
+   null,
+   "flat"
+  ],
+  "12": [
+   "혼자서 트라이얼",
+   [
+    46,
+    0,
+    142,
+    32
+   ],
+   null,
+   null,
+   "flat"
+  ],
+  "13": [
+   "슈퍼 배틀!!",
+   [
+    50,
+    0,
+    141,
+    32
+   ],
+   null,
+   null,
+   "hgrad"
+  ],
+  "56": [
+   "그림책의 비밀",
+   null,
+   null,
+   null,
+   "hgrad"
+  ],
+  "96": [
+   "룰과 조작을 익히자!",
+   null,
+   null,
+   null,
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/ep_sprite2.POBJ.z": {
+  "18": [
+   "승",
+   [
+    0,
+    0,
+    16,
+    16
+   ],
+   "Galmuri11",
+   "outline"
+  ],
+  "19": [
+   "패",
+   [
+    0,
+    0,
+    16,
+    16
+   ],
+   "Galmuri11",
+   "outline"
+  ],
+  "21": [
+   "달성률",
+   null,
+   null,
+   null,
+   "grad3",
+   null,
+   1
+  ],
+  "22": [
+   "도전 횟수",
+   null,
+   null,
+   null,
+   "grad3",
+   null,
+   1
+  ],
+  "23": [
+   "전적",
+   null,
+   null,
+   null,
+   "grad3",
+   null,
+   1
+  ],
+  "24": [
+   "하이스코어",
+   null,
+   null,
+   null,
+   "grad3",
+   null,
+   1
+  ],
+  "27": [
+   "초커즈",
+   null,
+   "Galmuri7",
+   "glyph",
+   "white"
+  ],
+  "28": [
+   "볼그",
+   null,
+   "Galmuri7",
+   "glyph",
+   "white"
+  ],
+  "29": [
+   "미즈이",
+   null,
+   "Galmuri7",
+   "glyph",
+   "white"
+  ],
+  "30": [
+   "피카브",
+   null,
+   "Galmuri7",
+   "glyph",
+   "white"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/eg_sprite01_lower.POBJ.z": {
+  "6": [
+   "뒤로",
+   [
+    15,
+    4,
+    50,
+    18
+   ],
+   "Galmuri11",
+   [
+    8
+   ],
+   "white"
+  ],
+  "7": [
+   "결정",
+   [
+    12,
+    3,
+    60,
+    21
+   ],
+   null,
+   [
+    7,
+    6
+   ],
+   [
+    15
+   ]
+  ],
+  "8": [
+   "레벨",
+   null,
+   null,
+   "outline",
+   "grad3",
+   null,
+   1
+  ],
+  "12": [
+   "스테이지",
+   null,
+   null,
+   "outline",
+   "grad3",
+   null,
+   1
+  ],
+  "13": [
+   "스테이지",
+   [
+    0,
+    0,
+    52,
+    24
+   ],
+   "Galmuri11-Bold",
+   "outline",
+   "lumr:b",
+   "right:1",
+   1
+  ],
+  "14": [
+   "스테이지",
+   [
+    0,
+    0,
+    52,
+    24
+   ],
+   "Galmuri11-Bold",
+   "outline",
+   "lumr:b",
+   "right:1",
+   1
+  ],
+  "15": [
+   "스테이지",
+   [
+    0,
+    0,
+    52,
+    24
+   ],
+   "Galmuri11-Bold",
+   "outline",
+   "lumr:b",
+   "right:1",
+   1
+  ],
+  "13#2": [
+   "1",
+   [
+    52,
+    0,
+    64,
+    24
+   ],
+   "Galmuri11-Bold",
+   "outline",
+   "grad:13",
+   null,
+   1
+  ],
+  "14#2": [
+   "2",
+   [
+    52,
+    0,
+    64,
+    24
+   ],
+   "Galmuri11-Bold",
+   "outline",
+   "grad:13",
+   null,
+   1
+  ],
+  "15#2": [
+   "3",
+   [
+    52,
+    0,
+    64,
+    24
+   ],
+   "Galmuri11-Bold",
+   "outline",
+   "grad:13",
+   null,
+   1
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/eg_sprite01_upper.POBJ.z": {
+  "3": [
+   "볼그 배틀",
+   null,
+   null,
+   "ttf",
+   "lumr"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/adaman_sprite_main.POBJ.z": {
+  "0": [
+   "사보텐더와 아다만타이마이",
+   null,
+   "Galmuri11-Bold",
+   "seg",
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/akazukin_sprite_main.POBJ.z": {
+  "0": [
+   "빨간 두건 초코보",
+   null,
+   "Galmuri11-Bold",
+   "seg",
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/chocobo_sprite_main.POBJ.z": {
+  "0": [
+   "미운 초코보 새끼",
+   null,
+   "Galmuri11-Bold",
+   "seg",
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/levia_sprite_main.POBJ.z": {
+  "0": [
+   "리바이어선 소년",
+   null,
+   "Galmuri11-Bold",
+   "seg",
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/porky_sprite_main.POBJ.z": {
+  "0": [
+   "포키 세 마리",
+   null,
+   "Galmuri11-Bold",
+   "seg",
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/siva_sprite_main.POBJ.z": {
+  "0": [
+   "시바와 이프리트",
+   null,
+   "Galmuri11-Bold",
+   "seg",
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/titan_sprite_main.POBJ.z": {
+  "0": [
+   "타이탄과 콩나무",
+   null,
+   "Galmuri11-Bold",
+   "seg",
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/unicorn_sprite_main.POBJ.z": {
+  "0": [
+   "유니콘 음악대",
+   null,
+   "Galmuri11-Bold",
+   "seg",
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/vebs_sprite_main.POBJ.z": {
+  "0": [
+   "네 개의 크리스탈",
+   null,
+   "Galmuri11-Bold",
+   "seg",
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/adaman_sprite_sub.POBJ.z": {
+  "0": [
+   "바위산 꼭대기를 노려라",
+   [
+    31,
+    151
+   ],
+   "Galmuri11",
+   "seg",
+   "hgrad"
+  ],
+  "1": [
+   "급류! 사보텐더를 구해라!",
+   [
+    31,
+    151
+   ],
+   "Galmuri11",
+   "seg",
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/akazukin_sprite_sub.POBJ.z": {
+  "0": [
+   "찌릿찌릿 미로를 넘어",
+   [
+    32,
+    151
+   ],
+   "Galmuri11",
+   "seg",
+   "hgrad"
+  ],
+  "1": [
+   "먹구름 날려!",
+   [
+    79,
+    152
+   ],
+   "Galmuri11",
+   "seg",
+   "hgrad"
+  ],
+  "1#2": [
+   "슈퍼\n배틀",
+   [
+    32,
+    78
+   ],
+   "Galmuri7",
+   "seg",
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/chocobo_sprite_sub.POBJ.z": {
+  "0": [
+   "길 잃은 까만 초코보",
+   [
+    31,
+    151
+   ],
+   "Galmuri11",
+   "seg",
+   "hgrad"
+  ],
+  "1": [
+   "불꽃의 금화",
+   [
+    80,
+    136
+   ],
+   "Galmuri11",
+   "seg",
+   "hgrad"
+  ],
+  "1#2": [
+   "슈퍼\n배틀",
+   [
+    32,
+    78
+   ],
+   "Galmuri7",
+   "seg",
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/levia_sprite_sub.POBJ.z": {
+  "0": [
+   "해저! 보글보글 다이브",
+   [
+    31,
+    151
+   ],
+   "Galmuri11",
+   "seg",
+   "hgrad"
+  ],
+  "1": [
+   "배고파! 바다의 왕",
+   [
+    79,
+    152
+   ],
+   "Galmuri11",
+   "seg",
+   "hgrad"
+  ],
+  "1#2": [
+   "슈퍼\n배틀",
+   [
+    32,
+    78
+   ],
+   "Galmuri7",
+   "seg",
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/porky_sprite_sub.POBJ.z": {
+  "0": [
+   "조립! 퍼즐 하우스",
+   [
+    32,
+    152
+   ],
+   "Galmuri11",
+   "seg",
+   "hgrad"
+  ],
+  "1": [
+   "공포의 숨바꼭질",
+   [
+    79,
+    152
+   ],
+   "Galmuri11",
+   "seg",
+   "hgrad"
+  ],
+  "1#2": [
+   "슈퍼\n배틀",
+   [
+    32,
+    78
+   ],
+   "Galmuri7",
+   "seg",
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/siva_sprite_sub.POBJ.z": {
+  "1": [
+   "피해라! 모아라! 라산 열매",
+   [
+    31,
+    151
+   ],
+   "Galmuri11",
+   "seg",
+   "hgrad"
+  ],
+  "2": [
+   "사뿐! 점프로 루틸 열매",
+   [
+    30,
+    152
+   ],
+   "Galmuri11",
+   "seg",
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/titan_sprite_sub.POBJ.z": {
+  "0": [
+   "잎사귀 타고 구름 위로",
+   [
+    31,
+    152
+   ],
+   "Galmuri11",
+   "seg",
+   "hgrad"
+  ],
+  "1": [
+   "도망쳐! 낙엽 미끄럼",
+   [
+    31,
+    152
+   ],
+   "Galmuri11",
+   "seg",
+   "hgrad"
+  ]
+ },
+ "romdata/PUD/mgentryphase/ja/unicorn_sprite_sub.POBJ.z": {
+  "0": [
+   "외워라! 따라쟁이 멜로디",
+   [
+    32,
+    152
+   ],
+   "Galmuri11",
+   "seg",
+   "hgrad"
+  ],
+  "1": [
+   "따라쟁이 생존",
+   [
+    79,
+    152
+   ],
+   "Galmuri11",
+   "seg",
+   "hgrad"
+  ],
+  "1#2": [
+   "슈퍼\n배틀",
+   [
+    32,
+    78
+   ],
+   "Galmuri7",
+   "seg",
+   "hgrad"
+  ]
+ }
+}

@@ -1,0 +1,8 @@
+# 파일	txtbin 안쪽 경로	번호	번역   (\n = 줄바꿈, {ESC} = 0x1B, {13} = 쪽 끝 0x13)
+romdata/DT/GM_DT_EVTMSG0.FBC.z	DT_EVTMSG0.FBC/dt_EVTMSG0.txtbin	0	초코보\n
+romdata/DT/GM_DT_EVTMSG0.FBC.z	DT_EVTMSG0.FBC/dt_EVTMSG0.txtbin	5	시드\n
+romdata/DT/GM_DT_EVTMSG0.FBC.z	DT_EVTMSG0.FBC/dt_EVTMSG0.txtbin	100	자, 도착했다! 여기가 {ESC}BL}1~사막의 탑{ESC}WT}1~! \n{ESC}PP}1~위대한 힘{ESC}WT}1~이 \n잠든 곳이다{13}
+romdata/DT/GM_DT_EVTMSG0.FBC.z	DT_EVTMSG0.FBC/dt_EVTMSG0.txtbin	101	준비는 됐냐? \n파트너!{13}
+romdata/DT/GM_DT_EVTMSG0.FBC.z	DT_EVTMSG0.FBC/dt_EVTMSG0.txtbin	102	뀨!{13}
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	9	초코보\n
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	10	시드\n

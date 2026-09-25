@@ -1,0 +1,21 @@
+# 허용 목록 방식: 기본은 전부 제외, 올릴 것만 연다(ROM·빌드·추출 그림은 저작권·용량 때문에 절대 안 올림)
+/*
+!/.gitignore
+!/.gitattributes
+!/chocods-kr-patch/
+/chocods-kr-patch/*
+!/chocods-kr-patch/tools/
+!/chocods-kr-patch/docs/
+!/chocods-kr-patch/work/
+/chocods-kr-patch/work/*
+!/chocods-kr-patch/work/*.tsv
+!/chocods-kr-patch/work/*.json
+!/chocods-kr-patch/work/*.py
+!/chocods-kr-patch/work/*.txt
+!/chocods-kr-patch/work/logo/
+/chocods-kr-patch/work/logo/*
+!/chocods-kr-patch/work/logo/v13.png
+__pycache__/
+*.nds
+*.bin
+*.pyc

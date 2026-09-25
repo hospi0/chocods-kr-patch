@@ -1,0 +1,57 @@
+# PoC-2 — 「할일」 화면 7장 텍스트   (파일	txtbin 안쪽 경로	번호	번역 · \n 줄바꿈 · {ESC} · {13} 쪽 끝 · {XX} 바이트)
+# 부호 뒤 공백은 빌더가 지운다.
+# ── 첫 장면(PoC-1)
+romdata/DT/GM_DT_EVTMSG0.FBC.z	DT_EVTMSG0.FBC/dt_EVTMSG0.txtbin	0	초코보\n
+romdata/DT/GM_DT_EVTMSG0.FBC.z	DT_EVTMSG0.FBC/dt_EVTMSG0.txtbin	5	시드\n
+romdata/DT/GM_DT_EVTMSG0.FBC.z	DT_EVTMSG0.FBC/dt_EVTMSG0.txtbin	100	자, 도착했다! 여기가 {ESC}BL}1~사막의 탑{ESC}WT}1~! \n{ESC}PP}1~위대한 힘{ESC}WT}1~이 \n잠든 곳이다{13}
+romdata/DT/GM_DT_EVTMSG0.FBC.z	DT_EVTMSG0.FBC/dt_EVTMSG0.txtbin	101	준비는 됐냐? \n파트너!{13}
+romdata/DT/GM_DT_EVTMSG0.FBC.z	DT_EVTMSG0.FBC/dt_EVTMSG0.txtbin	102	쿠엣! \n[조사시험] 초코보{이} 시드{을} 탑{으}로 \n칼{으}로 물{은} 발톱{과} 너{이다}다{13}
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	9	초코보\n
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	10	시드\n
+# ── 던전 메뉴 버튼(화면 3)
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	11	{15}CT}1~아이템
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	12	{15}CT}1~세이브하기\n
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	13	{15}CT}1~스테이터스
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	14	{15}CT}1~소중한 것\n
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	15	{15}CT}1~어빌리티
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	16	{15}CT}1~발밑
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	17	{15}CT}1~로그 보기\n
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	18	{15}CT}1~시스템
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	231	{15}CT}1~중단하기
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	221	{15}CT}1~단축키
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	274	{15}CT}1~단련하기
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	389	{ESC}RD}1~장비{ESC}WT}1~를 바꿀 수 있습니다. 던전에서는 \n아이템 사용과 단축키 설정도 할 수 있습니다\n
+# ── 로그(화면 4)
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	61	{ESC}YL}1~{05}}11~{ESC}WT}1~{을} 주웠다\n
+# ── 장비 설명 줄(화면 5)
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	30	공격э%d→%d \n단련э%d/%dээээ각인：%s%s%s%s%s%s%s%s
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	31	방어э%d→%d \n단련э%d/%dээээ각인：%s%s%s%s%s%s%s%s
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	245	공격э%d{ESC}GR}1~→%d{ESC}WT}1~ \n단련э%d/%dээээ각인：%s%s%s%s%s%s%s%s
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	246	방어э%d{ESC}GR}1~→%d{ESC}WT}1~ \n단련э%d/%dээээ각인：%s%s%s%s%s%s%s%s
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	247	공격э%d{ESC}PK}1~→%d{ESC}WT}1~ \n단련э%d/%dээээ각인：%s%s%s%s%s%s%s%s
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	248	방어э%d{ESC}PK}1~→%d{ESC}WT}1~ \n단련э%d/%dээээ각인：%s%s%s%s%s%s%s%s
+# ── 능력치 이름(화면 7)
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	233	공격
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	234	방어\n
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	235	마력\n
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	236	정신
+romdata/DT/DT_ALL.FBC.z	DT_SYSMSG.FBC/dt_SYSMSG.txtbin	331	공격ээ%sэ마력ээ%s \n방어эйЛ┼%sэ정신┼йй%s
+# ── Shift-JIS(아이템·직업·던전·능력)
+romdata/DT/DT_ALL.FBC.z	DT_ITEM_ALL.FBC/dt_ITEM_ALL.txtbin	0	녹슨 발톱
+romdata/DT/DT_ALL.FBC.z	DT_ITEM_ALL.FBC/dt_ITEM_ALL.txtbin	220	녹슨 안장
+romdata/DT/DT_ALL.FBC.z	DT_PLY_JOBPARAM.FBC/dt_PLY_JOBPARAM.txtbin	0	스핑
+romdata/DT/DT_ALL.FBC.z	DT_PLY_JOBPARAM.FBC/dt_PLY_JOBPARAM.txtbin	1	나이트
+romdata/DT/DT_ALL.FBC.z	DT_PLY_JOBPARAM.FBC/dt_PLY_JOBPARAM.txtbin	2	용기사
+romdata/DT/DT_ALL.FBC.z	DT_PLY_JOBPARAM.FBC/dt_PLY_JOBPARAM.txtbin	3	암흑기사
+romdata/DT/DT_ALL.FBC.z	DT_PLY_JOBPARAM.FBC/dt_PLY_JOBPARAM.txtbin	4	닌자
+romdata/DT/DT_ALL.FBC.z	DT_PLY_JOBPARAM.FBC/dt_PLY_JOBPARAM.txtbin	5	시프
+romdata/DT/DT_ALL.FBC.z	DT_PLY_JOBPARAM.FBC/dt_PLY_JOBPARAM.txtbin	6	학자
+romdata/DT/DT_ALL.FBC.z	DT_PLY_JOBPARAM.FBC/dt_PLY_JOBPARAM.txtbin	7	흑마도사
+romdata/DT/DT_ALL.FBC.z	DT_PLY_JOBPARAM.FBC/dt_PLY_JOBPARAM.txtbin	8	백마도사
+romdata/DT/DT_ALL.FBC.z	DT_PLY_JOBPARAM.FBC/dt_PLY_JOBPARAM.txtbin	9	무희
+romdata/DT/DT_ALL.FBC.z	DT_PLY_JOBPARAM.FBC/dt_PLY_JOBPARAM.txtbin	10	적마도사
+romdata/DT/DT_ALL.FBC.z	DT_PLY_JOBPARAM.FBC/dt_PLY_JOBPARAM.txtbin	11	히어로X
+romdata/DT/DT_ALL.FBC.z	DT_PLY_JOBPARAM.FBC/dt_PLY_JOBPARAM.txtbin	12	시드
+romdata/DT/DT_ALL.FBC.z	DT_DGN_CMN.FBC/dt_DGN_CMN.txtbin	1	사막의 탑
+romdata/DT/DT_ALL.FBC.z	DT_PLY_ABT.FBC/dt_PLY_ABT.txtbin	0	초코보 킥
+romdata/DT/DT_ALL.FBC.z	DT_PLY_ABT.FBC/dt_PLY_ABT.txtbin	1	초코보의 킥으로\n옆에 있는 적을 공격
