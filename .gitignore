@@ -19,3 +19,4 @@ __pycache__/
 *.nds
 *.bin
 *.pyc
+!/chocods-kr-patch/work/ko/

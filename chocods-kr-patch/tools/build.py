@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 r"""시드와 초코보 DS+ 한글 빌드
 
-  python tools/build.py <번역.tsv> <출력.nds>
+  python tools/build.py <번역.tsv|번역 폴더(work/ko)> <출력.nds|--dry>
 
-번역 TSV: 파일<TAB>txtbin 안쪽 경로<TAB>번호<TAB>번역  ( \n 줄바꿈 · {ESC}=0x1B · {13}=0x13 쪽 끝 · {XX}=바이트 )
+번역 TSV: 파일<TAB>txtbin 안쪽 경로<TAB>번호<TAB>번역  또는 머리줄 「@<TAB>파일<TAB>안쪽 경로」 아래 「번호<TAB>번역」  ( \n 줄바꿈 · {ESC}=0x1B · {13}=0x13 쪽 끝 · {XX}=바이트 )
 처리: 원본 md5 확인 → 파일마다 LZ 해제 → FBC 펼쳐 txtbin 문자열 교체(인코딩은 그 txtbin 원래 것: UTF-8/Shift-JIS)
       → FBC 다시 조립 → LZ11 재압축 → NitroFS 교체(ndspy) · 글꼴 dsr_fnt 에 갈무리9 한글 덧붙임.
 """
+import glob
 import hashlib
 import os
 import re
@@ -49,13 +50,21 @@ def squeeze(s):
 
 
 def read_tsv(path):
+    """번역 TSV 하나 또는 폴더(안의 *.tsv 전부, 이름 순)"""
     rows = defaultdict(lambda: defaultdict(dict))
-    for line in open(path, encoding='utf-8'):
-        line = line.rstrip('\n')
-        if not line or line.startswith('#'):
-            continue
-        f, inner, idx, ko = line.split('\t')
-        rows[f][inner][int(idx)] = squeeze(josa.expand(unesc(ko)))
+    paths = sorted(glob.glob(os.path.join(path, '*.tsv'))) if os.path.isdir(path) else [path]
+    for p in paths:
+        cur = None
+        for line in open(p, encoding='utf-8'):
+            line = line.rstrip('\n')
+            if not line or line.startswith('#'):
+                continue
+            cols = line.split('\t')
+            if cols[0] == '@':                    # 머리줄 「@ 파일 안쪽경로」 → 아래 줄은 「번호 번역」
+                cur = cols[1:3]
+                continue
+            f, inner, idx, ko = cols if len(cols) == 4 else cur + cols
+            rows[f][inner][int(idx)] = squeeze(josa.expand(unesc(ko)))
     return rows
 
 
