@@ -218,6 +218,8 @@ def main():
             ji = icons(jp)
             if '길' in ko:                                   # ┣┳ = 좁은 「ギル」 글리프 → 「길」 로 바꿔 써도 된다
                 ji -= Counter({'┣': 9, '┳': 9})
+            if '전생' in ko:                                 # ⑮ = 「転」 글리프 → 「전생」
+                ji -= Counter({'⑮': 9})
             if ji != icons(ko) and (inner.split('/')[-1], int(i)) not in ICON_OK:
                 e.append('아이콘 다름 원문%s 번역%s' % (dict(icons(jp) - icons(ko)), dict(icons(ko) - icons(jp))))
             if ko.count('{13}') != jp.count('{13}'):
