@@ -8,6 +8,7 @@ r"""번역 검사(ROM 없이) — 원문 work/alltext.tsv 와 번역 work/ko/*.t
   · 태그 보존: {ESC}XX}1~ 색·{15}CT}1~ 정렬·{11}}1~·%d·아이콘 글자(ы щ ┓ э ① …) 가 원문과 같은 개수
   · 색 태그 짝: 색을 켜면 {ESC}WT}1~ 로 닫고 나서 다음 색
   · 쪽({13}) 수 같음 · 쪽마다 줄 수 ≤ 원문 그 문자열의 최대 줄 수
+  · 부호(,.!?:;) 뒤 공백 없음 · 원문에 없는 겹공백 없음
   · 줄 폭 ≤ 예산(한글·전각 1, 반각 0.5, 부호 뒤 공백은 빌더가 지우므로 뺌) — 예산은 «상자 폭»: 표마다 원문 최대 줄 폭(BUDGET)
   · 가나·한자 남음 · KS X 1001 밖 음절 · 모르는 조사 표시
 보고: 본편 글꼴 한글 음절 수(한자 칸 606 / 가나 칸까지 ≈880) · --rare N 이면 N 회 이하 음절 목록(줄이기 후보)
@@ -230,6 +231,11 @@ def main():
                 e.append('색 %s 안 닫힘' % cur)
             if ko.endswith('\\n') != jp.endswith('\\n'):
                 e.append('끝 줄바꿈 다름')
+            if re.search('[가-힣]', ko):
+                for m in re.finditer(r'[,.!?:;] +', ko):            # 규칙: 부호 뒤 공백 없음(빌더 squeeze 와 같은 범위)
+                    e.append('부호 뒤 공백 「%s」' % ko[max(0, m.start() - 4):m.end() + 2])
+                if re.search(r'(?<![ \\n])  (?! *\\n)', ko.replace('{13}', '')) and '  ' not in jp:
+                    e.append('겹공백')
             jp_pages, ko_pages = pages(jp), pages(squeeze(ko))
             max_lines = max(len(pg) for pg in jp_pages)
             bud = budget_of(inner, jp)
