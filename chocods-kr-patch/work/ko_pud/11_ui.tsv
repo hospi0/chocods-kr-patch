@@ -1,0 +1,184 @@
+# 카드 게임 UI 문구 — 대전 로그·캐릭터·칭호·정형문·통신·Wi-Fi·덱·무선·이름 입력
+# 대전 로그는 조각을 이어 붙인다(「이름」+は+「카드」+を召喚した！) — 카드 게임은 조사 자동 선택이 안 돼 「은(는)」「을(를)」 꼴.
+# ㎝㎞㎜♪ = 글꼴 속 이모티콘 그대로 · %ls %d 그대로
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	0	은(는)
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	1	의
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	2	에게
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	3	을(를) 소환했다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	4	공격 턴!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	5	상대의 공격을 가드했다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	6	은(는) CP가 모자라다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	7	크리스탈 어빌리티 봉인 중!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	8	가드 어빌리티
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	9	화상을 입었다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	10	독에 걸렸다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	11	얼어붙었다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	12	마비됐다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	13	헤이스트 효과가 붙었다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	14	슬로 효과가 붙었다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	15	CP가
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	16	개 파괴됐다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	17	스테이터스를 리프레시!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	18	CP가 모두 같은 색이 됐다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	19	개 차지했다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	20	개 빼앗겼다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	21	크리스탈 어빌리티가 봉인됐다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	22	프로테스 효과가 붙었다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	23	가드 브레이크에\n실패했다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	24	서로\n상황을 살피고 있다
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	25	분위기가\n긴장되었다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	26	분위기가\n과열된다!
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	27	과열이 이어지고 있다!
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	0	초코보
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	1	사하긴
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	2	골렘
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	3	철거인
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	4	베히모스
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	5	돌 군
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	6	히어로X
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	7	초커즈
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	8	시로마
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	9	프레이아
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	10	메아
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	11	Mr모그리
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	0	견습 듀얼리스트
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	1	１０급\n풋내기 히어로
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	2	９급\n떠돌이 듀얼리스트
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	3	８급\n밑바닥 수행 중
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	4	７급\n그저 운이 좋을 뿐
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	5	６급\n종잡을 수 없는 녀석
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	6	５급\n제법 몸에 익었다
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	7	４급\n상상 속에선 히어로
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	8	３급\n그럭저럭 하는 녀석
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	9	２급\n운이 아니라 실력?
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	10	１급\n기대되는 듀얼리스트
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	11	초단\n반쪽짜리 히어로
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	12	２단\n나름 유명인
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	13	３단\n추리의 달인 승부사
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	14	４단\n수읽기는 프로급
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	15	５단\n세상의 중심은 나
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	16	６단\n날카로운 내 수읽기
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	17	７단\n신기를 부리는 녀석
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	18	８단\nＷＡ・ＺＡ・ＳＨＩ
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	19	９단\nＰＵＤ히어로
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	20	히어로 위의 히어로
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	0	딱 한 번만 더\n부탁드립니다!
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	1	한 번 더\n대전하고 싶어요!!
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	2	연전!연전!
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	3	좀 쉬어요㎝
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	4	졌습니다…!
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	5	완패다…!
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	6	너무 강해!!!
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	7	분해요㎞
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	8	아까웠는데～!
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	9	조금만 더 하면\n이길 뻔했는데!
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	10	위험했다…
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	11	막상막하군!
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	12	좋은 승부였어～㎝
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	13	봤어?!\n방금 그 멋진 싸움㎜
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	14	어때!\n항복이냐～♪
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	15	연습해서\n다시 올게요…㎞
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	16	졸려졌어요…㎞
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	17	즐거웠어～㎜
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	18	멋진 시간을\n고마워요～!
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	19	또 만나요♪
+romdata/PUD/pub/pubresult/textdata_ja_.dat.z	0	상대 플레이어가 접속을 끊어서\n대전을 종료합니다
+romdata/PUD/pub/pubresult/textdata_ja_.dat.z	1	친구 목록에 추가했습니다
+romdata/PUD/pub/pubresult/textdata_ja_.dat.z	2	친구 목록이 가득 찼습니다\n친구 목록에는 ２０명까지만 등록할 수 있으니\n새로 등록하려면\n누군가를 친구 목록에서 지워 주세요
+romdata/PUD/pub/pubresult/textdata_ja_.dat.z	3	이미 친구 목록에 등록되어 있습니다
+romdata/PUD/pub/pubresult/textdata_ja_.dat.z	4	상대 플레이어의 응답이 없습니다\n시간이 다 되어 대전을 종료합니다
+romdata/PUD/pub/errortext_ja_.dat.z	0	Wi-Fi 커넥션에\n접속할 수 없습니다.\n자세한 내용은 사용 설명서를\n참조해 주세요.
+romdata/PUD/pub/errortext_ja_.dat.z	1	Wi-Fi 커넥션이 혼잡하거나\n서비스가 중지되어\n접속할 수 없습니다.\n잠시 후 다시 시도해 주세요.
+romdata/PUD/pub/errortext_ja_.dat.z	2	고객님의 Wi-Fi 커넥션 ID는 오랫동안\n사용되지 않아 삭제되었습니다.\n자세한 내용은 설명서를 참조해 주세요.
+romdata/PUD/pub/errortext_ja_.dat.z	3	이 소프트웨어의\nWi-Fi 커넥션 서비스는\n종료되었습니다.\n이용해 주셔서 감사합니다.
+romdata/PUD/pub/errortext_ja_.dat.z	4	액세스 포인트가 혼잡하여\n접속할 수 없습니다.\n잠시 후 다시 시도해 주세요.
+romdata/PUD/pub/errortext_ja_.dat.z	5	액세스 포인트를 찾을 수 없습니다.\n액세스 포인트에 가까이 가서\n다시 시도해 주세요.
+romdata/PUD/pub/errortext_ja_.dat.z	6	접속할 수 있는 액세스 포인트를\n찾을 수 없습니다.\nWi-Fi 커넥션 설정에서\n접속 설정을 확인해 주세요.
+romdata/PUD/pub/errortext_ja_.dat.z	7	닌텐도 Wi-Fi USB 커넥터에\n접속할 수 없습니다.\nWi-Fi 커넥션 설정에서\n닌텐도 Wi-Fi USB 커넥터의\n접속을 확인해 주세요.
+romdata/PUD/pub/errortext_ja_.dat.z	8	Wi-Fi 커넥션에\n접속할 수 없습니다.\nWi-Fi 커넥션 설정에서\n접속 설정을 확인해 주세요.
+romdata/PUD/pub/errortext_ja_.dat.z	9	상대로부터 응답이 없습니다.\n상대가 이미 Wi-Fi 커넥션에\n접속하지 않았거나 상대 친구 목록에서\n등록이 지워졌을 수 있습니다.
+romdata/PUD/pub/errortext_ja_.dat.z	10	통신 오류로 Wi-Fi 커넥션에서\n연결이 끊어졌습니다.
+romdata/PUD/pub/errortext_ja_.dat.z	11	통신 오류가 발생했습니다.
+romdata/PUD/pub/errortext_ja_.dat.z	12	다운로드에 실패했습니다.
+romdata/PUD/pub/errortext_ja_.dat.z	13	오류가 발생하여\nWi-Fi 커넥션 기능을 사용할 수 없습니다.\n리셋하고 다시 시작해 주세요.
+romdata/PUD/pub/errortext_ja_.dat.z	14	오류 코드：
+romdata/PUD/errorproc/textdata_ja_.dat.z	0	통신 오류입니다
+romdata/PUD/errorproc/textdata_ja_.dat.z	1	Ａ버튼 또는 아래 화면 터치로
+romdata/PUD/errorproc/textdata_ja_.dat.z	2	메뉴 화면으로 돌아갑니다
+romdata/PUD/errorproc/textdata_ja_.dat.z	3	대전 선택 메뉴로 돌아갑니다
+romdata/PUD/errorproc/textdata_ja_.dat.z	4	Wi-Fi 메뉴로 돌아갑니다
+romdata/PUD/errorproc/textdata_ja_.dat.z	5	전원을 꺼 주세요
+romdata/PUD/errorproc/textdata_ja_.dat.z	6	타이틀 화면으로 돌아갑니다
+romdata/PUD/errorproc/textdata_ja_.dat.z	7	데이터를 쓰지 못했습니다\n전원을 끄고\n카드를 다시 꽂아 주세요
+romdata/PUD/errorproc/textdata_ja_.dat.z	8	데이터를 읽지 못했습니다\n전원을 끄고\n카드를 다시 꽂아 주세요
+romdata/PUD/errorproc/textdata_ja_.dat.z	9	데이터가 손상되었습니다
+romdata/PUD/wifi/ja/wifitext.bin	0	메뉴에서 골라 주세요
+romdata/PUD/wifi/ja/wifitext.bin	1	Wi-Fi 팝업 듀얼의\n지금까지의 통산 성적입니다
+romdata/PUD/wifi/ja/wifitext.bin	2	대전 방법을\n골라 주세요
+romdata/PUD/wifi/ja/wifitext.bin	3	친구 목록에 아무도 등록되어 있지 않아\n친구 대전은 할 수 없습니다
+romdata/PUD/wifi/ja/wifitext.bin	4	대전 상대를 찾고 있습니다\n잠시 기다려 주세요
+romdata/PUD/wifi/ja/wifitext.bin	5	검색 중입니다
+romdata/PUD/wifi/ja/wifitext.bin	6	대전 상대를 찾았습니다
+romdata/PUD/wifi/ja/wifitext.bin	7	대전 상대를 찾지 못했습니다
+romdata/PUD/wifi/ja/wifitext.bin	8	캐릭터를 골라 주세요
+romdata/PUD/wifi/ja/wifitext.bin	9	친구 목록이 가득 찼습니다\n친구 목록에는 ２０명까지만 등록할 수 있으니\n새로 등록하려면\n누군가를 친구 목록에서 지워 주세요
+romdata/PUD/wifi/ja/wifitext.bin	10	친구 코드를 입력할 수 없습니다\n먼저 한 번 Wi-Fi 팝업 듀얼을\n선택해야 합니다
+romdata/PUD/wifi/ja/wifitext.bin	11	아직 친구 코드가 없습니다\nWi-Fi 팝업 듀얼을 선택하면\n친구 코드가 만들어져\n확인할 수 있게 됩니다
+romdata/PUD/wifi/ja/wifitext.bin	12	친구 목록에는 최대 ２０명 등록할 수 있습니다\n２０명을 넘으면 등록할 수 없으니 그때는\n누군가를 친구 목록에서 지워 주세요\n친구 목록에 추가하고 친구 코드를 입력한 뒤\n서로 동시에 Wi-Fi 커넥션에 접속하면\n크리스탈 색이 회색에서 빨강으로 바뀌며\n친구 등록이 완료됩니다
+romdata/PUD/wifi/ja/wifitext.bin	13	을(를) 지웁니다\n한 번 지운 친구는 되돌릴 수 없습니다\n정말 지우겠습니까?
+romdata/PUD/wifi/ja/wifitext.bin	14	친구 코드를 입력해 주세요
+romdata/PUD/wifi/ja/wifitext.bin	15	친구 코드를 등록했습니다
+romdata/PUD/wifi/ja/wifitext.bin	16	당신의 친구 코드입니다
+romdata/PUD/wifi/ja/wifitext.bin	17	친구 코드가 틀렸습니다
+romdata/PUD/wifi/ja/wifitext.bin	18	카드 １５장이 든 덱이 없어서\n팝업 듀얼을 할 수 없습니다
+romdata/PUD/wifi/ja/wifitext.bin	19	데이터를 쓰지 못했습니다\n전원을 끄고\n카드를 다시 꽂아 주세요
+romdata/PUD/wifi/ja/wifitext.bin	20	통신 시간 초과 오류입니다
+romdata/PUD/wifi/ja/wifitext.bin	21	예
+romdata/PUD/wifi/ja/wifitext.bin	22	아니오
+romdata/PUD/wifi/ja/wifitext.bin	23	DS 본체의 Wi-Fi 사용자 정보가\n지워졌을 수 있습니다\nWi-Fi 커넥션 설정에서\n접속 설정을 확인해 주세요
+romdata/PUD/wifi/ja/wifitext.bin	24	Wi-Fi 커넥션에 접속하겠습니까?
+romdata/PUD/wifi/ja/wifitext.bin	25	Wi-Fi 커넥션에서는 DS 카드와\nDS 본체를 한 쌍으로 다룹니다\nDS 카드에 DS 본체의 Wi-Fi 사용자\n정보를 저장하고 Wi-Fi 커넥션에\n접속하겠습니까?
+romdata/PUD/wifi/ja/wifitext.bin	26	이 DS 본체의 Wi-Fi 사용자 정보를\nDS 카드에 저장했습니다\n앞으로 Wi-Fi 커넥션에 접속할 때는\n이 DS 본체를 사용해 주세요
+romdata/PUD/wifi/ja/wifitext.bin	27	DS 본체와 DS 카드의\nWi-Fi 사용자 정보가 달라서\nWi-Fi 커넥션에 접속할 수 없습니다
+romdata/PUD/wifi/ja/wifitext.bin	28	DS 카드에 저장된\nWi-Fi 사용자 정보를 갱신하겠습니까?\nWi-Fi 사용자 정보를 갱신하면\nWi-Fi 커넥션에서 지금까지\n사용하던 데이터는\n사라집니다
+romdata/PUD/wifi/ja/wifitext.bin	29	친구의 친구 목록에 새 친구 코드를\n등록받아 Wi-Fi 커넥션에 접속\n해야 합니다\n\n정말 갱신해도 괜찮습니까?
+romdata/PUD/wifi/ja/wifitext.bin	30	Wi-Fi 커넥션에 접속하고 있습니다\n잠시 기다려 주세요
+romdata/PUD/wifi/ja/wifitext.bin	31	지금 플레이어 이름으로는\nWi-Fi 커넥션을 이용할 수 없습니다\n플레이어 이름을 바꿔서 다시 접속해 주세요
+romdata/PUD/wifi/ja/wifitext.bin	32	Wi-Fi 커넥션에서 연결을 끊어도\n괜찮습니까?
+romdata/PUD/wifi/ja/wifitext.bin	33	Wi-Fi 커넥션에서\n연결을 끊고 있습니다
+romdata/PUD/wifi/ja/wifitext.bin	34	Wi-Fi 커넥션에서\n연결을 끊었습니다
+romdata/PUD/deck/ja/cancel.txt	0	편집한 내용을\n취소해도 괜찮습니까?
+romdata/PUD/deck/ja/clear.txt	0	%ls\n을(를) 지워도 괜찮습니까?
+romdata/PUD/deck/ja/colrate.txt	0	컬렉션율
+romdata/PUD/deck/ja/decide.txt	0	편집한 내용으로\n결정하고 끝냅니다
+romdata/PUD/deck/ja/learning.txt	0	『연습 덱』은\n카드를 바꿔 넣을 수 없습니다
+romdata/PUD/deck/ja/newdeck.txt	0	새 덱 만들기
+romdata/PUD/deck/ja/no.txt	0	아니
+romdata/PUD/deck/ja/nodeck.txt	0	카드 １５장이 든 덱이 없어서\n팝업 듀얼을 할 수 없습니다
+romdata/PUD/deck/ja/notedited.txt	0	덱이 편집되지 않았습니다
+romdata/PUD/deck/ja/training.txt	0	『초급 덱』은 덱을\n편집할 수 있습니다
+romdata/PUD/deck/ja/under8.txt	0	카드 ８장이 든 덱이 없어서\n팝업 듀얼을 할 수 없습니다
+romdata/PUD/deck/ja/yes.txt	0	예
+romdata/PUD/multiplay/text/ja/gather0.txt	0	모집 중
+romdata/PUD/multiplay/text/ja/gather1.txt	0	모집 중.
+romdata/PUD/multiplay/text/ja/gather2.txt	0	모집 중..
+romdata/PUD/multiplay/text/ja/gather3.txt	0	모집 중...
+romdata/PUD/multiplay/text/ja/mp001.ptx	0	메뉴에서 골라 주세요{00}
+romdata/PUD/multiplay/text/ja/mp002.ptx	0	그룹을 골라 주세요\n그룹이 하나도 없거나\n새로 만들고 싶으면\n『모집』을 골라 주세요{00}
+romdata/PUD/multiplay/text/ja/mp003.ptx	0	대전 상대를 모집하고 있습니다\n『마감』을 터치하면 다음으로 갑니다{00}
+romdata/PUD/multiplay/text/ja/mp003.ptx	1	호스트의 응답을 기다리고 있습니다\n잠시 기다려 주세요{00}
+romdata/PUD/multiplay/text/ja/mp004.ptx	0	캐릭터를 골라 주세요{00}
+romdata/PUD/multiplay/text/ja/mp005.ptx	0	COM의 인원수와\n강함을 골라 주세요{00}
+romdata/PUD/multiplay/text/ja/mp006.ptx	0	놀고 싶은 그림책 게임을\n골라 주세요{00}
+romdata/PUD/multiplay/text/ja/mp006.ptx	1	『볼그 배틀』로\n정해졌습니다{00}
+romdata/PUD/multiplay/text/ja/mp006.ptx	2	『크로마 퍼즐』로\n정해졌습니다{00}
+romdata/PUD/multiplay/text/ja/mp006.ptx	3	『라그나로크 레이스』로\n정해졌습니다{00}
+romdata/PUD/multiplay/text/ja/mp006.ptx	4	『시로마 타워』로\n정해졌습니다{00}
+romdata/PUD/multiplay/text/ja/mp007.ptx	0	카드 １５장이 든 덱이 없어서\n팝업 듀얼을 할 수 없습니다{00}
+romdata/PUD/multiplay/text/ja/na0.txt	0	참가할 수 없음
+romdata/PUD/multiplay/text/ja/search0.txt	0	검색 중
+romdata/PUD/multiplay/text/ja/search1.txt	0	검색 중.
+romdata/PUD/multiplay/text/ja/search2.txt	0	검색 중..
+romdata/PUD/multiplay/text/ja/search3.txt	0	검색 중...
+romdata/PUD/skb/ja/deck.txt	0	카드 덱%d의 이름을 입력해 주세요
+romdata/PUD/skb/ja/savedata.txt	0	플레이어 이름을 입력하세요

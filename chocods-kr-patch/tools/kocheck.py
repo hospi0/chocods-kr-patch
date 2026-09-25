@@ -46,11 +46,29 @@ ICON_OK = {('dt_SYSMSG.txtbin', 14),   # 「АБВГДЕ」 = だいじなもの
 
 # 편지(ITEM_ALL_TXT1 456‥496)의 분홍 글자({ESC}PK}1~)를 이어 읽으면 합언어(DT_UIRWW) — 합언어는 일본어 자판 그대로라
 # 한국어 편지에선 분홍 음절이 합언어의 한글 발음이 되게 쓴다(つ=쓰, か·た행 거센소리, 장음 う 는 「우」). 분홍 태그 개수는 원문과 달라도 된다.
-HIDDEN = {456: '오모이데가이타이', 457: '보우켄노하지마리다', 458: '아케노묘우조우', 459: '키이로이텐시',
-          461: '사리게나이이노리', 462: '만게쓰노요루', 463: '이치린노하나', 464: '카가미노우미', 465: '타이세쓰나히토',
-          466: '아이스루코코로', 468: '보쿠노이모우토', 469: '아타시노아니키', 470: '쓰타에타이아이',
-          471: '쓰요쿠케다카쿠', 472: '세카이노히호우', 475: '키보우노호시', 476: '코코요리토와니', 477: '나쓰노소라',
-          478: '아나타토와타시', 479: '코오레루토키', 480: '메데타이아타마', 481: '코코로노테키', 496: '로만노세카이'}
+HIDDEN = {456: '추억이아파',
+          457: '모험의시작이다',
+          458: '샛별',
+          459: '노란천사',
+          461: '작은기도',
+          462: '보름달밤',
+          463: '한송이꽃',
+          464: '거울바다',
+          465: '소중한사람',
+          466: '사랑하는마음',
+          468: '내여동생',
+          469: '우리오빠',
+          470: '전하고픈마음',
+          471: '강하고고귀하게',
+          472: '세계의보물',
+          475: '희망의별',
+          476: '여기서영원히',
+          477: '여름하늘',
+          478: '당신과나',
+          479: '멈춘시간',
+          480: '태평한머리',
+          481: '마음의적',
+          496: '로망의세계'}
 ACROSTIC = {504: '기관차조사해보라고요'}   # 줄 첫 글자(원문 きかんしゃしらべろよ = 기관차를 조사해 봐)
 
 TAG = re.compile(r'\{ESC\}[A-Z]{2}\}\d~|\{[0-9A-Fa-f]{2}\}(?:[A-Z]{2}\}\d~|\}\d~)?|%[0-9]*[dsxc]|\\n')
@@ -134,12 +152,17 @@ def pages(s):
     return [pg.split('\\n') for pg in plain(s).split('\x13')]
 
 
+# 글꼴에서 키릴 자리에 «가나 그림»이 든 글자(2026-09-25 실기: 직업 화면 라벨이 이것으로 쓰여 번역에서 빠졌다)
+# → 아이콘이 아니라 일본어 글자라 번역에서 한글로 바꾼다(개수 비교에서 뺀다). г=ジョ д=ブ к=あ л=と Ё Ж З И Й К=ジョブチェン Ч Ш Щ Ъ=とうろく
+JP_PICTURE = set('гдклЁЖЗИЙКЧШЩЪ')
+
+
 def icons(s):
     """아이콘·특수 글자(원문이 키릴·괘선·원숫자 자리를 빌려 씀) — 한글·가나·한자·ASCII·흔한 부호 밖"""
     s = TAG.sub('', s.replace('{13}', ''))
     for k in JOSA:
         s = s.replace(k, '')
-    return Counter(c for c in s if ord(c) > 0x7E and not hangul(c) and not KANA_KANJI.match(c)
+    return Counter(c for c in s if ord(c) > 0x7E and not hangul(c) and not KANA_KANJI.match(c) and c not in JP_PICTURE
                    and c not in '〇·　！？、。「」『』（）…・～ー―：；，．＋－％／＝＆＊＃＠＜＞【】［］｛｝〜×→←↑↓☆★○●◎◇◆□■△▲▽▼♪♥“”‘’　０１２３４５６７８９'
                    and not ('Ａ' <= c <= 'ｚ'))
 
@@ -232,6 +255,8 @@ def main():
                 e.append('색 %s 안 닫힘' % cur)
             if ko.endswith('\\n') != jp.endswith('\\n'):
                 e.append('끝 줄바꿈 다름')
+            if '~' in re.sub(r'\}\d+~', '}', ko) and '~' not in re.sub(r'\}\d+~', '}', jp):
+                e.append('반각 물결 ~ (일본 글꼴 0x7E = 윗줄 ‾ 로 나온다 → 전각 ～)')
             if re.search('[가-힣]', ko):
                 for m in re.finditer(r'[,.!?:;] +', ko):            # 규칙: 부호 뒤 공백 없음(빌더 squeeze 와 같은 범위)
                     e.append('부호 뒤 공백 「%s」' % ko[max(0, m.start() - 4):m.end() + 2])
@@ -248,12 +273,19 @@ def main():
                     bud = max(bud, 5 if '{15}' in jp else 18)   # 버튼은 같은 메뉴끼리 크기 공유(가장 긴 원문 せつめい·セーブする 4‥5)
                 else:
                     bud = table_max[inner]
+            # 대사 상자는 쪽 마지막 줄 끝에 넘김 표시(▶)가 한 칸 붙는다 → 그 줄은 상자 폭 −1(원문도 17 이하, 넘는 건 특수 줄)
+            last_bud = None
+            if 'EVTMSG' in inner:
+                last_bud = max([bud - 1] + [width(nz[-1]) for pg in jp_pages for nz in [[l for l in pg if l.strip()]] if nz])
             for pg in ko_pages:
                 if len(pg) > max_lines:
                     e.append('쪽 줄 수 %d > %d' % (len(pg), max_lines))
                 for ln in pg:
                     if width(ln) > bud:
                         e.append('줄 폭 %.1f > %.1f 「%s」' % (width(ln), bud, ln.strip()))
+                nz = [l for l in pg if l.strip()]
+                if last_bud is not None and nz and bud >= width(nz[-1]) > last_bud:
+                    e.append('쪽 끝 줄 폭 %.1f > %.1f(넘김 표시 자리) 「%s」' % (width(nz[-1]), last_bud, nz[-1].strip()))
             if ENC.get((f, inner)) == 'cp932' and sjis_bad(unesc(ko)):
                 e.append('Shift-JIS 로 못 쓰는 글자 %s' % ''.join(sorted(set(sjis_bad(unesc(ko))))))
             kk = KANA_KANJI.findall(TAG.sub('', ko))

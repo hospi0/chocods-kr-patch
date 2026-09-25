@@ -191,10 +191,108 @@ def patch_font(rom, ids, used):
     return len(items)
 
 
+# 오버레이 2(카드 게임·무선 대전 코드) 안의 UTF-16 문자열 — 제자리(원래 길이 안, 나머지 0 채움). 끝 NUL 까지 맞춰 찾는다.
+# (2026-09-25 실기: 무선 대전 캐릭터 선택 이름판이 일본어 — charactertext 와 별개인 코드 속 사본)
+OV2_STRINGS = [
+    ('メーア', '메아'), ('シロマ', '시로마'), ('鉄巨人', '철거인'), ('チョコボ', '초코보'), ('ドルくん', '돌 군'),
+    ('ゴーレム', '골렘'), ('サハギン', '사하긴'), ('フレイア', '프레이아'), ('ベヒーモス', '베히모스'),
+    ('ヒーローＸ', '히어로Ｘ'), ('チョッカーズ', '초커즈'), ('Mr.モーグリ', 'Mr.모그리'),
+    ('『ルールがめん』へもどります。', '『룰 화면』으로 돌아가요.'),
+    ('ちゃふー', '차후～'), ('ぎにゃーぶにゃー', '기냐～부냐～'),
+    ('けんさくちゅう', '검색 중'), ('けんさくちゅう.', '검색 중.'), ('けんさくちゅう..', '검색 중..'), ('けんさくちゅう...', '검색 중...'),
+    ('ぼしゅうちゅう', '모집 중'), ('ぼしゅうちゅう.', '모집 중.'), ('ぼしゅうちゅう..', '모집 중..'), ('ぼしゅうちゅう...', '모집 중...'),
+    ('れんしゅうデッキ', '연습 덱'), ('しょきゅうデッキ', '초급 덱'),
+]
+
+
+def patch_ov2(rom):
+    ov = rom.loadArm9Overlays()[2]
+    assert not ov.compressed
+    d = bytearray(rom.files[ov.fileID])
+    n = 0
+    for jp, ko in OV2_STRINGS:
+        a = jp.encode('utf-16-le') + b'\0\0'
+        b = ko.encode('utf-16-le') + b'\0\0'
+        assert len(b) <= len(a), '%s → %s 길이 넘침' % (jp, ko)
+        hits = [i for i in range(len(d) - len(a)) if i % 2 == 0 and d[i:i + len(a)] == a and d[i - 2:i] in (b'\0\0', b'\xff\x7f')] \
+            if False else []
+        i = d.find(a)
+        while i >= 0:
+            if i % 2 == 0:
+                d[i:i + len(a)] = b + bytes(len(a) - len(b))
+                n += 1
+            i = d.find(a, i + 2)
+    rom.files[ov.fileID] = bytes(d)
+    return n, {c for _, ko in OV2_STRINGS for c in ko if 0xAC00 <= ord(c) <= 0xD7A3}
+
+
+# 카드 게임 이름·덱 이름 입력 자판(PUD/skb/skbdat.skb = UTF-16 표, 쪽마다 60글자: 키 51 + 제어) — 가나만 한글로(사용자 2026-09-25).
+# 쪽: 0 히라가나 · 60 히라가나 작은 글자 · 120 가타카나 · 180 가타카나 작은 글자 (゛゜、。ー 키는 그대로)
+# 히라가나 = ㅏㅣㅡㅔㅗ 오십음 자리(가기그게고…) · 가타카나 = 거센소리·된소리 등. 「하스피」(は·す·ヒ)는 반드시 칠 수 있게.
+SKB_KANA_HIRA = 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん'
+SKB_KANA_KATA = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン'
+SKB_HIRA_KO = '아이으에오가기그게고사시스세소다디드데도나니느네노하히흐헤호마미므메모야유요라리르레로와우응'
+SKB_KATA_KO = '어여우유애카키크케코자지즈제조타티트테토차치츠체초파피프페포바비브베보예요위까따빠싸짜왜의은'
+
+
+def patch_skb(rom, ids):
+    fid = ids['romdata/PUD/skb/skbdat.skb']
+    t = list(bytes(rom.files[fid]).decode('utf-16-le'))
+    t0 = list(t)                                       # 원본(작은 글자 쪽의 자리 기준)
+    assert len(SKB_HIRA_KO) == len(SKB_KANA_HIRA) and len(SKB_KATA_KO) == len(SKB_KANA_KATA)
+    n = 0
+    for base, kana, ko in ((0, SKB_KANA_HIRA, SKB_HIRA_KO), (60, SKB_KANA_HIRA, SKB_HIRA_KO),
+                           (120, SKB_KANA_KATA, SKB_KATA_KO), (180, SKB_KANA_KATA, SKB_KATA_KO)):
+        norm = ''.join(t0[:51]) if base < 120 else ''.join(t0[120:171])     # 작은 글자 쪽도 보통 쪽 자리로 맞춤
+        keys = [c for c in norm if c not in '゛゜、。ー']
+        slots = [k for k, c in enumerate(norm) if c not in '゛゜、。ー']
+        assert ''.join(keys) == kana, (base, ''.join(keys))
+        for k, c in zip(slots, ko):
+            t[base + k] = c
+            n += 1
+    rom.files[fid] = ''.join(t).encode('utf-16-le')
+    assert all(c in SKB_HIRA_KO + SKB_KATA_KO for c in '하스피')   # 사용자 이름「하스피」
+    return n, set(SKB_HIRA_KO) | set(SKB_KATA_KO)
+
+
+GALMURI7 = r'C:\claude\utils\font\Galmuri-v2.40.3\Galmuri7.bdf'
+
+
+def patch_cardfont(rom, ids, used):
+    """카드 설명·대전 칸의 8×8 카드 글꼴(PUD/card/cardfont.nftr.z) — 한자 칸을 한글(갈무리7)로. 원래 한글이 없어 설명이 빈칸으로 나왔다(실기 2026-09-25)."""
+    p = 'romdata/PUD/card/cardfont.nftr.z'
+    fid = ids[p]
+    d, comp = unz(rom.files[fid])
+    f = nftr.Nftr(d)
+    G, asc = bdf.load(GALMURI7)
+    items = []
+    for ch in sorted(used):
+        arr, adv = bdf.render(G, asc, ord(ch), f.cw, f.ch, 7)   # 원래 글자처럼 0‥6행(기준선 asc=9 를 쓰면 2‥8행 → 아래 잘림, 실기 2026-09-25)
+        bits = ''.join(str(v) for row in arr for v in row)
+        bits += '0' * (-len(bits) % 8)
+        bm = bytes(int(bits[i:i + 8], 2) for i in range(0, len(bits), 8))
+        w = max([x + 1 for row in arr for x, v in enumerate(row) if v] or [f.cw])
+        items.append((ord(ch), bm + bytes(f.tsize - len(bm)), (0, w, w + 1)))
+    nftr.replace_kanji(f, items)
+    out = f.build()
+    assert len(out) == len(d), '카드 글꼴 크기가 바뀜'
+    rom.files[fid] = rez(out, comp)
+    return len(items)
+
+
 def patch_pud(rom, ids):
     for p in ('romdata/PUD/card/card.bin.z', 'romdata/PUD/card/ja/card.bin.z'):
         ROM_ORIG_FILES[p] = bytes(rom.files[ids[p]])
     g = patch_graphics(rom, ids)
     used, cn = patch_cards(rom, ids)
+    import pudtext                                   # 카드 게임 글(튜토리얼·그림책 설명·대전 로그·Wi-Fi·덱…) — work/ko_pud
+    used |= pudtext.apply(rom, ids)
+    n2, u2 = patch_ov2(rom)                           # 오버레이 2 UTF-16 문자열(캐릭터 이름·덱 이름 등)
+    used |= u2
+    n3, u3 = patch_skb(rom, ids)                      # 이름·덱 이름 입력 자판(가나 → 한글)
+    used |= u3
+    print('  카드 게임: 입력 자판 가나 %d칸 → 한글' % n3)
     nf = patch_font(rom, ids, used)
+    ncf = patch_cardfont(rom, ids, used)              # 카드 설명 8×8 글꼴
+    print('  카드 게임: 오버레이 2 문자열 %d곳 · 카드 글꼴 한글 %d자' % (n2, ncf))
     print('  카드 게임: 그림 %d 파일 · 카드 이름 그림 %d · card.bin 2 · 글꼴 한글 %d자' % (g, cn, nf))

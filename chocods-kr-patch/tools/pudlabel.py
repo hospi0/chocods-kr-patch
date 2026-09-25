@@ -250,6 +250,11 @@ def relabel(sp, c, text, rect=None, font=None, align='center', erase_to=None, pa
                 continue
             near = [(abs(xx - x), can_orig[y][xx]) for xx in range(W) if fillable(xx, y)]
             near += [(abs(yy - y) + 100, can_orig[yy][x]) for yy in range(H) if fillable(x, yy)]
+            if not near:
+                # 판 안쪽 색이 줄·열에 없으면 바깥 테두리색이라도(저장하고 뒤로: 윗 테두리에 박힌 옛 글자 테두리가 투명 구멍으로 — 실기 2026-09-25)
+                near = [(abs(xx - x), can_orig[y][xx]) for xx in range(W) if is_plate(xx, y)]
+            if not near:                                 # 그래도 없으면 셀 전체에서 가장 가까운 판 화소(결정 버튼 가장자리 구멍)
+                near = [(abs(xx - x) + abs(yy - y), can_orig[yy][xx]) for yy in range(H) for xx in range(W) if fillable(xx, yy)]
             can[y][x] = min(near)[1] if near else 0
     if plate:                                            # 판 안쪽 경계(1 px)에 걸친 옛 글자 조각도 지운다
         bx0, by0, bx1, by1 = plate[1]

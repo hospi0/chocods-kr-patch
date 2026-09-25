@@ -34,8 +34,9 @@ TABS = {30: ('세이브 모드', 10, 2, {10, 2}, 6), 31: ('중단 모드', 10, 2
 
 
 def bold_mask(text, font, gap=0, dil=((0, 0), (0, 1), (1, 0), (1, 1))):
-    """→ (fill 마스크[y][x] bool) 2 px 획. 글자 사이 gap px(테두리는 서로 겹친다)."""
+    """→ (fill 마스크[y][x] bool) 2 px 획. 글자 사이 gap px(테두리는 서로 겹친다) — gap 이 목록이면 글자 사이마다."""
     G, asc = font
+    gaps = gap if isinstance(gap, (list, tuple)) else [gap] * len(text)
     glyphs = []
     for ch in text:
         if ch == ' ':                                    # 띄어쓰기 = 빈 4 px
@@ -59,7 +60,7 @@ def bold_mask(text, font, gap=0, dil=((0, 0), (0, 1), (1, 0), (1, 1))):
     out = [[] for _ in range(H)]
     for k, gph in enumerate(glyphs):
         for y in range(H):
-            out[y] += (gph[y] if gph else [0] * 4) + ([0] * gap if k + 1 < len(glyphs) else [])
+            out[y] += (gph[y] if gph else [0] * 4) + ([0] * gaps[k] if k + 1 < len(glyphs) else [])
     ys = [y for y, r in enumerate(out) if any(r)]
     return out[min(ys):max(ys) + 1]
 
@@ -124,7 +125,12 @@ def build(ncer_b, ncbr_b, dsr_bytes):
             for x, v in enumerate(r):
                 if v != frame:
                     r[x] = 0
-        img = outlined(bold_mask(text, g14, 0, HORIZ))      # 자간 0: 테두리끼리 겹침(40 px 안)
+        mask = bold_mask(text, g14, 0, HORIZ)              # 자간 0: 테두리끼리 겹침(40 px 안)
+        if c == 22:                                        # 「1」 만 좁다 → 제·장을 양옆으로 벌려 다른 장 폭에 맞춤(사용자 요청)
+            want = min(len(bold_mask(t, g14, 0, HORIZ)[0]) for k, t in CHAPTER.items() if k != 22)
+            extra = max(0, want - len(mask[0]))
+            mask = bold_mask(text, g14, [extra // 2, extra - extra // 2, 0], HORIZ)
+        img = outlined(mask)
         top = 4 + (17 - len(img)) // 2
         _paste_centered(can, img, top, lambda v, y: edge if v == 2 else (rows_fill.get(y, 10) if c == 27 else 3))
         write_back(c, can, x0, y0)

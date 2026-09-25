@@ -20,6 +20,10 @@ JOBS = [
     ('romdata/UI/STATMENU/bg_stat_{v}.FBC.z', ['cid'], (0, 14, 7, 17),          # 다른 지역판은 이 자리가 빈 판
      [('찾은', 5, 1, 15, 11), ('그렌의 메모', 4, 11, 15, 11)], {15, 11},
      lambda x, y: None if x >= 49 else (10 if 5 <= y <= 17 and x >= 4 else 13)),   # x ≥ 49 = 오른쪽 아이콘(지우지 않음)                                    # みつけた / グレンのメモ
+    # 직업 목록 머리 「ジョブLv」(타일 304‥307, 흰 1 · 바탕 2). 「Lv」(306·307)는 bg_job2 도 써서 그대로, 「ジョブ」(304·305)만.
+    # 2026-09-25 실기 발견 — 이 판은 cid 가 없고 지역 5벌이다.
+    ('romdata/UI/JOBCMENU/bg_job3_{v}.FBC.z', ['dark', 'fire', 'light', 'memory', 'water'], (19, 12, 21, 13),
+     [('직업', None, 0, 1, None)], {1}, lambda x, y: 2),
 ]
 
 

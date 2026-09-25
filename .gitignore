@@ -2,6 +2,7 @@
 /*
 !/.gitignore
 !/.gitattributes
+!/README.md
 !/chocods-kr-patch/
 /chocods-kr-patch/*
 !/chocods-kr-patch/tools/
@@ -20,3 +21,4 @@ __pycache__/
 *.bin
 *.pyc
 !/chocods-kr-patch/work/ko/
+!/chocods-kr-patch/work/ko_pud/

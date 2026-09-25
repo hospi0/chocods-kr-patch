@@ -19,7 +19,7 @@ import sys
 from collections import defaultdict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import areagfx, base16, bgwords, minamegfx, bdf, dgnbanner, fbc, gearlogo, jobname, josa, popupgfx, hudlabel, labelgfx, logoimg, lz11, ncer, nftr, sjiskr, titlegfx, titletext
+import areagfx, base16, bgwords, exitlabel, minamegfx, bdf, dgnbanner, fbc, gearlogo, jobname, josa, popupgfx, hudlabel, labelgfx, logoimg, lz11, ncer, nftr, sjiskr, titlegfx, titletext
 from PIL import Image
 import ndspy.rom, ndspy.lz10
 
@@ -103,6 +103,55 @@ def remap_text(text):
     return ''.join(TEXT_REMAP.get(c, c) for c in text)
 
 
+KBD_PATH = 'romdata/UI/KBD/kbdmap.FBC.z'
+# 자판 칸 글자는 글꼴(dsr_fnt)로 그린다(그림 아님 — 2026-09-25 실기 확인). kbdmap = BOM + UTF-16 칸 글자.
+# 합언어 정답(work/ko/40_password.tsv)의 한글 음절 전부 + 이름용 흔한 음절(KBD_FILL, 글꼴에 있는 것만)을 가나다순으로
+# 히라가나 50 → 가타카나 50 → 그림 문자 쪽 그림 칸(U+E0xx·п Ф ┗) → 기호 쪽(정답에 쓰는 KBD_SIGN_KEEP 빼고) 순서로 채운다.
+# (실기 2026-09-25 시험: kbdmap 에 한글(TEXT_REMAP 코드)을 넣으면 칸에 나오고 정답 비교도 그대로 통과)
+# 그림 문자 쪽 U+E000‥E006 은 조사 표지(josa)와 겹쳐 조사 글리프가 뜨던 자리 — 이 칸들도 한글 칸이 된다.
+KBD_FILL = '가나다라마바사아자차카타파하준민수현연윤혜진성훈경빈솔키토쿠포그미유예슬서지호우은영주선희'
+KBD_SIGN_KEEP = set('！？&「」↓…')
+KBD_PICTO_SLOT = lambda c: 0xE000 <= ord(c) <= 0xE0FF or c in 'пФ┗'
+
+
+def patch_kbd(rom, ids):
+    pw = read_tsv(os.path.join(ROOT, 'work', 'ko', '40_password.tsv'))
+    need = sorted({c for r in pw.values() for m in r.values() for t in m.values() for c in t if 0xAC00 <= ord(c) <= 0xD7A3})
+    fid = ids[KBD_PATH]
+    d, comp = unz(rom.files[fid])
+    ents = fbc.entries(d)
+    maps = {name: list(b[2:].decode('utf-16-le')) for name, b in ents if name.endswith('.kbdmap')}
+    slots = [('jp_hiragana.kbdmap', k) for k in range(len(maps['jp_hiragana.kbdmap']))]
+    slots += [('jp_katakana.kbdmap', k) for k in range(len(maps['jp_katakana.kbdmap']))]
+    slots += [('picto.kbdmap', k) for k, c in enumerate(maps['picto.kbdmap']) if KBD_PICTO_SLOT(c)]
+    slots += [('sign.kbdmap', k) for k, c in enumerate(maps['sign.kbdmap']) if c not in KBD_SIGN_KEEP]
+    assert len(need) <= len(slots), '합언어 음절 %d > 자판 칸 %d' % (len(need), len(slots))
+    fill = [c for c in KBD_FILL if c not in need and c in TEXT_REMAP]
+    freq = defaultdict(int)                            # 그다음은 번역문에 자주 나오는 음절 순
+    for f in glob.glob(os.path.join(ROOT, 'work', 'ko', '*.tsv')):
+        for ln in open(f, encoding='utf-8'):
+            for c in ln:
+                if 0xAC00 <= ord(c) <= 0xD7A3:
+                    freq[c] += 1
+    fill += [c for c in sorted(freq, key=lambda c: -freq[c]) if c not in need and c not in fill and c in TEXT_REMAP]
+    syl = sorted(need + fill[:len(slots) - len(need)])
+    for (name, k), c in zip(slots, syl):
+        maps[name][k] = remap_text(c)
+    left = len(slots) - len(syl)
+    for name, k in slots[len(syl):]:                   # 남는 칸은 빈칸(가나·그림이 남지 않게)
+        maps[name][k] = '　'
+    new = []
+    for name, b in ents:
+        if name in maps:
+            nb = b[:2] + ''.join(maps[name]).encode('utf-16-le')
+            assert len(nb) == len(b)
+            b = nb
+        new.append((name, b))
+    nd = fbc.build(new)
+    rom.files[fid] = lz11.compress(nd) if comp else nd
+    print('  %s  자판: 칸 %d = 합언어 음절 %d + 이름용 %d (빈칸 %d)' % (KBD_PATH, len(slots), len(need), len(syl) - len(need), left))
+
+
 def replace_nested(d, repl, prefix=''):
     """중첩 FBC 에서 {경로: 새 바이트} 교체 → 새 FBC. 쓴 경로는 repl 에서 지운다."""
     new = []
@@ -163,25 +212,40 @@ def patch_gfx(rom, ids, dsr):
         nc, nb = popupgfx.build(e[kc], e[kb])
         return {kc: nc, kb: nb}
     edit('romdata/UI/DMGCNTR/num_counter.FBC.z', popup)      # 상태 변화 팝업
-    cid_scrs = []                                            # 바탕 UI 낱말(bg_base_cid 타일)
-    for p in ids:
-        if p.startswith('romdata/UI/') and p.endswith('_cid.FBC.z') and 'BASEUI' not in p:
-            cid_scrs += [b for b in dict(fbc.walk(lz11.decompress(rom.files[ids[p]]))).values() if b[:4] == b'RCSN']
+    import kbdlabel                                          # 입력 자판 라벨(かな·カナ·゛·゜·小字·きりかえ)
+    edit('romdata/UI/KBD/kbdres.FBC.z', lambda e: {'kbd_jp.NCGR': kbdlabel.build(e['kbd_jp.NCGR']),
+                                                    'kbd_mark.NCGR': kbdlabel.build(e['kbd_mark.NCGR'], kbdlabel.KIRIKAE)})
+    for var in bgwords.VARIANTS:                             # 바탕 UI 낱말(bg_base_<지역> 타일) — 지역판마다
+        jobs = [j for j in bgwords.JOBS if var in j[1]]
+        if not jobs:
+            continue
+        scrs = []
+        for p in ids:
+            if p.startswith('romdata/UI/') and p.endswith('_%s.FBC.z' % var) and 'BASEUI' not in p:
+                scrs += [b for b in dict(fbc.walk(lz11.decompress(rom.files[ids[p]]))).values() if b[:4] == b'RCSN']
 
-    def bgw(e):
-        g = e['bg_base_cid.NCGR']
-        for tmpl, vars_, region, lines, erase, bgf in bgwords.JOBS:
-            js0 = [b for b in dict(fbc.walk(lz11.decompress(rom.files[ids[tmpl.format(v='cid')]]))).values() if b[:4] == b'RCSN'][0]
-            js = [x for x in cid_scrs if x == js0][0]
-            g = bgwords.patch(g, cid_scrs, js, region, lines, erase, bgf)
-        return {'bg_base_cid.NCGR': g}
-    edit('romdata/UI/BASEUI/bg_base_cid.FBC.z', bgw)
+        def bgw(e, var=var, jobs=jobs, scrs=scrs):
+            key = 'bg_base_%s.NCGR' % var
+            g = e[key]
+            for tmpl, vars_, region, lines, erase, bgf in jobs:
+                js0 = [b for b in dict(fbc.walk(lz11.decompress(rom.files[ids[tmpl.format(v=var)]]))).values() if b[:4] == b'RCSN'][0]
+                js = [x for x in scrs if x == js0][0]
+                g = bgwords.patch(g, scrs, js, region, lines, erase, bgf)
+            return {key: g}
+        edit('romdata/UI/BASEUI/bg_base_%s.FBC.z' % var, bgw)
     for path, (unit, names) in minamegfx.FILES.items():      # 필드 지도 지명
         def mn(e, unit=unit, names=names):
             kc = next(k for k in e if k.endswith('.NCER')); kb = next(k for k in e if k.endswith('.NCBR'))
             nc, nb = minamegfx.build(e[kc], e[kb], unit, names, titletext.Font(dsr))
             return {kc: nc, kb: nb}
         edit(path, mn)
+    xfonts = exitlabel.fonts_for(dsr)
+    for path, (unit, linear, span, labels) in exitlabel.FILES.items():   # 필드 출구 표시(필드 맵 ▷ 등)
+        def xl(e, unit=unit, linear=linear, span=span, labels=labels):
+            kc = next(k for k in e if k.endswith('.NCER')); kb = next(k for k in e if k.endswith(('.NCGR', '.NCBR')))
+            nc, nb, _, _ = exitlabel.build(e[kc], e[kb], unit, linear, span, labels, xfonts)
+            return {kc: nc, kb: nb}
+        edit(path, xl)
     for key, text in areagfx.NAMES.items():                  # 필드 지역 이름
         edit('romdata/UI/AREANAME/area_%s.FBC.z' % key,
              lambda e, text=text: {next(k for k in e if k.endswith('.NCGR')):
@@ -334,6 +398,40 @@ def glyph_of(G, asc, f, ch):
     return bm + bytes(f.tsize - len(bm)), (0, 9, 10)
 
 
+GALMURI7 = r'C:\claude\utils\font\Galmuri-v2.40.3\Galmuri7.bdf'
+# 가나 «그림 글리프»(키릴 자리)를 한글 그림으로 다시 그린다 — 직업 화면 라벨(시스템 메시지 320‥346 등)이 이 글자를 쓴다.
+# 이 줄들은 글자 칸 윗줄이 가려져서(실기 2026-09-25 「식업」·「직업 변경」 윗도트 잘림) 보통 한글 글리프를 못 쓴다:
+#  · г д = 「직」「업」 갈무리7(3‥9행, 「Lv」 아이콘과 같은 높이) — 목록·초상화 아래 「직업Lv」
+#  · Ё Ж З И = 「직」「업」「변」「경」 갈무리9 를 가운데 줄 하나 빼고 윗부분을 1도트 내림 — 탭 「직업 변경」
+PICTURE_G7 = {'г': '직', 'д': '업'}
+PICTURE_G9_DOWN = {'Ё': ('직', 6), 'Ж': ('업', 5), 'З': ('변', 6), 'И': ('경', 6)}   # (글자, 뺄 행)
+
+
+def _pack10(rows, tsize):
+    bits = ''.join('1' if v else '0' for r in rows for v in r[:10])
+    bits += '0' * (tsize * 8 - len(bits))
+    return bytes(int(bits[k:k + 8], 2) for k in range(0, tsize * 8, 8))
+
+
+def picture_glyphs(f, G9, asc9):
+    G7, asc7 = bdf.load(GALMURI7)
+    for code, ch in PICTURE_G7.items():
+        arr, adv = bdf.render(G7, asc7, ord(ch), 10, 10, 10)
+        w = max(x for r in arr for x, v in enumerate(r) if v) + 1
+        i = f.lookup(ord(code))
+        f.glyphs[i] = _pack10(arr, f.tsize)
+        f.widths[i] = (0, w, w + 1)
+    for code, (ch, cut) in PICTURE_G9_DOWN.items():
+        arr, adv = bdf.render(G9, asc9, ord(ch), 10, 10, 10)
+        assert not any(arr[0]), ch
+        rows = [[0] * 10] + arr[:cut] + arr[cut + 1:]            # cut 행을 빼고 그 위를 한 줄 내림
+        assert len(rows) == 10
+        w = max(x for r in rows for x, v in enumerate(r) if v) + 1
+        i = f.lookup(ord(code))
+        f.glyphs[i] = _pack10(rows, f.tsize)
+        f.widths[i] = (0, w, adv)
+
+
 def build_font(orig, pua, keep_kana):
     """keep_kana: 남길 가나 코드 집합(None = 전부). → (새 글꼴, 한글 수, 보고 문자열)"""
     remap, a, al, n = pua
@@ -345,6 +443,7 @@ def build_font(orig, pua, keep_kana):
     codes = nftr.code_map(f)
     drop = {c for c in codes if in_ranges(c, KANJI) or (in_ranges(c, KANA) and keep_kana is not None and c not in keep_kana)}
     dropped, h0, moved = nftr.rebuild(f, drop, josa.PUA_BASE, glyphs, extra=[(josa.NULL, bytes(f.tsize), (0, 0, 0))])
+    picture_glyphs(f, G, asc)
     out = f.build()
     per = f.tsize + 3
     room = FONT_GROW_MAX - (len(out) - len(orig))
@@ -393,6 +492,7 @@ def main():
             assert lz11.decompress(nd) == patch_fbc(unz(rom.files[fid])[0], read_tsv(tsv)[path])
         rom.files[fid] = nd
         print('  %s  %d → %d B' % (path, len(rom.files[fid]) if False else len(d), len(nd)))
+    patch_kbd(rom, ids)                               # 이름·합언어 입력 자판(한글 음절 칸 · 그림 문자 쪽 조사 표지 충돌)
     rom.arm9 = sjiskr.patch_arm9(rom.arm9, pua[0])   # SJIS→유니코드 표의 한자 칸 2,350 개 = 한글(옮겨 적은 코드)
     rom.arm9, hook, hlen = josa.patch_arm9(rom.arm9, pua)   # 조사 자동 선택 훅(글리프 번호 함수)
     print('  ARM9 조사 훅 0x%X (%d B)' % (hook, hlen))
@@ -411,6 +511,11 @@ def main():
     print('  장 제목 그림 %d 파일' % chaptitle.patch_rom(rom, ids, replace_nested))
     import pudbuild                                  # 카드 게임(PUD): 그림·카드 표·카드 게임 글꼴
     pudbuild.patch_pud(rom, ids)
+    for name in ('DSA_L', 'DSB_U'):                  # 영상 자막(tools/movsub.py 가 만든 work/mov_ko/*.mods)
+        p = os.path.join(ROOT, 'work', 'mov_ko', name + '.mods')
+        assert os.path.exists(p), '%s 없음 — python tools/movsub.py 먼저' % p
+        rom.files[ids['romdata/MOV/%s.mods' % name]] = open(p, 'rb').read()
+        print('  romdata/MOV/%s.mods  자막 영상 %d B' % (name, os.path.getsize(p)))
     fid = ids[FONT_PATH]
     orig_font = rom.files[fid]
     results = {}

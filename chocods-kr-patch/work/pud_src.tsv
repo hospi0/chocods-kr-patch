@@ -1,0 +1,1336 @@
+# 카드 게임 글 원문(tools/pudtext.py) — 경로	형식	번호	원문
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	0	は
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	1	の
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	2	に
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	3	を召喚した！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	4	攻撃ターン！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	5	相手の攻撃をガードした！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	6	はCPが足りない！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	7	ｸﾘｽﾀﾙｱﾋﾞﾘﾃｨはふうじられている！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	8	ガードアビリティ
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	9	やけどをおった！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	10	どくにかかった！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	11	こおりついた！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	12	しびれた！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	13	ヘイストの効果がついた！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	14	スロウの効果がついた！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	15	CPを
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	16	個破壊された！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	17	ステータスをリフレッシュ！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	18	CPがすべて同じ色になった！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	19	個チャージした！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	20	個うばわれた！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	21	ｸﾘｽﾀﾙｱﾋﾞﾘﾃｨをふうじられた！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	22	プロテスの効果がついた！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	23	ガードブレイクに\n失敗した！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	24	おたがい\nようすをみている
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	25	場の空気が\nきんちょうした！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	26	場の空気が\nかねつする！
+romdata/PUD/pub/pubmain/ja/battletext.bin.z	table	27	かねつは続いている！
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	table	0	チョコボ
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	table	1	サハギン
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	table	2	ゴーレム
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	table	3	鉄巨人
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	table	4	ベヒーモス
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	table	5	ドルくん
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	table	6	ヒーローX
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	table	7	チョッカーズ
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	table	8	シロマ
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	table	9	フレイア
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	table	10	メーア
+romdata/PUD/pub/pubmain/ja/charactertext.bin.z	table	11	Mrモーグリ
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	0	見習いデュエリスト
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	1	１０級\nひよっこヒーロー
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	2	９級\n野良デュエリスト
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	3	８級\n下積み時代駆抜け中
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	4	７級\n運がいいだけなのだ
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	5	６級\n推測不可能なアイツ
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	6	５級\n結構板についてきた
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	7	４級\n妄想上ではヒーロー
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	8	３級\nそこそこできるヤツ
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	9	２級\n運じゃなく実力か？
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	10	１級\n期待のデュエリスト
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	11	初段\n半人前ヒーロー
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	12	２段\nそこそこ有名人
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	13	３段\n推理上手な勝負人
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	14	４段\n迅速な読みはプロ級
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	15	５段\n世界の中心は俺
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	16	６段\n冴え渡る俺の読み
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	17	７段\n神業を起こすヤツ
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	18	８段\nＷＡ・ＺＡ・ＳＨＩ
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	19	９段\nＰＵＤヒーロー
+romdata/PUD/pub/pubresult/pubresult_shougou_ja_.dat.z	table	20	ヒーローを超えるヒーロー
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	0	あと一回だけ\nお願いします！
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	1	もう一度\n対戦したいです！！
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	2	連戦！　連戦！
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	3	休憩しましょう㎝
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	4	参りました…！
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	5	完敗だ…！
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	6	強すぎる！！！
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	7	悔しいです㎞
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	8	惜しかったのにー！
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	9	もう少しで\n勝てそうだったのに！
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	10	危なかった…
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	11	互角だな！
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	12	いい勝負だったぜー㎝
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	13	見た？！　\n今の華麗な戦い㎜
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	14	どうだ！　\nまいったかー♪
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	15	練習して\n出直します…㎞
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	16	眠くなりました…㎞
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	17	楽しかったー㎜
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	18	すばらしい時間を\nありがとうー！
+romdata/PUD/pub/pubresult/pubresult_teikei_ja_.dat.z	table	19	また会いましょう♪
+romdata/PUD/pub/pubresult/textdata_ja_.dat.z	table	0	相手プレイヤーが接続を中断したので\n対戦を終了します
+romdata/PUD/pub/pubresult/textdata_ja_.dat.z	table	1	フレンドリストに追加しました
+romdata/PUD/pub/pubresult/textdata_ja_.dat.z	table	2	フレンドリストがいっぱいです\nフレンドリストは　２０人までしか登録できないので\n新しく登録する場合は\nいずれかをフレンドリストから消してください
+romdata/PUD/pub/pubresult/textdata_ja_.dat.z	table	3	すでにフレンドリストに登録されています
+romdata/PUD/pub/pubresult/textdata_ja_.dat.z	table	4	相手プレイヤーの応答がありません\n時間切れのため対戦を終了します
+romdata/PUD/pub/errortext_ja_.dat.z	table	0	Wi-Fiコネクションに\n接続できません。\n詳しくはガイドブックを\nご覧ください。
+romdata/PUD/pub/errortext_ja_.dat.z	table	1	Wi-Fiコネクションが混み合っているか\nサービスが停止しているために\n接続できません。\nしばらく待ってやり直してください。
+romdata/PUD/pub/errortext_ja_.dat.z	table	2	お客様のWi-FiコネクションIDは長い間\n使用されなかったため削除されました。\n詳しくはガイドブックをご覧ください。
+romdata/PUD/pub/errortext_ja_.dat.z	table	3	このソフトの\nWi-Fiコネクションサービスは\n終了しました。\nご利用ありがとうございました。
+romdata/PUD/pub/errortext_ja_.dat.z	table	4	アクセスポイントが混み合っているため\n接続できません。\nしばらく待ってやり直してください。
+romdata/PUD/pub/errortext_ja_.dat.z	table	5	アクセスポイントが見つかりません。\nアクセスポイントに近づいて\nもう一度おためしください。
+romdata/PUD/pub/errortext_ja_.dat.z	table	6	接続できるアクセスポイントが\n見つかりません。\nWi-Fiコネクション設定で\n接続先の設定をご確認ください。
+romdata/PUD/pub/errortext_ja_.dat.z	table	7	ニンテンドーWi-Fiコネクタに\n接続できません。\nWi-Fiコネクション設定で\nニンテンドーWi-Fiコネクタの\n接続をご確認ください。
+romdata/PUD/pub/errortext_ja_.dat.z	table	8	Wi-Fiコネクションに\n接続できません。\nWi-Fiコネクション設定で\n接続先の設定をご確認ください。
+romdata/PUD/pub/errortext_ja_.dat.z	table	9	相手からの応答がありません。\n既に相手がWi-Fiコネクションに\n接続していないか、相手のフレンドリストから\n登録がなくなった可能性があります。
+romdata/PUD/pub/errortext_ja_.dat.z	table	10	通信エラーによってWi-Fiコネクションから\n切断されました。
+romdata/PUD/pub/errortext_ja_.dat.z	table	11	通信エラーが発生しました。
+romdata/PUD/pub/errortext_ja_.dat.z	table	12	ダウンロードに失敗しました。
+romdata/PUD/pub/errortext_ja_.dat.z	table	13	エラーが発生したため、\nWi-Fiコネクションの機能を使用できません。\nリセットしてやり直してください。
+romdata/PUD/pub/errortext_ja_.dat.z	table	14	エラーコード：
+romdata/PUD/errorproc/textdata_ja_.dat.z	table	0	通信エラーです
+romdata/PUD/errorproc/textdata_ja_.dat.z	table	1	Ａボタンまたは下画面へのタッチで
+romdata/PUD/errorproc/textdata_ja_.dat.z	table	2	メニュー画面に戻ります
+romdata/PUD/errorproc/textdata_ja_.dat.z	table	3	対戦選択メニュー画面に戻ります
+romdata/PUD/errorproc/textdata_ja_.dat.z	table	4	Wi-Fiメニューに戻ります
+romdata/PUD/errorproc/textdata_ja_.dat.z	table	5	電源を切ってください
+romdata/PUD/errorproc/textdata_ja_.dat.z	table	6	タイトル画面へ戻ります
+romdata/PUD/errorproc/textdata_ja_.dat.z	table	7	データを書けませんでした\n電源を切って\nカードを差し込み直してください
+romdata/PUD/errorproc/textdata_ja_.dat.z	table	8	データを読めませんでした\n電源を切って\nカードを差し込み直してください
+romdata/PUD/errorproc/textdata_ja_.dat.z	table	9	データが壊れています
+romdata/PUD/wifi/ja/wifitext.bin	table	0	メニューから選択してください
+romdata/PUD/wifi/ja/wifitext.bin	table	1	Wi-Fiポップアップデュエルの\nこれまでのつうさんせいせきです
+romdata/PUD/wifi/ja/wifitext.bin	table	2	対戦する方法を\n選択してください
+romdata/PUD/wifi/ja/wifitext.bin	table	3	フレンドリストに誰も登録されていないため\nフレンドたいせんでは遊べません
+romdata/PUD/wifi/ja/wifitext.bin	table	4	対戦相手を探しています\nしばらくお待ちください
+romdata/PUD/wifi/ja/wifitext.bin	table	5	検索中です
+romdata/PUD/wifi/ja/wifitext.bin	table	6	対戦相手が見つかりました
+romdata/PUD/wifi/ja/wifitext.bin	table	7	対戦相手が見つかりませんでした
+romdata/PUD/wifi/ja/wifitext.bin	table	8	キャラクターを選択してください
+romdata/PUD/wifi/ja/wifitext.bin	table	9	フレンドリストがいっぱいです\nフレンドリストは　２０人までしか登録できないので\n新しく登録する場合は\nいずれかをフレンドリストから消してください
+romdata/PUD/wifi/ja/wifitext.bin	table	10	フレンドコードを入力できません\n１度　Wi-Fiポップアップデュエルを\n選択する必要があります
+romdata/PUD/wifi/ja/wifitext.bin	table	11	フレンドコードがまだありません\nWi-Fiポップアップデュエルを選択すると、\nフレンドコードが作成され\n確認できるようになります
+romdata/PUD/wifi/ja/wifitext.bin	table	12	フレンドリストは　最大２０人まで登録できます\n２０人を超えると登録できないので　その場合は\nいずれかをフレンドリストから消してください\nフレンドリストに追加　フレンドコード入力後\nお互い同時にWi-Fiコネクションに接続すると\nクリスタルの色がグレーから赤に変わり\nフレンド登録が完了します
+romdata/PUD/wifi/ja/wifitext.bin	table	13	を消します\n１度消したフレンドは　元には戻りません\n本当に消しますか？
+romdata/PUD/wifi/ja/wifitext.bin	table	14	フレンドコードを入力してください
+romdata/PUD/wifi/ja/wifitext.bin	table	15	フレンドコードを登録しました
+romdata/PUD/wifi/ja/wifitext.bin	table	16	あなたのフレンドコードです
+romdata/PUD/wifi/ja/wifitext.bin	table	17	フレンドコードがまちがっています
+romdata/PUD/wifi/ja/wifitext.bin	table	18	ｶｰﾄﾞが１５枚組み込まれたﾃﾞｯｷがないので\nポップアップデュエルでは遊べません
+romdata/PUD/wifi/ja/wifitext.bin	table	19	データを書き込めませんでした\n電源を切って\nカードを差し込み直してください
+romdata/PUD/wifi/ja/wifitext.bin	table	20	通信タイムアウトエラーです
+romdata/PUD/wifi/ja/wifitext.bin	table	21	はい
+romdata/PUD/wifi/ja/wifitext.bin	table	22	いいえ
+romdata/PUD/wifi/ja/wifitext.bin	table	23	DS本体のWi-Fiユーザー情報が\n消えた可能性があります\nWi-Fiコネクション設定で\n接続先の設定をご確認ください
+romdata/PUD/wifi/ja/wifitext.bin	table	24	Wi-Fiコネクションに接続しますか？
+romdata/PUD/wifi/ja/wifitext.bin	table	25	Wi-Fiコネクションでは、DSカードと\nDS本体をセットで扱います\nDSカードにDS本体のWi-Fiユーザー\n情報を保存して　Wi-Fiコネクションに\n接続しますか？
+romdata/PUD/wifi/ja/wifitext.bin	table	26	このDS本体のWi-Fiユーザー情報を\nDSカードに保存しました\n今後のWi-Fiコネクションへの接続は\nこのDS本体をお使いください
+romdata/PUD/wifi/ja/wifitext.bin	table	27	DS本体とDSカードの\nWi-Fiユーザー情報がちがうため\nWi-Fiコネクションに接続できません
+romdata/PUD/wifi/ja/wifitext.bin	table	28	DSカードに保存されている\nWi-Fiユーザー情報を更新しますか？\nWi-Fiユーザー情報を更新すると\nWi-Fiコネクションでこれまで\nお使いになっていたデータは\n失われてしまいます
+romdata/PUD/wifi/ja/wifitext.bin	table	29	友達のフレンドリストへ新しいフレンドコードを\n登録してもらって Wi-Fi コネクションに接続\nする必要があります\n\n本当に更新してもよろしいですか？
+romdata/PUD/wifi/ja/wifitext.bin	table	30	Wi-Fiコネクションに接続しています\nしばらくお待ちください
+romdata/PUD/wifi/ja/wifitext.bin	table	31	お使いのプレイヤー名では\nWi-Fiコネクションを利用できません\nプレイヤー名を変更して接続しなおしてください
+romdata/PUD/wifi/ja/wifitext.bin	table	32	Wi-Fiコネクションから切断しても\nよろしいですか？
+romdata/PUD/wifi/ja/wifitext.bin	table	33	Wi-Fiコネクションから\n切断しています
+romdata/PUD/wifi/ja/wifitext.bin	table	34	Wi-Fiコネクションから\n切断しました
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	0	ポップアップヒーローＸ\n「これからポップアップデュエルの\n極意を教えてやるクポ！{03}{SFF}{01}ポップアップデュエルとは\n召喚獣の力がふうじ込まれたカードを使って\n敵と戦う方法クポ{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	1	デュエルに必要なのは　もちろんカード！\nそして　そのカードを組み合わせたものが\n『デッキ』と呼ばれているクポ{03}{SFF}{01}デュエルは　その『デッキ』からランダムに\n３枚のカードを引いて　始めるクポ\nこの３枚を『手札』と呼ぶクポ{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	2	デュエルが始まったら『手札』の中から\n好きなカードを１枚選んで　タッチペンで{03}{SFF}{01}カードをタッチしたまま　はじき飛ばすように\n上に『ひょい』っと　スライドさせるクポ{03}{SFF}{01}これが『ポップアップ！』クポ　\nカードの中から召喚獣が現れて\n相手と戦ってくれるクポ{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	3	基本はコレを繰り返して　相手の『体力』を\n０（ゼロ）にすれば勝ちクポ\nとっても簡単だクポ」{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	4	ポップアップヒーローＸ\n「まずは　いちばん大事なポップアップデュエル\nカードの見かたについて説明するクポ{03}{SFF}{01}上画面に注目するクポ！{03}{SFF}{01}①魔法陣\nカードには上下左右４色の魔法陣があるクポ\nこれがデュエルの鍵を握るクポ{03}{SFF}{01}この魔法陣の中に『剣』と\n『盾』と『槍』のマークがあることに\n気づいてるクポか？{03}{SFF}{01}このマークの場所を　相手のカードと\n見比べることによって　攻撃の成功や\n失敗が決まるクポ{03}{SFF}{01}これを『マッチング』と呼ぶクポ　\n『マッチング』については　もう少し後で\n詳しく説明するクポ{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	5	②アビリティマーク\nすべてのカードは大きく分けて　アタック・\nガード・ガードブレイクタイプがあるクポ{03}{SFF}{01}アタックタイプのカードには\n『剣』のアビリティマークがあるクポ{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	6	ガードタイプのカードには\n『盾』のアビリティマークがあるクポ{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	7	ガードブレイクタイプのカードには\n『槍』のアビリティマークがあるクポ{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	8	③アビリティの効果\n発動する効果『アビリティ』の説明が\nここに書かれているクポ{03}{SFF}{01}アビリティには　たくさんの種類があるから\n１枚ずつカードを集めて　ゆっくり\n試しながら　覚えるといいクポ」{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	9	ポップアップヒーローＸ\n「デュエルが始まったら　まずは\n『ポップアップフェイズ』クポ{03}{SFF}{01}手札から１枚　カードを選んで\nポップアップするクポ{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	10	ここで大事なのが先に攻撃できる『先攻』と\n後に攻撃する『後攻』クポ{03}{SFF}{01}これはなんと！　ポップアップフェイズが\n始まったら　早いもの勝ちで決まるクポ\n先にカードを出したプレイヤーが『先攻』クポ{03}{SFF}{01}プレイヤー全員がカードをポップアップすると\n『先攻』プレイヤーの攻撃の順番…\nつまり『ターン』が　始まるクポ{03}{SFF}{01}このターンが終わったら　次は『後攻』の\nプレイヤーのターンが始まるクポ{03}{SFF}{01}戦いは　基本的に『先攻』の方が有利クポ　\nでもだからって　慌てて変なカードを出すと\n逆に不利になるクポ」{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	11	ポップアップヒーローＸ\n「いよいよ『マッチング』の説明だクポ{03}{SFF}{01}ここが最大のポイントになるクポ！\nちゃんと　ついてきてるクポ？{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	12	まず　アタックタイプのカードについて\n説明するクポ{03}{SFF}{01}『剣（アタック）』がある魔法陣と\n相手カードの同じ位置の魔法陣を見るクポ！{03}{SFF}{01}①相手の魔法陣が空白（アンマーク）の場合\nアタック成功クポ！\n相手に攻撃がヒットするクポ{03}{SFF}{01}②相手の魔法陣が槍（ガードブレイク）の場合\nアタック成功クポ！\n相手に攻撃がヒットするクポ{03}{SFF}{01}③相手の魔法陣も剣（アタック）の場合\n一応アタック成功クポ　でも与えるダメージが\n半分になってしまうクポ{03}{SFF}{01}④相手の魔法陣が盾（ガード）の場合\nアタック失敗クポ\n攻撃はガードされてしまうクポ{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	13	次にガードブレイクタイプのカードについて\n説明するクポ{03}{SFF}{01}『槍（ガードブレイク）』がある魔法陣と\n相手カードの同じ位置の魔法陣を見るクポ！{03}{SFF}{01}①相手の魔法陣が盾（ガード）の場合\nガードブレイク成功クポ！\n相手に攻撃がヒットするクポ{03}{SFF}{01}②相手の魔法陣が槍（ガードブレイク）の場合\nガードブレイク失敗クポ\nアビリティは発動しないクポ{03}{SFF}{01}③相手の魔法陣が剣（アタック）の場合\nガードブレイク失敗クポ\nアビリティは発動しないクポ{03}{SFF}{01}④相手の魔法陣が空白（アンマーク）の場合\nガードブレイク失敗クポ\nアビリティは発動しないクポ{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	14	最後にガードタイプのカードについて\n説明するクポ{03}{SFF}{01}ガードタイプのカードには\n魔法陣に相手を攻撃する『剣（アタック）』や\n『槍（ガードブレイク）』のマークがないクポ{03}{SFF}{01}だから　ガードタイプのカードでは\nマッチングは発生しないクポ\nこのターンは様子見で終わるクポ{03}{SFF}{01}…以上がマッチングのルールクポ\n理解できたクポ？{03}{SFF}{01}マッチングをしっかり覚えることが\nデュエルに勝つための第一歩クポ！」{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	15	ポップアップヒーローＸ\n「『マッチング』でアタックに成功したら\nいよいよ召喚獣の攻撃が始まるクポ{03}{SFF}{01}カードに書かれたアビリティに注目クポ{03}{SFF}{01}このアビリティが高いほど　相手に大きな\nダメージを与えられるクポ　いいカードは\nデッキに入れて　ガンガン使うといいクポ{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	16	アタックの次はガードについての説明クポ\n相手の攻撃ターンでガードに成功したら\n自分の体力は　全く減らないクポ{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	17	しかも！　もし自分の出したカードに\nガードアビリティがある場合は　カウンターで\n相手に　反撃ができるクポ！{03}{SFF}{01}ちなみにアビリティは　攻撃や防御\nだけじゃないクポ　体力回復や\n相手を邪魔する効果などさまざまクポ{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	18	ここでひとつ教えておくことがあるクポ{03}{SFF}{01}アビリティの効果のなかには\nステータスに異常が起こる\n『ステータスダメージ』というものがあるクポ{03}{SFF}{01}『ステータスダメージ』を受けると\n体力ゲージのところにアイコンが現れるクポ{03}{SFF}{01}『やけど』『どく』『こおり』『しびれ』…\nこれらは　次のターン終了まで続くクポ\n気をつけなければ大変なことになるクポ！{03}{SFF}{01}しっかり体力を計算して\nあぶないと思ったら\nガードすることを考えるのも大切クポ！」{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	19	ポップアップヒーローＸ\n「お互いの攻撃ターンが終わったら\n『エンドフェイズ』になるクポ{03}{SFF}{01}つまり　またポップアップフェイズに\n戻るってことクポ{03}{SFF}{01}このエンドフェイズでは　さっき出したカードが\n同じ色のクリスタルに変化するクポ\nこれを『クリスタルチャージ』と呼ぶクポ！{03}{SFF}{01}クリスタルがチャージされると\n普段では使えない　すごいカードの\n能力を　使えるようになるクポ！{03}{SFF}{01}ただし！　グレーのカードは無属性の\n召喚獣クポ　他のカードより少し強いけど\nクリスタルにはならないクポ」{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	20	ポップアップヒーローＸ\n「次は『クリスタルポイント』についての\n説明をするクポ　{03}{SFF}{01}赤・緑・青・黄の属性のついたカードを\n使えば　『エンドフェイズ』のたびに\nクリスタルを１個ずつチャージできるクポ{03}{SFF}{01}こうしてたまったクリスタルの数を\n『CP（クリスタルポイント）』と呼ぶクポ！{03}{SFF}{01}この『CP』が必殺技『クリスタルアビリティ』を\n発動するための　大事な力になるクポ\nたくさんためるほど　有利になるクポ{03}{SFF}{01}ただし！　『CP』は最大で１０個までしか\nためることができないクポ　それを越えると\n古いクリスタルから　なくなってゆくクポ{03}{SFF}{01}その他にも相手のチャージしたクリスタルを\n壊すアビリティや　色を変えるアビリティなど\nいろんなカードがあるクポ！」{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	21	ポップアップヒーローＸ\n「ついに来たクポ！　必殺技クポ！\n『クリスタルアビリティ』クポ！！{03}{SFF}{01}カードによってはアビリティの説明に\n『CP』という文字と『クリスタルアイコン』が\nいくつか書かれているものがあるクポ{03}{SFF}{01}これがそのアビリティを発動するために\n必要な『CP』を表しているクポ{03}{SFF}{01}必要な『CP』数がチャージされていれば\n『クリスタルアビリティ』が発動されるクポ！\n足りていない場合は　失敗するクポ{03}{SFF}{01}『クリスタルアビリティ』が発動できるカードは\n光っているから　一目でわかるはずクポ！{03}{SFF}{01}上手に『クリスタルアビリティ』を使いたい\n場合は　デッキを作るときから『CP』のことを\n計算に入れておく必要があるクポ！」{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	22	ポップアップヒーローＸ\n「いよいよ新システムの説明クポ！\n２つの新しいルールが追加されたクポ{03}{SFF}{01}まずひとつめは『ポップダウン』クポ！\n『CP』を使って　いらないカードを\n捨てる事ができるクポ！{03}{SFF}{01}捨てた次のターンでは２枚カードをひけるクポ\nうまく使って戦略を広げるクポ！{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	23	２つめは『おみあいシステム』クポ！\nお互いガードタイプカードの時に発動するクポ{03}{SFF}{01}ガードカードでおみあいをくり返すと\nまわりの空気が「かねつ」するクポ{03}{SFF}{01}空気がかねつしたら次にヒットした\nダメージは倍になるクポ{03}{SFF}{01}ダメージがヒットするまでかねつ状態は\n継続するクポ\nかねつしてしまったら気がぬけないクポ！」{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	24	ポップアップヒーローＸ\n「さぁ　まとめクポ　\n最強のデュエリストを目指すなら！{03}{SFF}{01}これからモグが言う\n３つの鉄則を覚えるクポ　{03}{SFF}{01}まず１つ目　デュエルの行方は　マッチングに\n左右されるクポ　だから　相手の出すカードを\n『読む』ことがポイントになってくるクポ　{03}{SFF}{01}ポップアップフェイズで　相手の手札の\n色だけは　わかるから　そこから推理して\n攻撃を組み立てるといいクポ　{03}{SFF}{01}ただ　読みを鍛えるいちばんの近道は\nたくさんのデュエルを実践することクポ　\nモグなら　いつでも相手してやるクポ！{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	25	そして２つ目　いくら読み合いをしても\n出したいカードがなければ意味がないクポ\nそこで『デッキ』が大事になってくるクポ！{03}{SFF}{01}デッキを組むコツはイマジネーションクポ！\nどうやって　相手に勝つかをイメージして\n最強のデッキを生み出すクポ！！{03}{SFF}{02}
+romdata/PUD/pubtutorial/ja/tutorialtext.bin	table	26	３つ目クポ　最強のデッキを組むには\n何よりも『カード』が必要クポ\nとにかく１枚でも多くカードを集めるクポ！{03}{SFF}{01}カードは　いろんな場所でゲットできる\nらしいクポ！うわさでは…\nおっとこれは秘密だったクポ{03}{SFF}{01}ところでキミは　運がいい方クポ？\n世の中には『ラッキー』なだけで\nデュエルに勝ち続ける奴もいるクポ{03}{SFF}{01}だがしかーーーーし！！！\nラッキーなんて　長続きしないクポ\n『読み』『デッキ』そして『カード』！{03}{SFF}{01}この３つがカンペキなら　どんなラッキーな\n相手にだって　必ず勝てるクポ！{03}{SFF}{01}ラッキーな相手をふうじ込めるのは\n確かな戦略クポーー！！\n…はぁはぁ　興奮し過ぎたクポ{03}{SFF}{01}これでチュートリアルはおしまいクポ！\n頑張って　モグみたいに立派な\nポップアップヒーローを目指すといいクポ！」{03}{SFF}{02}
+romdata/PUD/deck/ja/cardgroup.bin	table	0	マンドラ族
+romdata/PUD/deck/ja/cancel.txt	u16z	0	編集した内容を\nキャンセルしてよろしいですか？
+romdata/PUD/deck/ja/clear.txt	u16z	0	%ls\nをクリアしてもよろしいですか？
+romdata/PUD/deck/ja/colrate.txt	u16z	0	コレクション率
+romdata/PUD/deck/ja/decide.txt	u16z	0	編集した内容で\n決定して終了します
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	0	バハムート
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	1	シヴァ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	2	イフリート
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	3	カーバンクル
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	4	アダマンタイマイ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	5	ユニコーン
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	6	サボテンダー
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	7	ラムウ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	8	ボム
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	9	ラミア
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	10	フェニックス
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	11	オーディーン
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	12	タイタン
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	13	ゴブリン
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	14	
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	15	鉄巨人
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	16	トンベリ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	17	ケット・シー
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	18	リヴァイアサン
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	19	ミストドラゴン
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	20	ビスマルク
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	21	テュポーン
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	22	オメガ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	23	アルテマウェポン
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	24	ラグナロク
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	25	神竜
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	26	チョコボ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	27	ギルガメッシュ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	28	マンドラレッド
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	29	マンドラゴラ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	30	マンドラプリンス
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	31	マンドラキング
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	32	マンドラダーク
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	33	火炎弾
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	34	炎の結界
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	35	焦土
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	36	山火事
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	37	地獄の火炎
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	38	火炎弾･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	39	炎のダンス
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	40	守りのトライアングル
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	41	自爆
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	42	大爆発
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	43	自爆･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	44	大爆発･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	45	尻尾
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	46	うたごえ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	47	乙女のキッス
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	48	ゆうわく
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	49	ゆうわく･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	50	乙女のキッス･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	51	炎の一撃
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	52	ファイアバリア
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	53	不死の魂
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	54	転生の炎
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	55	転生の炎･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	56	不死の魂･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	57	鉄壁の守り
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	58	奇跡の甲羅
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	59	のろい呪い
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	60	マイティガード
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	61	鉄壁の守り･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	62	奇跡の甲羅･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	63	スピニングニードル
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	64	まちぶせ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	65	どくばり
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	66	針千本
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	67	光合成
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	68	針千本･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	69	突進
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	70	ヒールキック
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	71	泉水
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	72	疾風突き
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	73	泉水･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	74	疾風突き･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	75	大地の怒り
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	76	岩石投げ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	77	大地のこぶし
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	78	地割れ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	79	地割れ･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	80	大地のこぶし･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	81	氷の息吹
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	82	鎮火
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	83	スノーカーテン
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	84	ダイヤモンドダスト
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	85	天からの一撃
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	86	鎮火･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	87	テールウィップ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	88	サンダーストーム
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	89	湧き水
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	90	タイダルウェイブ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	91	湧き水･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	92	タイダルウェイブ･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	93	霧のブレス
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	94	モクモク
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	95	アクアブレス
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	96	呪縛の冷気
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	97	呪縛の冷気･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	98	アクアブレス･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	99	雑魚ちらし
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	100	のみこむ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	101	バブルブロウ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	102	メイルシュトロム
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	103	バブルブロウ･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	104	のみこむ･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	105	シャイニングスター
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	106	クイックスタンプ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	107	ルビーの光
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	108	ホーリーガード
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	109	聖なる歌声
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	110	ルビーの光･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	111	感電
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	112	雷雲
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	113	裁きの雷
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	114	電磁場
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	115	裁きの雷･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	116	電磁場･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	117	メガホン
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	118	突撃ラッパ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	119	キャットレイン
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	120	マーベラスチアー
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	121	マーベラスチアー･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	122	突撃ラッパ･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	123	こぶし
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	124	タックル
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	125	ビーム
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	126	兜割り
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	127	ビーム･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	128	兜割り･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	129	斬鉄剣
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	130	グングニルの槍
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	131	スレイプニル
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	132	暗黒剣
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	133	斬鉄剣･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	134	グングニルの槍･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	135	奇襲
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	136	メガフレア
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	137	テラフレア
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	138	インパルス
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	139	メガフレア･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	140	テラフレア･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	141	毒霧
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	142	影縫い
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	143	包丁
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	144	みんなの恨み
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	145	みんなの恨み･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	146	たたく
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	147	あばれる
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	148	おおごえ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	149	メテオ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	150	たたく･改
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	151	ファイアボール
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	152	いただきます
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	153	鼻息
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	154	ボディープレス
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	155	天地崩壊
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	156	ヒット･ジ･エンド
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	157	三段斬り
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	158	エクスカリパー
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	159	王者の剣
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	160	究極幻想
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	161	波動砲
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	162	アルテマ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	163	メタモルフォース
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	164	アトミックレイ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	165	チョコボックル
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	166	夢想花
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	167	種まき
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	168	ヘッドバット
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	169	光の楽園
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	170	かすみ草
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	171	ロケットパンチ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	172	シャドウフレア
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	173	破壊のつるぎ
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	174	心ない天使
+romdata/PUD/deck/ja/deck_card_data.dcd	dcd	175	ヒップアタック
+romdata/PUD/deck/ja/learning.txt	u16z	0	『練習デッキ』は\nカードを入れ替えることができません
+romdata/PUD/deck/ja/newdeck.txt	u16z	0	新しくデッキを作る
+romdata/PUD/deck/ja/no.txt	u16z	0	いいえ
+romdata/PUD/deck/ja/nodeck.txt	u16z	0	ｶｰﾄﾞが１５枚組み込まれたﾃﾞｯｷがない\nので ポップアップデュエルができません
+romdata/PUD/deck/ja/notedited.txt	u16z	0	デッキが編集されていません
+romdata/PUD/deck/ja/training.txt	u16z	0	『初級デッキ』はデッキを\n編集することが可能です
+romdata/PUD/deck/ja/under8.txt	u16z	0	ｶｰﾄﾞが８枚組み込まれたﾃﾞｯｷがない\nので、ポップアップデュエルができません
+romdata/PUD/deck/ja/yes.txt	u16z	0	はい
+romdata/PUD/mgentryphase/text/en/expl/mg001.ptx	ptx	0	{1B}BRules{1B}{1B}\nLead the adamantoise to the top\nof the mountain!{00}
+romdata/PUD/mgentryphase/text/en/expl/mg001.ptx	ptx	1	{1B}BRules{1B}{1B}\nRotate the adamantoise on the\nlower screen to control its\ndirection. Lift the stylus to send\nthe adamantoise into its shell,\nmaking it impervious to damage.{00}
+romdata/PUD/mgentryphase/text/en/expl/mg002.ptx	ptx	0	{1B}BRules{1B}{1B}\nLead the adamantoise to rescue\nthe cactuar!{00}
+romdata/PUD/mgentryphase/text/en/expl/mg002.ptx	ptx	1	{1B}BRules{1B}{1B}\nRotate the adamantoise on the\nlower screen to control its\ndirection. Lift the stylus to send\nthe adamantoise into its shell,\nincreasing its speed.{00}
+romdata/PUD/mgentryphase/text/en/expl/mg003.ptx	ptx	0	{1B}BRules{1B}{1B}\nSlide the chocobo to snatch as\nmany lasans as you can while\navoiding the falling fire and ice!{00}
+romdata/PUD/mgentryphase/text/en/expl/mg003.ptx	ptx	1	{1B}BRules{1B}{1B}\nIf the chocobo is frozen or\non fire, tap it quickly with the\nstylus to remove the ailment.{00}
+romdata/PUD/mgentryphase/text/en/expl/mg004.ptx	ptx	0	{1B}BRules{1B}{1B}\nSlide the chocobo to the\nupper screen to snatch as\nmany luchiles as you can\nwhile avoiding the fire!{00}
+romdata/PUD/mgentryphase/text/en/expl/mg004.ptx	ptx	1	{1B}BRules{1B}{1B}\nSlide the chocobo upwards to\nlaunch it into the upper screen.{00}
+romdata/PUD/mgentryphase/text/en/expl/mg005.ptx	ptx	0	{1B}BRules{1B}{1B}\nUse the stylus to draw leaves\nand launch the chocobo into\nthe air! Reach the top before\nanybody else does!{00}
+romdata/PUD/mgentryphase/text/en/expl/mg005.ptx	ptx	1	{1B}BRules{1B}{1B}\nSmaller leaves have more\nelasticity than bigger ones.\nWatch out for the bomb\nmonsters!{00}
+romdata/PUD/mgentryphase/text/en/expl/mg006.ptx	ptx	0	{1B}BRules{1B}{1B}\nUse the stylus to draw leaves\nand redirect the chocobo!\nBag as many coins as you can!{00}
+romdata/PUD/mgentryphase/text/en/expl/mg006.ptx	ptx	1	{1B}BRules{1B}{1B}\nLeaves must be drawn\ndiagonally, or else the chocobo\nwill move straight through them.\nWalk over ▲ to slow down or\n▼ to speed up.{00}
+romdata/PUD/mgentryphase/text/en/expl/mg007.ptx	ptx	0	{1B}BRules{1B}{1B}\nMove the magnifying glass by\nsliding the stylus!\nFind those fiery little\nchocolings!{00}
+romdata/PUD/mgentryphase/text/en/expl/mg007.ptx	ptx	1	{1B}BRules{1B}{1B}\nOnce you've found a chocoling,\ncenter the magnifying glass\nabove it.{00}
+romdata/PUD/mgentryphase/text/en/expl/mg008.ptx	ptx	0	{1B}BRules{1B}{1B}\nThe power of the spring's water\nturns fire into gold! Try stealing\ncoins from opponents, too!{00}
+romdata/PUD/mgentryphase/text/en/expl/mg008.ptx	ptx	1	{1B}BRules{1B}{1B}\nControl the chocobo by sliding\nthe stylus. Tap twice to initiate\na rolling attack. Use this to steal\ncoins from your opponents.{00}
+romdata/PUD/mgentryphase/text/en/expl/mg009.ptx	ptx	0	{1B}BRules{1B}{1B}\nListen carefully to the\nmusicians' magical melody!\nThen be on the right panel\nat the right time!{00}
+romdata/PUD/mgentryphase/text/en/expl/mg009.ptx	ptx	1	{1B}BRules{1B}{1B}\nTap the panels to move to the\nappropriate instrument when\nrepeating the last tune.{00}
+romdata/PUD/mgentryphase/text/en/expl/mg010.ptx	ptx	0	{1B}BRules{1B}{1B}\nListen carefully to the\nmusicians' magical melody!\nThen be on the right panel\nat the right time!{00}
+romdata/PUD/mgentryphase/text/en/expl/mg010.ptx	ptx	1	{1B}BRules{1B}{1B}\nControl the chocobo by sliding\nthe stylus. Tap twice to initiate\na rolling attack. Use this to\nknock opponents away from\nthe right panel.{00}
+romdata/PUD/mgentryphase/text/en/expl/mg011.ptx	ptx	0	{1B}BRules{1B}{1B}\nSwim through the sea tunnel\nwhile dodging any obstacles\nthat appear! Mess up three\ntimes and you'll end up as\nLeviathan's lunch!{00}
+romdata/PUD/mgentryphase/text/en/expl/mg011.ptx	ptx	1	{1B}BRules{1B}{1B}\nQuickly slide the stylus up and\ndown to give the chocobo an\nupwards boost. Lifting the stylus\nfrom the touch screen will\ncause the chocobo to sink.{00}
+romdata/PUD/mgentryphase/text/en/expl/mg012.ptx	ptx	0	{1B}BRules{1B}{1B}\nCatch the golden fish and feed\nthem to Leviathan!{00}
+romdata/PUD/mgentryphase/text/en/expl/mg012.ptx	ptx	1	{1B}BRules{1B}{1B}\nControl the chocobo by sliding\nthe stylus. Tap twice to initiate\na rolling attack. Use this to steal\nfish from your opponents.{00}
+romdata/PUD/mgentryphase/text/en/expl/mg013.ptx	ptx	0	{1B}BRules{1B}{1B}\nGather the scattered puzzle\npieces to build three different\nhouses! You'll receive a bonus\nfor completing a house.{00}
+romdata/PUD/mgentryphase/text/en/expl/mg013.ptx	ptx	1	{1B}BRules{1B}{1B}\nControl the chocobo by sliding\nthe stylus. Land on a puzzle\npiece to pick it up, then release\nit over the house.{00}
+romdata/PUD/mgentryphase/text/en/expl/mg014.ptx	ptx	0	{1B}BRules{1B}{1B}\nRun and hide to avoid the\nTonberries! Once you've\nbeen spotted, they'll give chase!{00}
+romdata/PUD/mgentryphase/text/en/expl/mg014.ptx	ptx	1	{1B}BRules{1B}{1B}\nControl the chocobo by sliding\nthe stylus. Tap twice to initiate\na rolling attack. Use this to\nknock your opponents towards\nthe Tonberries.{00}
+romdata/PUD/mgentryphase/text/en/expl/mg015.ptx	ptx	0	{1B}BRules{1B}{1B}\nComplete the maze without\ntouching the electrified walls!\nIf you get zapped, you'll be\nwarped back to the last flag!{00}
+romdata/PUD/mgentryphase/text/en/expl/mg015.ptx	ptx	1	{1B}BRules{1B}{1B}\nSlide the stylus to move\nthrough the maze,\nbut watch your step.{00}
+romdata/PUD/mgentryphase/text/en/expl/mg016.ptx	ptx	0	{1B}BRules{1B}{1B}\nDodge Ramuh's deadly lightning\nattacks!{00}
+romdata/PUD/mgentryphase/text/en/expl/mg016.ptx	ptx	1	{1B}BRules{1B}{1B}\nControl the chocobo by sliding\nthe stylus. Tap twice to initiate\na rolling attack. Use this to\nknock Ramuh and his lightning\ninto your opponents.{00}
+romdata/PUD/mgentryphase/text/en/secret/cl001.ptx	ptx	0	{1B}GUnlocked Epilogue 1{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl001.ptx	ptx	1	{00}
+romdata/PUD/mgentryphase/text/en/secret/cl001.ptx	ptx	2	{1B}GUnlocked Epilogue 2{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl001.ptx	ptx	3	{1B}C{1B}GObtained 034 Cactuar - Photosynthesis{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl001.ptx	ptx	4	{1B}C{1B}GObtained 029　Adamantoise - Slowspell{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl001.ptx	ptx	5	{1B}C{1B}GObtained 031　Cactuar - Spinning Needle{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl001.ptx	ptx	6	{1B}C{1B}GObtained 027 Adamantoise - Miraculous Shell{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl002.ptx	ptx	0	{1B}GUnlocked Epilogue 1{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl002.ptx	ptx	1	{1B}GRescued Sweenie{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl002.ptx	ptx	2	{1B}GUnlocked Epilogue 2{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl002.ptx	ptx	3	{1B}GUnlocked Epilogue 3{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl002.ptx	ptx	4	{1B}C{1B}GObtained 030 Adamantoise - Mighty Guard{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl002.ptx	ptx	5	{1B}C{1B}GObtained 067 Bismarck - No Mercy{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl002.ptx	ptx	6	{1B}C{1B}GObtained 072　Bismarck - Maelstrom{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl003.ptx	ptx	0	{1B}C{1B}GObtained 049 Shiva - Chilling Whisper{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl003.ptx	ptx	1	{1B}GRescued Peachie{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl003.ptx	ptx	2	{1B}GUnlocked Epilogue 2{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl003.ptx	ptx	3	{1B}GUnlocked Epilogue 3{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl003.ptx	ptx	4	{1B}GUnlocked Epilogue 1{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl003.ptx	ptx	5	{1B}C{1B}GObtained 003　Ifrit - Flame Ward{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl003.ptx	ptx	6	{1B}C{1B}GObtained 004　Shiva - Extinguish{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl004.ptx	ptx	0	{1B}C{1B}GObtained 006 Ifrit - Hellfire{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl004.ptx	ptx	1	{1B}GRescued Indie{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl004.ptx	ptx	2	{1B}GUnlocked Epilogue 1{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl004.ptx	ptx	3	{1B}GUnlocked Epilogue 2{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl004.ptx	ptx	4	{1B}C{1B}GObtained 053　Shiva - Diamond Dust{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl004.ptx	ptx	5	{1B}C{1B}GObtained 054 Shiva - Heavenly Strike{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl004.ptx	ptx	6	{1B}GUnlocked Epilogue 3{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl005.ptx	ptx	0	{1B}GUnlocked Epilogue 1{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl005.ptx	ptx	1	{1B}GUnlocked Epilogue 2{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl005.ptx	ptx	2	{1B}GRescued Yelro{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl005.ptx	ptx	3	{1B}C{1B}GObtained 043　Titan - Gaia's Wrath{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl005.ptx	ptx	4	{1B}C{1B}GObtained 007　Bomb - Fiery Tango{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl005.ptx	ptx	5	{1B}GUnlocked Epilogue 3{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl005.ptx	ptx	6	{1B}C{1B}GObtained 008 Bomb - Delta Guard{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl006.ptx	ptx	0	{1B}GUnlocked Epilogue 1{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl006.ptx	ptx	1	{1B}GUnlocked Trial Mode{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl006.ptx	ptx	2	{1B}GRescued Jarro{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl006.ptx	ptx	3	{1B}GUnlocked Epilogue 3{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl006.ptx	ptx	4	{1B}C{1B}GObtained 044　Titan - Boulder Toss{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl006.ptx	ptx	5	{1B}GUnlocked Epilogue 2{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl006.ptx	ptx	6	{1B}C{1B}GObtained 047　Titan - Fissure{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl007.ptx	ptx	0	{1B}GUnlocked Battle Mode{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl007.ptx	ptx	1	{1B}GUnlocked Epilogue 1{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl007.ptx	ptx	2	{1B}GRescued Dolly{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl007.ptx	ptx	3	{1B}GUnlocked Epilogue 2{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl007.ptx	ptx	4	{1B}C{1B}GObtained 019　Phoenix - Fire Strike{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl007.ptx	ptx	5	{1B}GUnlocked Epilogue 3{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl007.ptx	ptx	6	{1B}C{1B}GObtained 020　Phoenix - Blazing Barrier{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl008.ptx	ptx	0	{00}
+romdata/PUD/mgentryphase/text/en/secret/cl008.ptx	ptx	1	{1B}GRescued Belle{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl008.ptx	ptx	2	{1B}GUnlocked Epilogue 1{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl008.ptx	ptx	3	{1B}GUnlocked Epilogue 3{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl008.ptx	ptx	4	{1B}GUnlocked Epilogue 2{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl008.ptx	ptx	5	{1B}C{1B}GObtained 021　Phoenix - Undying Spirit{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl008.ptx	ptx	6	{1B}C{1B}GObtained 023　Phoenix - Flames of Rebirth{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl009.ptx	ptx	0	{1B}C{1B}GObtained 085 Cait Sith - Megaphone{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl009.ptx	ptx	1	{1B}GUnlocked Epilogue 1{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl009.ptx	ptx	2	{1B}GRescued Moggie{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl009.ptx	ptx	3	{1B}C{1B}GObtained 037 Unicorn - Rush{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl009.ptx	ptx	4	{1B}GUnlocked Epilogue 2{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl009.ptx	ptx	5	{1B}GUnlocked Epilogue 3{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl009.ptx	ptx	6	{1B}C{1B}GObtained 039 Unicorn - Fountainhead{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl010.ptx	ptx	0	{1B}C{1B}GObtained 038 Unicorn - Healing Kick{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl010.ptx	ptx	1	{1B}GUnlocked Epilogue 3{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl010.ptx	ptx	2	{1B}GUnlocked Epilogue 1{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl010.ptx	ptx	3	{1B}GUnlocked Epilogue 2{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl010.ptx	ptx	4	{1B}GRescued Becky{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl010.ptx	ptx	5	{1B}C{1B}GObtained 041 Unicorn - Gale Strike{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl010.ptx	ptx	6	{1B}C{1B}GObtained 088 Cait Sith - Cat Rain{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl011.ptx	ptx	0	{1B}GUnlocked Battle Mode{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl011.ptx	ptx	1	{1B}GUnlocked Epilogue 1{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl011.ptx	ptx	2	{1B}GRescued Bruce{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl011.ptx	ptx	3	{1B}GUnlocked Epilogue 2{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl011.ptx	ptx	4	{1B}GUnlocked Epilogue 3{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl011.ptx	ptx	5	{1B}C{1B}GObtained 055 Leviathan - Tail Whip{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl011.ptx	ptx	6	{1B}C{1B}GObtained 056 Leviathan - Thunder Storm{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl012.ptx	ptx	0	{00}
+romdata/PUD/mgentryphase/text/en/secret/cl012.ptx	ptx	1	{1B}GUnlocked Epilogue 3{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl012.ptx	ptx	2	{1B}GUnlocked Epilogue 1{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl012.ptx	ptx	3	{1B}GRescued Zavi{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl012.ptx	ptx	4	{1B}GUnlocked Epilogue 2{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl012.ptx	ptx	5	{1B}C{1B}GObtained 057 Leviathan - Geyser{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl012.ptx	ptx	6	{1B}C{1B}GObtained 059 Leviathan - Tidal Wave{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl013.ptx	ptx	0	{1B}GUnlocked Battle Mode{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl013.ptx	ptx	1	{1B}GRescued Joe{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl013.ptx	ptx	2	{1B}GUnlocked Epilogue 3{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl013.ptx	ptx	3	{1B}C{1B}GObtained 109 Tonberry - Poison Cloud{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl013.ptx	ptx	4	{1B}GUnlocked Epilogue 1{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl013.ptx	ptx	5	{1B}GUnlocked Epilogue 2{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl013.ptx	ptx	6	{1B}C{1B}GObtained 111 Tonberry - Knife{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl014.ptx	ptx	0	{00}
+romdata/PUD/mgentryphase/text/en/secret/cl014.ptx	ptx	1	{1B}GUnlocked Epilogue 3{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl014.ptx	ptx	2	{1B}GUnlocked Epilogue 1{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl014.ptx	ptx	3	{1B}GUnlocked Epilogue 2{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl014.ptx	ptx	4	{1B}GRescued Brow{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl014.ptx	ptx	5	{1B}C{1B}GObtained 110 Tonberry - Shadowbind{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl014.ptx	ptx	6	{1B}C{1B}GObtained 112 Tonberry - Karma{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl015.ptx	ptx	0	{1B}GUnlocked Battle Mode{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl015.ptx	ptx	1	{1B}GUnlocked Epilogue 1{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl015.ptx	ptx	2	{1B}GUnlocked Epilogue 2{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl015.ptx	ptx	3	{1B}GRescued Grinn{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl015.ptx	ptx	4	{1B}C{1B}GObtained 079 Ramuh - Shock{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl015.ptx	ptx	5	{1B}GUnlocked Epilogue 3{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl015.ptx	ptx	6	{1B}C{1B}GObtained 081 Ramuh - EM Field{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl016.ptx	ptx	0	{00}
+romdata/PUD/mgentryphase/text/en/secret/cl016.ptx	ptx	1	{1B}GUnlocked Epilogue 3{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl016.ptx	ptx	2	{1B}GUnlocked Epilogue 1{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl016.ptx	ptx	3	{1B}GUnlocked Epilogue 2{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl016.ptx	ptx	4	{1B}GRescued Wakaba{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl016.ptx	ptx	5	{1B}C{1B}GObtained 080 Ramuh - Thundercloud{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/cl016.ptx	ptx	6	{1B}C{1B}GObtained 083 Ramuh - Judgment Bolt{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/en/secret/mg001.ptx	ptx	0	Finish trial mode within 5 minutes.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg001.ptx	ptx	1	Conquer battle mode level 1.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg001.ptx	ptx	2	Conquer battle mode level 2.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg001.ptx	ptx	3	Conquer battle mode level 5.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg001.ptx	ptx	4	Finish trial mode within 30 seconds.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg001.ptx	ptx	5	Finish trial mode within 25 seconds.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg001.ptx	ptx	6	Finish trial mode without taking\nany damage from boulders.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg002.ptx	ptx	0	Finish trial mode within 3 minutes.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg002.ptx	ptx	1	Conquer battle mode level 3.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg002.ptx	ptx	2	Conquer battle mode level 4.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg002.ptx	ptx	3	Conquer battle mode level 5.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg002.ptx	ptx	4	Finish trial mode within 1 minute.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg002.ptx	ptx	5	Finish trial mode within 50 seconds.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg002.ptx	ptx	6	Finish trial mode without\nbumping into any walls.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg003.ptx	ptx	0	Conquer battle mode level 1.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg003.ptx	ptx	1	Conquer battle mode level 3.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg003.ptx	ptx	2	Conquer battle mode level 4.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg003.ptx	ptx	3	Conquer battle mode level 5.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg003.ptx	ptx	4	Score at least 25 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg003.ptx	ptx	5	Score at least 40 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg003.ptx	ptx	6	Score at least 60 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg004.ptx	ptx	0	Score at least 5 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg004.ptx	ptx	1	Conquer battle mode level 3.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg004.ptx	ptx	2	Conquer battle mode level 4.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg004.ptx	ptx	3	Conquer battle mode level 5.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg004.ptx	ptx	4	Score at least 10 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg004.ptx	ptx	5	Score at least 20 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg004.ptx	ptx	6	Score at least 30 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg005.ptx	ptx	0	Conquer battle mode level 1.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg005.ptx	ptx	1	Conquer battle mode level 2.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg005.ptx	ptx	2	Conquer battle mode level 4.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg005.ptx	ptx	3	Conquer battle mode level 5.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg005.ptx	ptx	4	Climb to at least 50m in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg005.ptx	ptx	5	Climb to at least 100m in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg005.ptx	ptx	6	Climb to at least 200m in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg006.ptx	ptx	0	Conquer battle mode level 1.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg006.ptx	ptx	1	Conquer battle mode level 3.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg006.ptx	ptx	2	Conquer battle mode level 4.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg006.ptx	ptx	3	Conquer battle mode level 5.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg006.ptx	ptx	4	Score at least 5 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg006.ptx	ptx	5	Score at least 10 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg006.ptx	ptx	6	Score at least 20 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg007.ptx	ptx	0	Score at least 3 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg007.ptx	ptx	1	Conquer battle mode level 3.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg007.ptx	ptx	2	Conquer battle mode level 4.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg007.ptx	ptx	3	Conquer battle mode level 5.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg007.ptx	ptx	4	Score at least 8 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg007.ptx	ptx	5	Score at least 10 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg007.ptx	ptx	6	Score at least 12 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg008.ptx	ptx	0	Conquer battle mode level 1.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg008.ptx	ptx	1	Conquer battle mode level 2.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg008.ptx	ptx	2	Conquer battle mode level 3.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg008.ptx	ptx	3	Conquer battle mode level 4.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg008.ptx	ptx	4	Conquer battle mode level 5.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg008.ptx	ptx	5	Score at least 10 points in battle mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg008.ptx	ptx	6	Score at least 20 points in battle mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg009.ptx	ptx	0	Score at least 5 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg009.ptx	ptx	1	Conquer battle mode level 2.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg009.ptx	ptx	2	Conquer battle mode level 3.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg009.ptx	ptx	3	Conquer battle mode level 4.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg009.ptx	ptx	4	Conquer battle mode level 5.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg009.ptx	ptx	5	Score at least 15 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg009.ptx	ptx	6	Score at least 20 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg010.ptx	ptx	0	Conquer battle mode level 1.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg010.ptx	ptx	1	Conquer battle mode level 2.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg010.ptx	ptx	2	Conquer battle mode level 3.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg010.ptx	ptx	3	Conquer battle mode level 4.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg010.ptx	ptx	4	Conquer battle mode level 5.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg010.ptx	ptx	5	Score at least 10 points in battle mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg010.ptx	ptx	6	Score at least 15 points in battle mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg011.ptx	ptx	0	Swim at least 10m in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg011.ptx	ptx	1	Conquer battle mode level 3.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg011.ptx	ptx	2	Conquer battle mode level 4.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg011.ptx	ptx	3	Conquer battle mode level 5.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg011.ptx	ptx	4	Swim at least 20m in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg011.ptx	ptx	5	Swim at least 50m in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg011.ptx	ptx	6	Swim at least 100m in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg012.ptx	ptx	0	Conquer battle mode level 1.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg012.ptx	ptx	1	Conquer battle mode level 3.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg012.ptx	ptx	2	Conquer battle mode level 4.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg012.ptx	ptx	3	Conquer battle mode level 5.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg012.ptx	ptx	4	Conquer battle mode level 2 with at least 15 points.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg012.ptx	ptx	5	Conquer battle mode level 4 with at least 10 points.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg012.ptx	ptx	6	Conquer battle mode level 5 with at least 20 points.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg013.ptx	ptx	0	Score at least 5 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg013.ptx	ptx	1	Conquer battle mode level 2.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg013.ptx	ptx	2	Conquer battle mode level 3.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg013.ptx	ptx	3	Conquer battle mode level 4.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg013.ptx	ptx	4	Conquer battle mode level 5.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg013.ptx	ptx	5	Score at least 20 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg013.ptx	ptx	6	Score at least 30 points in trial mode.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg014.ptx	ptx	0	Conquer battle mode level 1.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg014.ptx	ptx	1	Conquer battle mode level 2.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg014.ptx	ptx	2	Conquer battle mode level 3.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg014.ptx	ptx	3	Conquer battle mode level 4.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg014.ptx	ptx	4	Conquer battle mode level 5.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg014.ptx	ptx	5	Conquer battle mode level 2 without being hit.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg014.ptx	ptx	6	Conquer battle mode level 5 without being hit.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg015.ptx	ptx	0	Finish trial mode within 5 minutes.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg015.ptx	ptx	1	Conquer battle mode level 3.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg015.ptx	ptx	2	Conquer battle mode level 4.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg015.ptx	ptx	3	Conquer battle mode level 5.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg015.ptx	ptx	4	Finish trial mode within 1 minute 30 seconds.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg015.ptx	ptx	5	Finish trial mode within 1 minute.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg015.ptx	ptx	6	Finish trial mode within 45 seconds.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg016.ptx	ptx	0	Conquer battle mode level 1.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg016.ptx	ptx	1	Conquer battle mode level 2.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg016.ptx	ptx	2	Conquer battle mode level 3.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg016.ptx	ptx	3	Conquer battle mode level 4.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg016.ptx	ptx	4	Conquer battle mode level 5.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg016.ptx	ptx	5	Conquer battle mode level 2 without being hit.{00}
+romdata/PUD/mgentryphase/text/en/secret/mg016.ptx	ptx	6	Conquer battle mode level 4 without being hit.{00}
+romdata/PUD/mgentryphase/text/en/trial/mg001.ptx	ptx	0	{1B}BRules{1B}{1B}\nLead the adamantoise to the top\nof the mountain!\nMaster the slopes and improve\nyour record!{00}
+romdata/PUD/mgentryphase/text/en/trial/mg001.ptx	ptx	1	{1B}BRules{1B}{1B}\nRotate the adamantoise on the\nlower screen to control its\ndirection. Lift the stylus to send\nthe adamantoise into its shell,\nmaking it impervious to damage.{00}
+romdata/PUD/mgentryphase/text/en/trial/mg002.ptx	ptx	0	{1B}BRules{1B}{1B}\nLead the adamantoise to\nrescue the cactuar!\nMaster the rapids and improve\nyour record!{00}
+romdata/PUD/mgentryphase/text/en/trial/mg002.ptx	ptx	1	{1B}BRules{1B}{1B}\nRotate the adamantoise on the\nlower screen to control its\ndirection. Lift the stylus to send\nthe adamantoise into its shell,\nincreasing its speed.{00}
+romdata/PUD/mgentryphase/text/en/trial/mg003.ptx	ptx	0	{1B}BRules{1B}{1B}\nSlide the chocobo to snatch as\nmany lasans as you can while\navoiding the fire and ice from\nabove!\nThree hits and its game over!{00}
+romdata/PUD/mgentryphase/text/en/trial/mg003.ptx	ptx	1	{1B}BRules{1B}{1B}\nIf the chocobo is frozen or\non fire, tap it quickly with the\nstylus to remove the ailment.{00}
+romdata/PUD/mgentryphase/text/en/trial/mg004.ptx	ptx	0	{1B}BRules{1B}{1B}\nSlide the chocobo to the\nupper screen to snatch as\nmany luchiles as you can\nwhile avoiding the fire!{00}
+romdata/PUD/mgentryphase/text/en/trial/mg004.ptx	ptx	1	{1B}BRules{1B}{1B}\nIf the chocobo is frozen or\non fire, tap it quickly with the\nstylus to remove the ailment.{00}
+romdata/PUD/mgentryphase/text/en/trial/mg005.ptx	ptx	0	{1B}BRules{1B}{1B}\nUse the stylus to draw leaves\nand launch the chocobo into\nthe air! Bump into a bomb\nmonster three times, and it's\ngame over!{00}
+romdata/PUD/mgentryphase/text/en/trial/mg005.ptx	ptx	1	{1B}BRules{1B}{1B}\nSmaller leaves have more\nelasticity than bigger ones.\nWatch out for the bomb\nmonsters!{00}
+romdata/PUD/mgentryphase/text/en/trial/mg006.ptx	ptx	0	{1B}BRules{1B}{1B}\nUse the stylus to draw leaves\nand redirect the chocobo!\nBag as many coins as you can!\nBump into Titan three times,\nand it's game over!{00}
+romdata/PUD/mgentryphase/text/en/trial/mg006.ptx	ptx	1	{1B}BRules{1B}{1B}\nLeaves must be drawn\ndiagonally, or else the chocobo\nwill move straight through them.\nWalk over ▲ to slow down or\n▼ to speed up.{00}
+romdata/PUD/mgentryphase/text/en/trial/mg007.ptx	ptx	0	{1B}BRules{1B}{1B}\nMove the magnifying glass by\nsliding the stylus!\nFind those fiery little\nchocolings!{00}
+romdata/PUD/mgentryphase/text/en/trial/mg007.ptx	ptx	1	{1B}BRules{1B}{1B}\nOnce you've found a chocoling,\ncenter the magnifying glass\nabove it. Keep searching until\nthe timer runs out.{00}
+romdata/PUD/mgentryphase/text/en/trial/mg009.ptx	ptx	0	{1B}BRules{1B}{1B}\nSwim through the sea tunnel\nwhile dodging any obstacles\nthat appear! Mess up once,\nand you'll end up as\nLeviathan's lunch!{00}
+romdata/PUD/mgentryphase/text/en/trial/mg009.ptx	ptx	1	{1B}BRules{1B}{1B}\nQuickly slide the stylus up and\ndown to give the chocobo an\nupwards boost. Lifting the stylus\nfrom the touch screen will\ncause the chocobo to sink.{00}
+romdata/PUD/mgentryphase/text/en/trial/mg011.ptx	ptx	0	{1B}BRules{1B}{1B}\nSwim through the sea tunnel\nwhile dodging any obstacles\nthat appear! Mess up once,\nand you'll end up as Leviathan's\nlunch!{00}
+romdata/PUD/mgentryphase/text/en/trial/mg011.ptx	ptx	1	{1B}BRules{1B}{1B}\nQuickly slide the stylus up and\ndown to give the chocobo an\nupwards boost. Lifting the stylus\nfrom the screen will cause the\nchocobo to sink.{00}
+romdata/PUD/mgentryphase/text/en/trial/mg013.ptx	ptx	0	{1B}BRules{1B}{1B}\nGather the scattered puzzle\npieces to build three different\nhouses! You'll receive a bonus\nfor completing a house.{00}
+romdata/PUD/mgentryphase/text/en/trial/mg013.ptx	ptx	1	{1B}BRules{1B}{1B}\nControl the chocobo by sliding\nthe stylus. Land on a puzzle\npiece to pick it up, then release\nit over the house.{00}
+romdata/PUD/mgentryphase/text/en/trial/mg015.ptx	ptx	0	{1B}BRules{1B}{1B}\nComplete the maze without\ntouching the electrified walls!\nMaster the maze!{00}
+romdata/PUD/mgentryphase/text/en/trial/mg015.ptx	ptx	1	{1B}BRules{1B}{1B}\nSlide the stylus to move\nthrough the maze,\nbut watch your step.{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg001.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg001.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nキャラクターの後にある{1B}R戦士の魂{1B}{1B}に\n３回体当たりすると破壊できるよ。\n全ての{1B}R戦士の魂{1B}{1B}を破壊すると\n勝ちになるよ。\n{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg002.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg002.ptx	ptx	1	{1B}B＜アドバイス＞{1B}{1B}\n画面右下のアイテムアイコンで\nアイテムウィンドウを開き、\nアイテムを選択してつかう事で\nゲームを有利に進める事ができるよ。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg003.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg003.ptx	ptx	1	{1B}B＜アドバイス＞{1B}{1B}\n画面右下のアイテムアイコンで\nアイテムウィンドウを開き、\nアイテムを選択してつかう事で\nゲームを有利に進める事ができるよ。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg004.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg004.ptx	ptx	1	{1B}B＜アドバイス＞{1B}{1B}\n画面右下のアイテムアイコンで\nアイテムウィンドウを開き、\nアイテムを選択してつかう事で\nゲームを有利に進める事ができるよ。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg005.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg005.ptx	ptx	1	{1B}B＜アドバイス＞{1B}{1B}\n画面右下のアイテムアイコンで\nアイテムウィンドウを開き、\nアイテムを選択してつかう事で\nゲームを有利に進める事ができるよ。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg006.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg006.ptx	ptx	1	{1B}B＜アドバイス＞{1B}{1B}\n画面右下のアイテムアイコンで\nアイテムウィンドウを開き、\nアイテムを選択してつかう事で\nゲームを有利に進める事ができるよ。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg007.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg007.ptx	ptx	1	{1B}B＜アドバイス＞{1B}{1B}\n画面右下のアイテムアイコンで\nアイテムウィンドウを開き、\nアイテムを選択してつかう事で\nゲームを有利に進める事ができるよ。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg008.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg008.ptx	ptx	1	{1B}B＜アドバイス＞{1B}{1B}\n画面右下のアイテムアイコンで\nアイテムウィンドウを開き、\nアイテムを選択してつかう事で\nゲームを有利に進める事ができるよ。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg009.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg009.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボを魔石に当てると１ポイントが手に入ります。\n同じ色の魔石がぶつかるようにすると\nポイントがたくさんもらえるよ。\nポイントが多い人が勝ちになります。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg010.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg010.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボを魔石に当てると１ポイントが手に入ります。\n同じ色の魔石がぶつかるようにすると\nポイントがたくさんもらえるよ。\nポイントが多い人が勝ちになります。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg011.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg011.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボを魔石に当てると１ポイントが手に入ります。\n同じ色の魔石がぶつかるようにすると\nポイントがたくさんもらえるよ。\nポイントが多い人が勝ちになります。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg012.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg012.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボを魔石に当てると１ポイントが手に入ります。\n同じ色の魔石がぶつかるようにすると\nポイントがたくさんもらえるよ。\nポイントが多い人が勝ちになります。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg013.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg013.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボを魔石に当てると１ポイントが手に入ります。\n同じ色の魔石がぶつかるようにすると\nポイントがたくさんもらえるよ。\nポイントが多い人が勝ちになります。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg014.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg014.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボを魔石に当てると１ポイントが手に入ります。\n同じ色の魔石がぶつかるようにすると\nポイントがたくさんもらえるよ。\nポイントが多い人が勝ちになります。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg015.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg015.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボを魔石に当てると１ポイントが手に入ります。\n同じ色の魔石がぶつかるようにすると\nポイントがたくさんもらえるよ。\nポイントが多い人が勝ちになります。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg016.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg016.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボを魔石に当てると１ポイントが手に入ります。\n同じ色の魔石がぶつかるようにすると\nポイントがたくさんもらえるよ。\nポイントが多い人が勝ちになります。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg017.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを高く\n飛ばしてくれるよ。\n誰よりも先に豆の木の\nテッペンを目指そう！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg017.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱの方が高く飛べる{1B}{1B}けど\nボムがいるので気をつけて\n飛んでね。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg018.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを高く\n飛ばしてくれるよ。\n誰よりも先に豆の木の\nテッペンを目指そう！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg018.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱの方が高く飛べる{1B}{1B}けど\nボムがいるので気をつけて\n飛んでね。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg019.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを高く\n飛ばしてくれるよ。\n誰よりも先に豆の木の\nテッペンを目指そう！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg019.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱの方が高く飛べる{1B}{1B}けど\nボムがいるので気をつけて\n飛んでね。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg020.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを高く\n飛ばしてくれるよ。\n誰よりも先に豆の木の\nテッペンを目指そう！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg020.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱの方が高く飛べる{1B}{1B}けど\nボムがいるので気をつけて\n飛んでね。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg021.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを高く\n飛ばしてくれるよ。\n誰よりも先に豆の木の\nテッペンを目指そう！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg021.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱの方が高く飛べる{1B}{1B}けど\nボムがいるので気をつけて\n飛んでね。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg022.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを高く\n飛ばしてくれるよ。\n誰よりも先に豆の木の\nテッペンを目指そう！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg022.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱの方が高く飛べる{1B}{1B}けど\nボムがいるので気をつけて\n飛んでね。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg023.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを高く\n飛ばしてくれるよ。\n誰よりも先に豆の木の\nテッペンを目指そう！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg023.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱの方が高く飛べる{1B}{1B}けど\nボムがいるので気をつけて\n飛んでね。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg024.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを高く\n飛ばしてくれるよ。\n誰よりも先に豆の木の\nテッペンを目指そう！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg024.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱの方が高く飛べる{1B}{1B}けど\nボムがいるので気をつけて\n飛んでね。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg025.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下画面の虫眼鏡をタッチペンで\nスライドさせて、{1B}R黒こげの\nチョコボの子{1B}{1B}を探そう。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg025.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上画面の、{1B}R真ん中に合わせて\nあげてね。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg026.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下画面の虫眼鏡をタッチペンで\nスライドさせて、{1B}R黒こげの\nチョコボの子{1B}{1B}を探そう。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg026.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上画面の、{1B}R真ん中に合わせて\nあげてね。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg027.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下画面の虫眼鏡をタッチペンで\nスライドさせて、{1B}R黒こげの\nチョコボの子{1B}{1B}を探そう。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg027.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上画面の、{1B}R真ん中に合わせて\nあげてね。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg028.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下画面の虫眼鏡をタッチペンで\nスライドさせて、{1B}R黒こげの\nチョコボの子{1B}{1B}を探そう。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg028.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上画面の、{1B}R真ん中に合わせて\nあげてね。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg029.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下画面の虫眼鏡をタッチペンで\nスライドさせて、{1B}R黒こげの\nチョコボの子{1B}{1B}を探そう。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg029.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上画面の、{1B}R真ん中に合わせて\nあげてね。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg030.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下画面の虫眼鏡をタッチペンで\nスライドさせて、{1B}R黒こげの\nチョコボの子{1B}{1B}を探そう。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg031.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下画面の虫眼鏡をタッチペンで\nスライドさせて、{1B}R黒こげの\nチョコボの子{1B}{1B}を探そう。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg031.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上画面の、{1B}R真ん中に合わせて\nあげてね。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg032.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下画面の虫眼鏡をタッチペンで\nスライドさせて、{1B}R黒こげの\nチョコボの子{1B}{1B}を探そう。{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg032.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上画面の、{1B}R真ん中に合わせて\nあげてね。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg033.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊が鳴らした\n楽器とリズムを覚えよう。\n覚えたら、次の小節でリズムに\nあわせて{1B}R楽器のマークに\n移動して音楽隊の真似しよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg033.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n楽器のマークをタッチすると\nチョコボが移動するよ。\n{1B}R音が鳴る前に楽器のマークへ\n移動{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg034.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊が鳴らした\n楽器とリズムを覚えよう。\n覚えたら、次の小節でリズムに\nあわせて{1B}R楽器のマークに\n移動して音楽隊の真似しよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg034.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n楽器のマークをタッチすると\nチョコボが移動するよ。\n{1B}R音が鳴る前に楽器のマークへ\n移動{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg035.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊が鳴らした\n楽器とリズムを覚えよう。\n覚えたら、次の小節でリズムに\nあわせて{1B}R楽器のマークに\n移動して音楽隊の真似しよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg035.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n楽器のマークをタッチすると\nチョコボが移動するよ。\n{1B}R音が鳴る前に楽器のマークへ\n移動{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg036.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊が鳴らした\n楽器とリズムを覚えよう。\n覚えたら、次の小節でリズムに\nあわせて{1B}R楽器のマークに\n移動して音楽隊の真似しよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg036.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n楽器のマークをタッチすると\nチョコボが移動するよ。\n{1B}R音が鳴る前に楽器のマークへ\n移動{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg037.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊が鳴らした\n楽器とリズムを覚えよう。\n覚えたら、次の小節でリズムに\nあわせて{1B}R楽器のマークに\n移動して音楽隊の真似しよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg037.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n楽器のマークをタッチすると\nチョコボが移動するよ。\n{1B}R音が鳴る前に楽器のマークへ\n移動{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg038.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊が鳴らした\n楽器とリズムを覚えよう。\n覚えたら、次の小節でリズムに\nあわせて{1B}R楽器のマークに\n移動して音楽隊の真似しよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg038.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n楽器のマークをタッチすると\nチョコボが移動するよ。\n{1B}R音が鳴る前に楽器のマークへ\n移動{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg039.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊が鳴らした\n楽器とリズムを覚えよう。\n覚えたら、次の小節でリズムに\nあわせて{1B}R楽器のマークに\n移動して音楽隊の真似しよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg039.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n楽器のマークをタッチすると\nチョコボが移動するよ。\n{1B}R音が鳴る前に楽器のマークへ\n移動{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg040.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊が鳴らした\n楽器とリズムを覚えよう。\n覚えたら、次の小節でリズムに\nあわせて{1B}R楽器のマークに\n移動して音楽隊の真似しよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/expl/mg040.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n楽器のマークをタッチすると\nチョコボが移動するよ。\n{1B}R音が鳴る前に楽器のマークへ\n移動{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl001.ptx	ptx	0	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl001.ptx	ptx	1	{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl001.ptx	ptx	2	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl001.ptx	ptx	3	{1B}C{1B}G「034　サボテンダー　光合成」・エピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl001.ptx	ptx	4	{1B}C{1B}G「029　アダマンタイマイ　のろい呪い」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl001.ptx	ptx	5	{1B}C{1B}G「031　サボテンダー　ｽﾋﾟﾆﾝｸﾞﾆｰﾄﾞﾙ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl001.ptx	ptx	6	{1B}C{1B}G「027　アダマンタイマイ　奇跡の甲羅」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl002.ptx	ptx	0	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl002.ptx	ptx	1	{1B}G牧場のおともだち「スイニー」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl002.ptx	ptx	2	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl002.ptx	ptx	3	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl002.ptx	ptx	4	{1B}C{1B}G「030　アダマンタイマイ　マイティーガード」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl002.ptx	ptx	5	{1B}C{1B}G「067　ビスマルク　雑魚ちらし」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl002.ptx	ptx	6	{1B}C{1B}G「072　ビスマルク　メイルシュトロム」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl003.ptx	ptx	0	{1B}C{1B}G「049　シヴァ　氷の息吹」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl003.ptx	ptx	1	{1B}G牧場のおともだち「モモ」{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl003.ptx	ptx	2	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl003.ptx	ptx	3	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl003.ptx	ptx	4	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl003.ptx	ptx	5	{1B}C{1B}G「003　イフリート　炎の結界」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl003.ptx	ptx	6	{1B}C{1B}G「004　イフリート　焦土」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl004.ptx	ptx	0	{1B}C{1B}G「006　イフリート　地獄の火炎」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl004.ptx	ptx	1	{1B}G牧場のおともだち「アイアイ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl004.ptx	ptx	2	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl004.ptx	ptx	3	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl004.ptx	ptx	4	{1B}C{1B}G「053　シヴァ　ダイヤモンドダスト」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl004.ptx	ptx	5	{1B}C{1B}G「054　シヴァ　天からの一撃」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl004.ptx	ptx	6	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl005.ptx	ptx	0	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl005.ptx	ptx	1	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl005.ptx	ptx	2	{1B}G牧場のおともだち「イエロウ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl005.ptx	ptx	3	{1B}C{1B}G「043　タイタン　大地の怒り」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl005.ptx	ptx	4	{1B}C{1B}G「007　ボム　炎のダンス」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl005.ptx	ptx	5	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl005.ptx	ptx	6	{1B}C{1B}G「008　ボム　守りのトライアングル」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl006.ptx	ptx	0	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl006.ptx	ptx	1	{1B}G「ひとりでトライアル」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl006.ptx	ptx	2	{1B}G牧場のおともだち「ジャロ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl006.ptx	ptx	3	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl006.ptx	ptx	4	{1B}C{1B}G「044　タイタン　岩石投げ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl006.ptx	ptx	5	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl006.ptx	ptx	6	{1B}C{1B}G「047　タイタン　地割れ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl007.ptx	ptx	0	{1B}G「バトル」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl007.ptx	ptx	1	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl007.ptx	ptx	2	{1B}G牧場のおともだち「ドーリー」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl007.ptx	ptx	3	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl007.ptx	ptx	4	{1B}C{1B}G「019　フェニックス　炎の一撃」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl007.ptx	ptx	5	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl007.ptx	ptx	6	{1B}C{1B}G「020　フェニックス　ファイアバリア」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl008.ptx	ptx	0	{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl008.ptx	ptx	1	{1B}G牧場のおともだち「ベルデ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl008.ptx	ptx	2	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl008.ptx	ptx	3	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl008.ptx	ptx	4	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl008.ptx	ptx	5	{1B}C{1B}G「021　フェニックス　不死の魂」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl008.ptx	ptx	6	{1B}C{1B}G「023　フェニックス　転生の炎」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl009.ptx	ptx	0	{1B}C{1B}G「085　ケット・シー　メガホン」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl009.ptx	ptx	1	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl009.ptx	ptx	2	{1B}G牧場のおともだち「モギー」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl009.ptx	ptx	3	{1B}C{1B}G「037　ユニコーン　突進」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl009.ptx	ptx	4	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl009.ptx	ptx	5	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl009.ptx	ptx	6	{1B}C{1B}G「039　ユニコーン　泉水」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl010.ptx	ptx	0	{1B}C{1B}G「038　ユニコーン　ヒールキック」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl010.ptx	ptx	1	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl010.ptx	ptx	2	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl010.ptx	ptx	3	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl010.ptx	ptx	4	{1B}G牧場のおともだち「ベッキー」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl010.ptx	ptx	5	{1B}C{1B}G「041　ユニコーン　疾風突き」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl010.ptx	ptx	6	{1B}C{1B}G「088　ケット・シー　キャットレイン」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl011.ptx	ptx	0	{1B}G「バトル」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl011.ptx	ptx	1	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl011.ptx	ptx	2	{1B}G牧場のおともだち「ブルース」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl011.ptx	ptx	3	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl011.ptx	ptx	4	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl011.ptx	ptx	5	{1B}C{1B}G「055　リヴァイアサン　テールウィップ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl011.ptx	ptx	6	{1B}C{1B}G「056　リヴァイアサン　サンダーストーム」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl012.ptx	ptx	0	{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl012.ptx	ptx	1	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl012.ptx	ptx	2	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl012.ptx	ptx	3	{1B}G牧場のおともだち「ザヴィ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl012.ptx	ptx	4	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl012.ptx	ptx	5	{1B}C{1B}G「057　リヴァイアサン　湧き水」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl012.ptx	ptx	6	{1B}C{1B}G「059　リヴァイアサン　タイダルウェイブ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl013.ptx	ptx	0	{1B}G「バトル」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl013.ptx	ptx	1	{1B}G牧場のおともだち「ジョー」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl013.ptx	ptx	2	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl013.ptx	ptx	3	{1B}C{1B}G「109　トンベリ　毒霧」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl013.ptx	ptx	4	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl013.ptx	ptx	5	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl013.ptx	ptx	6	{1B}C{1B}G「111　トンベリ　包丁」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl014.ptx	ptx	0	{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl014.ptx	ptx	1	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl014.ptx	ptx	2	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl014.ptx	ptx	3	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl014.ptx	ptx	4	{1B}G牧場のおともだち「ブラウ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl014.ptx	ptx	5	{1B}C{1B}G「110　トンベリ　影縫い」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl014.ptx	ptx	6	{1B}C{1B}G「112　トンベリ　みんなの恨み」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl015.ptx	ptx	0	{1B}G「バトル」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl015.ptx	ptx	1	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl015.ptx	ptx	2	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl015.ptx	ptx	3	{1B}G牧場のおともだち「グリン」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl015.ptx	ptx	4	{1B}C{1B}G「079　ラムウ　感電」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl015.ptx	ptx	5	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl015.ptx	ptx	6	{1B}C{1B}G「081　ラムウ　電磁場」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl016.ptx	ptx	0	{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl016.ptx	ptx	1	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl016.ptx	ptx	2	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl016.ptx	ptx	3	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl016.ptx	ptx	4	{1B}G牧場のおともだち「ワカバ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl016.ptx	ptx	5	{1B}C{1B}G「080　ラムウ　雷雲」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/cl016.ptx	ptx	6	{1B}C{1B}G「083　ラムウ　裁きの雷」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg001.ptx	ptx	0	トライアルで５分以内にゴールする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg001.ptx	ptx	1	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg001.ptx	ptx	2	バトルでレベル２に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg001.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg001.ptx	ptx	4	トライアルで３０秒以内にゴールする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg001.ptx	ptx	5	トライアルで２５秒以内にゴールする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg001.ptx	ptx	6	トライアルで落石のダメージを\n一度も受けずにゴールする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg002.ptx	ptx	0	トライアルで３分以内にゴールする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg002.ptx	ptx	1	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg002.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg002.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg002.ptx	ptx	4	トライアルで１分以内にゴールする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg002.ptx	ptx	5	トライアルで５０秒以内にゴールする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg002.ptx	ptx	6	トライアルで一度もカベにぶつからず\nゴールする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg003.ptx	ptx	0	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg003.ptx	ptx	1	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg003.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg003.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg003.ptx	ptx	4	トライアルで２５pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg003.ptx	ptx	5	トライアルで４０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg003.ptx	ptx	6	トライアルで６０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg004.ptx	ptx	0	トライアルで５pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg004.ptx	ptx	1	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg004.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg004.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg004.ptx	ptx	4	トライアルで１０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg004.ptx	ptx	5	トライアルで２０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg004.ptx	ptx	6	トライアルで３０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg005.ptx	ptx	0	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg005.ptx	ptx	1	バトルでレベル２に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg005.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg005.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg005.ptx	ptx	4	トライアルで５０mまでのぼる{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg005.ptx	ptx	5	トライアルで１００mまでのぼる{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg005.ptx	ptx	6	トライアルで２００mまでのぼる{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg006.ptx	ptx	0	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg006.ptx	ptx	1	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg006.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg006.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg006.ptx	ptx	4	トライアルで５pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg006.ptx	ptx	5	トライアルで１０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg006.ptx	ptx	6	トライアルで２０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg007.ptx	ptx	0	トライアルで３pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg007.ptx	ptx	1	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg007.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg007.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg007.ptx	ptx	4	トライアルで８pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg007.ptx	ptx	5	トライアルで１０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg007.ptx	ptx	6	トライアルで１２pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg008.ptx	ptx	0	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg008.ptx	ptx	1	バトルでレベル２に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg008.ptx	ptx	2	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg008.ptx	ptx	3	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg008.ptx	ptx	4	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg008.ptx	ptx	5	バトルで１０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg008.ptx	ptx	6	バトルで２０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg009.ptx	ptx	0	トライアルで５pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg009.ptx	ptx	1	バトルでレベル２に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg009.ptx	ptx	2	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg009.ptx	ptx	3	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg009.ptx	ptx	4	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg009.ptx	ptx	5	トライアルで１５pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg009.ptx	ptx	6	トライアルで２０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg010.ptx	ptx	0	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg010.ptx	ptx	1	バトルでレベル２に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg010.ptx	ptx	2	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg010.ptx	ptx	3	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg010.ptx	ptx	4	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg010.ptx	ptx	5	バトルで１０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg010.ptx	ptx	6	バトルで１５pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg011.ptx	ptx	0	トライアルで１０ｍ以上およぐ{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg011.ptx	ptx	1	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg011.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg011.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg011.ptx	ptx	4	トライアルで２０ｍ以上およぐ{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg011.ptx	ptx	5	トライアルで５０ｍ以上およぐ{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg011.ptx	ptx	6	トライアルで１００ｍ以上およぐ{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg012.ptx	ptx	0	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg012.ptx	ptx	1	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg012.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg012.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg012.ptx	ptx	4	バトルでレベル２に１５pt以上かくとくして\n勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg012.ptx	ptx	5	バトルでレベル４に１０pt以上かくとくして\n勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg012.ptx	ptx	6	バトルでレベル５に２０pt以上かくとくして\n勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg013.ptx	ptx	0	トライアルで５pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg013.ptx	ptx	1	バトルでレベル２に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg013.ptx	ptx	2	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg013.ptx	ptx	3	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg013.ptx	ptx	4	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg013.ptx	ptx	5	トライアルで２０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg013.ptx	ptx	6	トライアルで３０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg014.ptx	ptx	0	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg014.ptx	ptx	1	バトルでレベル２に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg014.ptx	ptx	2	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg014.ptx	ptx	3	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg014.ptx	ptx	4	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg014.ptx	ptx	5	バトルでレベル２にノーミスで勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg014.ptx	ptx	6	バトルでレベル５にノーミスで勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg015.ptx	ptx	0	トライアルで５分以内にゴールする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg015.ptx	ptx	1	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg015.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg015.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg015.ptx	ptx	4	トライアルで１分３０秒以内にゴールする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg015.ptx	ptx	5	トライアルで１分以内にゴールする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg015.ptx	ptx	6	トライアルで４５秒以内にゴールする{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg016.ptx	ptx	0	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg016.ptx	ptx	1	バトルでレベル２に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg016.ptx	ptx	2	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg016.ptx	ptx	3	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg016.ptx	ptx	4	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg016.ptx	ptx	5	バトルでレベル２にノーミスで勝利する{00}
+romdata/PUD/mgentryphase/text/ja/secret/mg016.ptx	ptx	6	バトルでレベル４にノーミスで勝利する{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg001.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nアダマンタイマイを動かして\nゴールにたどり着くまでの\n{1B}Rタイムアタック{1B}{1B}にチャレンジ\nしよう！{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg001.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n下画面の{1B}Rアダマンハンドル{1B}{1B}を\nタッチペンで回すと、その向きへ\n進むよ。\n離すと{1B}R「甲羅」{1B}{1B}になって\n岩から{1B}Rダメージを受けないよ。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg002.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nアダマンタイマイを動かして\n溺れているサボテンダーを\n助けるまでの{1B}Rタイムアタック{1B}{1B}に\nチャレンジしよう！{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg002.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n下画面の{1B}Rアダマンハンドル{1B}{1B}を\nタッチペンで回すと、その向きへ\n進むよ。\n離すと{1B}R「甲羅」{1B}{1B}になって\n{1B}Rスピードが上がるよ。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg003.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボをタッチペンで\nスライドさせて、上から\n落ちてくる炎と氷を{1B}R避けながら\n３回ミスをするまで、ラサンの実を\nキャッチし続けよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg003.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボが、凍ったり燃えて\nしまったら、{1B}Rタッチペンで\nつついてあげる{1B}{1B}と早く元に\n戻れるよ。{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg004.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボをタッチペンで{1B}R上に向かって\n「弾く」{1B}{1B}と上画面へ飛ぶよ。\n炎と氷に３回触れてしまうまで\n{1B}Rルチルの実を取り続けよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg004.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボが燃えたり、凍って\nしまったら{1B}Rタッチペンでつついて\nあげる{1B}{1B}と早く元に戻れるよ。{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg005.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを\n高く飛ばしてくれるよ。\n{1B}R３回ミス{1B}{1B}をするまで、{1B}R登り\n続けよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg005.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱの方が高く飛べる{1B}{1B}けど\nボムに触るとミスになるので\n気をつけて飛んでね。{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg006.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線がかれ葉に\nなって{1B}{1B}チョコボが落ちる向きを\n変えてくれるよ。\nタイタンに３回当たるまで、\n{1B}Rお宝を取り続けよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg006.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nかれ葉は、{1B}R斜め{1B}{1B}に書かないと、\nチョコボが乗ったとき、{1B}R崩れて\n消えてしまうよ。{1B}{1B}\n▲を取るとスピードダウンして\n▼を取るとスピードアップするよ。{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg007.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下画面の虫眼鏡をタッチペンで\nスライドさせて{1B}R黒こげの\nチョコボの子{1B}{1B}を探そう。{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg007.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上画面の、{1B}R真ん中に合わせて\nあげてね。{1B}{1B}\nタイムが０になるまで{1B}R見つけ\n続けよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg009.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊が鳴らした\n楽器とリズムを覚えよう。\n覚えたら、次の小節でリズムに\nあわせて{1B}R楽器のマークに\n移動して音楽隊の真似しよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg009.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n楽器のマークをタッチすると\nチョコボが移動するよ。\n{1B}R音が鳴る前に楽器のマークへ\n移動{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg011.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n海中洞窟の{1B}R障害物を\nかわしながら{1B}{1B}ミスするまで、\n泳ぎ続けよう。{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg011.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n下画面を{1B}Rタッチペンで擦ると{1B}{1B}\nチョコボが{1B}R浮かぶよ！{1B}{1B}\n{1B}R何もしないとドンドン沈む{1B}{1B}から\n上下のバランスに気をつけよう！{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg013.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n散らばっているパズルピースを\n拾って{1B}R３種類の家を\n組み立てよう。{1B}{1B}\n家の最後のピースをはめると、\nボーナスがもらえるよ。{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg013.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nタッチペンでチョコボを\nスライドさせよう。\n{1B}Rパズルピースの上に乗せると\nチョコボがピースを持つよ。{1B}{1B}\n持ったピースは家の上で離そう！{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg015.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n周りの{1B}R雷に触れないように{1B}{1B}\n動かし、ゴールにたどり着く\nまでのタイムアタックに\nチャレンジしよう！{00}
+romdata/PUD/mgentryphase/text/ja/trial/mg015.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nタッチペンでチョコボを\n{1B}Rゆっくりゆっくり、慎重に{1B}{1B}\nスライドさせよう！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg001.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg001.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nキャラクターの後にある{1B}R戦士の魂{1B}{1B}に\n３回体当たりすると破壊できるよ。\n全ての{1B}R戦士の魂{1B}{1B}を破壊すると\n勝ちになるよ。\n{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg002.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg002.ptx	ptx	1	{1B}B＜アドバイス＞{1B}{1B}\n画面右下のアイテムアイコンで\nアイテムウィンドウを開き、\nアイテムを選択してつかう事で\nゲームを有利に進める事ができるよ。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg003.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg003.ptx	ptx	1	{1B}B＜アドバイス＞{1B}{1B}\n画面右下のアイテムアイコンで\nアイテムウィンドウを開き、\nアイテムを選択してつかう事で\nゲームを有利に進める事ができるよ。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg004.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg004.ptx	ptx	1	{1B}B＜アドバイス＞{1B}{1B}\n画面右下のアイテムアイコンで\nアイテムウィンドウを開き、\nアイテムを選択してつかう事で\nゲームを有利に進める事ができるよ。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg005.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg005.ptx	ptx	1	{1B}B＜アドバイス＞{1B}{1B}\n画面右下のアイテムアイコンで\nアイテムウィンドウを開き、\nアイテムを選択してつかう事で\nゲームを有利に進める事ができるよ。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg006.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg006.ptx	ptx	1	{1B}B＜アドバイス＞{1B}{1B}\n画面右下のアイテムアイコンで\nアイテムウィンドウを開き、\nアイテムを選択してつかう事で\nゲームを有利に進める事ができるよ。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg007.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg007.ptx	ptx	1	{1B}B＜アドバイス＞{1B}{1B}\n画面右下のアイテムアイコンで\nアイテムウィンドウを開き、\nアイテムを選択してつかう事で\nゲームを有利に進める事ができるよ。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg008.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg008.ptx	ptx	1	{1B}B＜アドバイス＞{1B}{1B}\n画面右下のアイテムアイコンで\nアイテムウィンドウを開き、\nアイテムを選択してつかう事で\nゲームを有利に進める事ができるよ。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg009.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg009.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボを魔石に当てると１ポイントが手に入ります。\n同じ色の魔石がぶつかるようにすると\nポイントがたくさんもらえるよ。\nポイントが多い人が勝ちになります。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg010.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg010.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボを魔石に当てると１ポイントが手に入ります。\n同じ色の魔石がぶつかるようにすると\nポイントがたくさんもらえるよ。\nポイントが多い人が勝ちになります。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg011.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg011.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボを魔石に当てると１ポイントが手に入ります。\n同じ色の魔石がぶつかるようにすると\nポイントがたくさんもらえるよ。\nポイントが多い人が勝ちになります。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg012.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg012.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボを魔石に当てると１ポイントが手に入ります。\n同じ色の魔石がぶつかるようにすると\nポイントがたくさんもらえるよ。\nポイントが多い人が勝ちになります。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg013.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg013.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボを魔石に当てると１ポイントが手に入ります。\n同じ色の魔石がぶつかるようにすると\nポイントがたくさんもらえるよ。\nポイントが多い人が勝ちになります。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg014.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg014.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボを魔石に当てると１ポイントが手に入ります。\n同じ色の魔石がぶつかるようにすると\nポイントがたくさんもらえるよ。\nポイントが多い人が勝ちになります。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg015.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg015.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボを魔石に当てると１ポイントが手に入ります。\n同じ色の魔石がぶつかるようにすると\nポイントがたくさんもらえるよ。\nポイントが多い人が勝ちになります。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg016.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボにタッチをして、\n{1B}Rパワーポイント{1B}{1B}を引っ張り\nチョコボを走らせよう！\n引っ張る長さによって、チョコボの\n進む距離が変わるぞ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg016.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボを魔石に当てると１ポイントが手に入ります。\n同じ色の魔石がぶつかるようにすると\nポイントがたくさんもらえるよ。\nポイントが多い人が勝ちになります。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg017.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを高く\nとばしてくれるよ。\nだれよりも先に豆の木の\nテッペンをめざそう！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg017.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱのほうが高くとべる{1B}{1B}けど\nボムがいるので気をつけて\nとんでね。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg018.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを高く\nとばしてくれるよ。\nだれよりも先に豆の木の\nテッペンをめざそう！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg018.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱのほうが高くとべる{1B}{1B}けど\nボムがいるので気をつけて\nとんでね。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg019.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを高く\nとばしてくれるよ。\nだれよりも先に豆の木の\nテッペンをめざそう！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg019.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱのほうが高くとべる{1B}{1B}けど\nボムがいるので気をつけて\nとんでね。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg020.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを高く\nとばしてくれるよ。\nだれよりも先に豆の木の\nテッペンをめざそう！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg020.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱのほうが高くとべる{1B}{1B}けど\nボムがいるので気をつけて\nとんでね。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg021.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを高く\nとばしてくれるよ。\nだれよりも先に豆の木の\nテッペンをめざそう！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg021.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱのほうが高くとべる{1B}{1B}けど\nボムがいるので気をつけて\nとんでね。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg022.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを高く\nとばしてくれるよ。\nだれよりも先に豆の木の\nテッペンをめざそう！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg022.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱのほうが高くとべる{1B}{1B}けど\nボムがいるので気をつけて\nとんでね。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg023.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを高く\nとばしてくれるよ。\nだれよりも先に豆の木の\nテッペンをめざそう！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg023.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱのほうが高くとべる{1B}{1B}けど\nボムがいるので気をつけて\nとんでね。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg024.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを高く\nとばしてくれるよ。\nだれよりも先に豆の木の\nテッペンをめざそう！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg024.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱのほうが高くとべる{1B}{1B}けど\nボムがいるので気をつけて\nとんでね。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg025.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下がめんの虫めがねを\nスライドさせて、{1B}R黒こげの\nチョコボの子{1B}{1B}をさがそう。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg025.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上がめんの、{1B}Rまん中に合わせて\nあげてね。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg026.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下がめんの虫めがねを\nスライドさせて、{1B}R黒こげの\nチョコボの子{1B}{1B}をさがそう。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg026.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上がめんの、{1B}Rまん中に合わせて\nあげてね。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg027.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下がめんの虫めがねを\nスライドさせて、{1B}R黒こげの\nチョコボの子{1B}{1B}をさがそう。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg027.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上がめんの、{1B}Rまん中に合わせて\nあげてね。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg028.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下がめんの虫めがねを\nスライドさせて、{1B}R黒こげの\nチョコボの子{1B}{1B}をさがそう。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg028.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上がめんの、{1B}Rまん中に合わせて\nあげてね。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg029.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下がめんの虫めがねを\nスライドさせて、{1B}R黒こげの\nチョコボの子{1B}{1B}をさがそう。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg029.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上がめんの、{1B}Rまん中に合わせて\nあげてね。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg030.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下がめんの虫めがねを\nスライドさせて、{1B}R黒こげの\nチョコボの子{1B}{1B}をさがそう。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg030.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上がめんの、{1B}Rまん中に合わせて\nあげてね。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg031.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下がめんの虫めがねを\nスライドさせて、{1B}R黒こげの\nチョコボの子{1B}{1B}をさがそう。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg031.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上がめんの、{1B}Rまん中に合わせて\nあげてね。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg032.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下がめんの虫めがねを\nスライドさせて、{1B}R黒こげの\nチョコボの子{1B}{1B}をさがそう。{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg032.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上がめんの、{1B}Rまん中に合わせて\nあげてね。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg033.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊がならした\nがっきとリズムをおぼえよう。\nおぼえたら、次のしょうせつで\nリズムにあわせて{1B}Rがっきのマークに\nいどうして音楽隊のマネしよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg033.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nがっきのマークをタッチすると\nチョコボがいどうするよ。\n{1B}R音がなる前にがっきのマークへ\nいどう{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg034.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊がならした\nがっきとリズムをおぼえよう。\nおぼえたら、次のしょうせつで\nリズムにあわせて{1B}Rがっきのマークに\nいどうして音楽隊のマネしよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg034.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nがっきのマークをタッチすると\nチョコボがいどうするよ。\n{1B}R音がなる前にがっきのマークへ\nいどう{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg035.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊がならした\nがっきとリズムをおぼえよう。\nおぼえたら、次のしょうせつで\nリズムにあわせて{1B}Rがっきのマークに\nいどうして音楽隊のマネしよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg035.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nがっきのマークをタッチすると\nチョコボがいどうするよ。\n{1B}R音がなる前にがっきのマークへ\nいどう{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg036.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊がならした\nがっきとリズムをおぼえよう。\nおぼえたら、次のしょうせつで\nリズムにあわせて{1B}Rがっきのマークに\nいどうして音楽隊のマネしよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg036.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nがっきのマークをタッチすると\nチョコボがいどうするよ。\n{1B}R音がなる前にがっきのマークへ\nいどう{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg037.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊がならした\nがっきとリズムをおぼえよう。\nおぼえたら、次のしょうせつで\nリズムにあわせて{1B}Rがっきのマークに\nいどうして音楽隊のマネしよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg037.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nがっきのマークをタッチすると\nチョコボがいどうするよ。\n{1B}R音がなる前にがっきのマークへ\nいどう{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg038.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊がならした\nがっきとリズムをおぼえよう。\nおぼえたら、次のしょうせつで\nリズムにあわせて{1B}Rがっきのマークに\nいどうして音楽隊のマネしよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg038.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nがっきのマークをタッチすると\nチョコボがいどうするよ。\n{1B}R音がなる前にがっきのマークへ\nいどう{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg039.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊がならした\nがっきとリズムをおぼえよう。\nおぼえたら、次のしょうせつで\nリズムにあわせて{1B}Rがっきのマークに\nいどうして音楽隊のマネしよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg039.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nがっきのマークをタッチすると\nチョコボがいどうするよ。\n{1B}R音がなる前にがっきのマークへ\nいどう{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg040.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊がならした\nがっきとリズムをおぼえよう。\nおぼえたら、次のしょうせつで\nリズムにあわせて{1B}Rがっきのマークに\nいどうして音楽隊のマネしよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/expl/mg040.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nがっきのマークをタッチすると\nチョコボがいどうするよ。\n{1B}R音がなる前にがっきのマークへ\nいどう{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl001.ptx	ptx	0	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl001.ptx	ptx	1	{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl001.ptx	ptx	2	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl001.ptx	ptx	3	{1B}C{1B}G「034　サボテンダー　光合成」・エピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl001.ptx	ptx	4	{1B}C{1B}G「029　アダマンタイマイ　のろい呪い」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl001.ptx	ptx	5	{1B}C{1B}G「031　サボテンダー　ｽﾋﾟﾆﾝｸﾞﾆｰﾄﾞﾙ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl001.ptx	ptx	6	{1B}C{1B}G「027　アダマンタイマイ　奇跡の甲羅」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl002.ptx	ptx	0	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl002.ptx	ptx	1	{1B}G牧場のおともだち「スイニー」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl002.ptx	ptx	2	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl002.ptx	ptx	3	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl002.ptx	ptx	4	{1B}C{1B}G「030　アダマンタイマイ　マイティーガード」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl002.ptx	ptx	5	{1B}C{1B}G「067　ビスマルク　雑魚ちらし」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl002.ptx	ptx	6	{1B}C{1B}G「072　ビスマルク　メイルシュトロム」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl003.ptx	ptx	0	{1B}C{1B}G「049　シヴァ　氷の息吹」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl003.ptx	ptx	1	{1B}G牧場のおともだち「モモ」{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl003.ptx	ptx	2	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl003.ptx	ptx	3	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl003.ptx	ptx	4	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl003.ptx	ptx	5	{1B}C{1B}G「003　イフリート　炎の結界」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl003.ptx	ptx	6	{1B}C{1B}G「004　イフリート　焦土」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl004.ptx	ptx	0	{1B}C{1B}G「006　イフリート　地獄の火炎」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl004.ptx	ptx	1	{1B}G牧場のおともだち「アイアイ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl004.ptx	ptx	2	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl004.ptx	ptx	3	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl004.ptx	ptx	4	{1B}C{1B}G「053　シヴァ　ダイヤモンドダスト」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl004.ptx	ptx	5	{1B}C{1B}G「054　シヴァ　天からの一撃」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl004.ptx	ptx	6	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl005.ptx	ptx	0	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl005.ptx	ptx	1	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl005.ptx	ptx	2	{1B}G牧場のおともだち「イエロウ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl005.ptx	ptx	3	{1B}C{1B}G「043　タイタン　大地の怒り」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl005.ptx	ptx	4	{1B}C{1B}G「007　ボム　炎のダンス」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl005.ptx	ptx	5	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl005.ptx	ptx	6	{1B}C{1B}G「008　ボム　守りのトライアングル」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl006.ptx	ptx	0	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl006.ptx	ptx	1	{1B}G「ひとりでトライアル」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl006.ptx	ptx	2	{1B}G牧場のおともだち「ジャロ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl006.ptx	ptx	3	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl006.ptx	ptx	4	{1B}C{1B}G「044　タイタン　岩石投げ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl006.ptx	ptx	5	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl006.ptx	ptx	6	{1B}C{1B}G「047　タイタン　地割れ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl007.ptx	ptx	0	{1B}G「バトル」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl007.ptx	ptx	1	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl007.ptx	ptx	2	{1B}G牧場のおともだち「ドーリー」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl007.ptx	ptx	3	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl007.ptx	ptx	4	{1B}C{1B}G「019　フェニックス　炎の一撃」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl007.ptx	ptx	5	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl007.ptx	ptx	6	{1B}C{1B}G「020　フェニックス　ファイアバリア」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl008.ptx	ptx	0	{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl008.ptx	ptx	1	{1B}G牧場のおともだち「ベルデ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl008.ptx	ptx	2	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl008.ptx	ptx	3	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl008.ptx	ptx	4	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl008.ptx	ptx	5	{1B}C{1B}G「021　フェニックス　不死の魂」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl008.ptx	ptx	6	{1B}C{1B}G「023　フェニックス　転生の炎」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl009.ptx	ptx	0	{1B}C{1B}G「085　ケット・シー　メガホン」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl009.ptx	ptx	1	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl009.ptx	ptx	2	{1B}G牧場のおともだち「モギー」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl009.ptx	ptx	3	{1B}C{1B}G「037　ユニコーン　突進」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl009.ptx	ptx	4	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl009.ptx	ptx	5	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl009.ptx	ptx	6	{1B}C{1B}G「039　ユニコーン　泉水」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl010.ptx	ptx	0	{1B}C{1B}G「038　ユニコーン　ヒールキック」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl010.ptx	ptx	1	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl010.ptx	ptx	2	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl010.ptx	ptx	3	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl010.ptx	ptx	4	{1B}G牧場のおともだち「ベッキー」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl010.ptx	ptx	5	{1B}C{1B}G「041　ユニコーン　疾風突き」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl010.ptx	ptx	6	{1B}C{1B}G「088　ケット・シー　キャットレイン」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl011.ptx	ptx	0	{1B}G「バトル」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl011.ptx	ptx	1	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl011.ptx	ptx	2	{1B}G牧場のおともだち「ブルース」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl011.ptx	ptx	3	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl011.ptx	ptx	4	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl011.ptx	ptx	5	{1B}C{1B}G「055　リヴァイアサン　テールウィップ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl011.ptx	ptx	6	{1B}C{1B}G「056　リヴァイアサン　サンダーストーム」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl012.ptx	ptx	0	{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl012.ptx	ptx	1	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl012.ptx	ptx	2	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl012.ptx	ptx	3	{1B}G牧場のおともだち「ザヴィ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl012.ptx	ptx	4	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl012.ptx	ptx	5	{1B}C{1B}G「057　リヴァイアサン　湧き水」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl012.ptx	ptx	6	{1B}C{1B}G「059　リヴァイアサン　タイダルウェイブ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl013.ptx	ptx	0	{1B}G「バトル」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl013.ptx	ptx	1	{1B}G牧場のおともだち「ジョー」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl013.ptx	ptx	2	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl013.ptx	ptx	3	{1B}C{1B}G「109　トンベリ　毒霧」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl013.ptx	ptx	4	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl013.ptx	ptx	5	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl013.ptx	ptx	6	{1B}C{1B}G「111　トンベリ　包丁」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl014.ptx	ptx	0	{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl014.ptx	ptx	1	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl014.ptx	ptx	2	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl014.ptx	ptx	3	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl014.ptx	ptx	4	{1B}G牧場のおともだち「ブラウ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl014.ptx	ptx	5	{1B}C{1B}G「110　トンベリ　影縫い」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl014.ptx	ptx	6	{1B}C{1B}G「112　トンベリ　みんなの恨み」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl015.ptx	ptx	0	{1B}G「バトル」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl015.ptx	ptx	1	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl015.ptx	ptx	2	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl015.ptx	ptx	3	{1B}G牧場のおともだち「グリン」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl015.ptx	ptx	4	{1B}C{1B}G「079　ラムウ　感電」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl015.ptx	ptx	5	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl015.ptx	ptx	6	{1B}C{1B}G「081　ラムウ　電磁場」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl016.ptx	ptx	0	{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl016.ptx	ptx	1	{1B}Gエピローグ３出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl016.ptx	ptx	2	{1B}Gエピローグ１出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl016.ptx	ptx	3	{1B}Gエピローグ２出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl016.ptx	ptx	4	{1B}G牧場のおともだち「ワカバ」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl016.ptx	ptx	5	{1B}C{1B}G「080　ラムウ　雷雲」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/cl016.ptx	ptx	6	{1B}C{1B}G「083　ラムウ　裁きの雷」出現{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg001.ptx	ptx	0	トライアルで５分以内にゴールする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg001.ptx	ptx	1	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg001.ptx	ptx	2	バトルでレベル２に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg001.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg001.ptx	ptx	4	トライアルで３０秒以内にゴールする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg001.ptx	ptx	5	トライアルで２５秒以内にゴールする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg001.ptx	ptx	6	トライアルで落石のダメージを\n一度も受けずにゴールする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg002.ptx	ptx	0	トライアルで３分以内にゴールする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg002.ptx	ptx	1	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg002.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg002.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg002.ptx	ptx	4	トライアルで１分以内にゴールする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg002.ptx	ptx	5	トライアルで５０秒以内にゴールする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg002.ptx	ptx	6	トライアルで一度もカベにぶつからず\nゴールする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg003.ptx	ptx	0	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg003.ptx	ptx	1	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg003.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg003.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg003.ptx	ptx	4	トライアルで２５pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg003.ptx	ptx	5	トライアルで４０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg003.ptx	ptx	6	トライアルで６０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg004.ptx	ptx	0	トライアルで５pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg004.ptx	ptx	1	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg004.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg004.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg004.ptx	ptx	4	トライアルで１０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg004.ptx	ptx	5	トライアルで２０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg004.ptx	ptx	6	トライアルで３０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg005.ptx	ptx	0	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg005.ptx	ptx	1	バトルでレベル２に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg005.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg005.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg005.ptx	ptx	4	トライアルで５０mまでのぼる{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg005.ptx	ptx	5	トライアルで１００mまでのぼる{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg005.ptx	ptx	6	トライアルで２００mまでのぼる{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg006.ptx	ptx	0	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg006.ptx	ptx	1	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg006.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg006.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg006.ptx	ptx	4	トライアルで５pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg006.ptx	ptx	5	トライアルで１０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg006.ptx	ptx	6	トライアルで２０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg007.ptx	ptx	0	トライアルで３pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg007.ptx	ptx	1	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg007.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg007.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg007.ptx	ptx	4	トライアルで８pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg007.ptx	ptx	5	トライアルで１０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg007.ptx	ptx	6	トライアルで１２pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg008.ptx	ptx	0	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg008.ptx	ptx	1	バトルでレベル２に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg008.ptx	ptx	2	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg008.ptx	ptx	3	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg008.ptx	ptx	4	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg008.ptx	ptx	5	バトルで１０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg008.ptx	ptx	6	バトルで２０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg009.ptx	ptx	0	トライアルで５pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg009.ptx	ptx	1	バトルでレベル２に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg009.ptx	ptx	2	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg009.ptx	ptx	3	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg009.ptx	ptx	4	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg009.ptx	ptx	5	トライアルで１５pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg009.ptx	ptx	6	トライアルで２０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg010.ptx	ptx	0	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg010.ptx	ptx	1	バトルでレベル２に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg010.ptx	ptx	2	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg010.ptx	ptx	3	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg010.ptx	ptx	4	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg010.ptx	ptx	5	バトルで１０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg010.ptx	ptx	6	バトルで１５pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg011.ptx	ptx	0	トライアルで１０ｍ以上およぐ{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg011.ptx	ptx	1	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg011.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg011.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg011.ptx	ptx	4	トライアルで２０ｍ以上およぐ{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg011.ptx	ptx	5	トライアルで５０ｍ以上およぐ{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg011.ptx	ptx	6	トライアルで１００ｍ以上およぐ{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg012.ptx	ptx	0	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg012.ptx	ptx	1	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg012.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg012.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg012.ptx	ptx	4	バトルでレベル２に１５pt以上かくとくして\n勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg012.ptx	ptx	5	バトルでレベル４に１０pt以上かくとくして\n勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg012.ptx	ptx	6	バトルでレベル５に２０pt以上かくとくして\n勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg013.ptx	ptx	0	トライアルで５pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg013.ptx	ptx	1	バトルでレベル２に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg013.ptx	ptx	2	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg013.ptx	ptx	3	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg013.ptx	ptx	4	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg013.ptx	ptx	5	トライアルで２０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg013.ptx	ptx	6	トライアルで３０pt以上かくとくする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg014.ptx	ptx	0	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg014.ptx	ptx	1	バトルでレベル２に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg014.ptx	ptx	2	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg014.ptx	ptx	3	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg014.ptx	ptx	4	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg014.ptx	ptx	5	バトルでレベル２にノーミスで勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg014.ptx	ptx	6	バトルでレベル５にノーミスで勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg015.ptx	ptx	0	トライアルで５分以内にゴールする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg015.ptx	ptx	1	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg015.ptx	ptx	2	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg015.ptx	ptx	3	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg015.ptx	ptx	4	トライアルで１分３０秒以内にゴールする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg015.ptx	ptx	5	トライアルで１分以内にゴールする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg015.ptx	ptx	6	トライアルで４５秒以内にゴールする{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg016.ptx	ptx	0	バトルでレベル１に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg016.ptx	ptx	1	バトルでレベル２に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg016.ptx	ptx	2	バトルでレベル３に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg016.ptx	ptx	3	バトルでレベル４に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg016.ptx	ptx	4	バトルでレベル５に勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg016.ptx	ptx	5	バトルでレベル２にノーミスで勝利する{00}
+romdata/PUD/mgentryphase/text/jc/secret/mg016.ptx	ptx	6	バトルでレベル４にノーミスで勝利する{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg001.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nアダマンタイマイを動かして\nゴールにたどりつくまでの\n{1B}Rタイムアタック{1B}{1B}にチャレンジ\nしよう！{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg001.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n下がめんの{1B}Rアダマンハンドル{1B}{1B}を\nタッチペンで回すと、そのむきへ\nすすむよ。\nはなすと{1B}R「こうら」{1B}{1B}になって\n岩から{1B}Rダメージをうけないよ。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg002.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nアダマンタイマイを動かして\nおぼれているサボテンダーを\n助けるまでの{1B}Rタイムアタック{1B}{1B}に\nチャレンジしよう！{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg002.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n下がめんの{1B}Rアダマンハンドル{1B}{1B}を\nタッチペンで回すと、そのむきへ\nすすむよ。\nはなすと{1B}R「こうら」{1B}{1B}になって\n{1B}Rスピードが上がるよ。{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg003.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボをタッチペンで\nスライドさせて、上から\nおちてくる炎と氷を{1B}Rよけながら\n３回ミスをするまで、ラサンの実を\nキャッチしつづけよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg003.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボが、こおったりもえて\nしまったら、{1B}Rタッチペンで\nつついてあげる{1B}{1B}と早く元に\nもどれるよ。{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg004.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nチョコボをタッチペンで{1B}R上に向かって\n「はじく」{1B}{1B}と上がめんへとぶよ。\n炎と氷に３回ふれてしまうまで\n{1B}Rルチルの実をとりつづけよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg004.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボがもえたり、こおって\nしまったら{1B}Rタッチペンでつついて\nあげる{1B}{1B}と早く元にもどれるよ。{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg005.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線が\n葉っぱになって{1B}{1B}チョコボを\n高くとばしてくれるよ。\n{1B}R３回ミス{1B}{1B}をするまで、{1B}Rのぼり\nつづけよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg005.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n大きな葉っぱよりも{1B}R小さな\n葉っぱのほうが高くとべる{1B}{1B}けど\nボムにさわるとミスになるので\n気をつけてとんでね。{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg006.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nタッチペンで{1B}R書いた線がかれ葉に\nなって{1B}{1B}チョコボがおちる向きを\nかえてくれるよ。\nタイタンに３回当たるまで、\n{1B}Rお宝をとりつづけよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg006.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nかれ葉は、{1B}Rななめ{1B}{1B}に書かないと、\nチョコボがのったとき、{1B}Rくずれて\nきえてしまうよ。{1B}{1B}\n▲をとるとスピードダウンして\n▼をとるとスピードアップするよ。{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg007.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n下がめんの虫めがねを\nタッチペンでスライドさせて、\n{1B}R黒こげのチョコボの子{1B}{1B}を\nさがそう。{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg007.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nチョコボの子を見つけたら\n上がめんの、{1B}Rまん中に合わせて\nあげてね。{1B}{1B}\nタイムが０になるまで{1B}R見つけ\nつづけよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg009.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nユニコーンの音楽隊がならした\nがっきとリズムをおぼえよう。\nおぼえたら、次のしょうせつで\nリズムにあわせて{1B}Rがっきのマークに\nいどうして音楽隊のマネしよう！{1B}{1B}{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg009.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nがっきのマークをタッチすると\nチョコボがいどうするよ。\n{1B}R音がなる前にがっきのマークへ\nいどう{1B}{1B}しておくのがコツだよ！{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg011.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\n海中どうくつの{1B}Rしょうがい物を\nかわしながら{1B}{1B}ミスするまで、\nおよぎつづけよう。{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg011.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\n下がめんを{1B}Rタッチペンでこすると{1B}{1B}\nチョコボが{1B}Rうかぶよ！{1B}{1B}\n{1B}R何もしないとドンドンしずむ{1B}{1B}から\n上下のバランスに気をつけよう！{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg013.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nちらばっているパズルピースを\nひろって{1B}R３しゅるいの家を\n組み立てよう。{1B}{1B}\n家のさいごのピースをはめると、\nボーナスがもらえるよ。{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg013.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nタッチペンでチョコボを\nスライドさせよう。\n{1B}Rパズルピースの上にのせると\nチョコボがピースをもつよ。{1B}{1B}\nもったピースは家の上ではなそう！{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg015.ptx	ptx	0	{1B}B＜ルール＞{1B}{1B}\nまわりの{1B}R雷にふれないように{1B}{1B}\n動かし、ゴールにたどりつく\nまでのタイムアタックに\nチャレンジしよう！{00}
+romdata/PUD/mgentryphase/text/jc/trial/mg015.ptx	ptx	1	{1B}B＜ルール＞{1B}{1B}\nタッチペンでチョコボを\n{1B}Rゆっくりゆっくり、しんちょうに{1B}{1B}\nスライドさせよう！{00}
+romdata/PUD/multiplay/text/ja/gather0.txt	u16z	0	ぼしゅうちゅう
+romdata/PUD/multiplay/text/ja/gather1.txt	u16z	0	ぼしゅうちゅう.
+romdata/PUD/multiplay/text/ja/gather2.txt	u16z	0	ぼしゅうちゅう..
+romdata/PUD/multiplay/text/ja/gather3.txt	u16z	0	ぼしゅうちゅう...
+romdata/PUD/multiplay/text/ja/mp001.ptx	ptx	0	メニューから選択してください{00}
+romdata/PUD/multiplay/text/ja/mp002.ptx	ptx	0	グループを選んでください\nグループがひとつもないときや\n新しく作りたいときは\n『ぼしゅう』を選んでください{00}
+romdata/PUD/multiplay/text/ja/mp003.ptx	ptx	0	対戦相手を募集しています\n『しめきる』をタッチすると先に進みます{00}
+romdata/PUD/multiplay/text/ja/mp003.ptx	ptx	1	親機の対応を待っています\nしばらくお待ちください{00}
+romdata/PUD/multiplay/text/ja/mp004.ptx	ptx	0	キャラクターを選択してください{00}
+romdata/PUD/multiplay/text/ja/mp005.ptx	ptx	0	COMの人数と\n強さを選択してください{00}
+romdata/PUD/multiplay/text/ja/mp006.ptx	ptx	0	遊びたい絵本ゲームを\n選んでください{00}
+romdata/PUD/multiplay/text/ja/mp006.ptx	ptx	1	『ヴォルグバトル』\nに決まりました{00}
+romdata/PUD/multiplay/text/ja/mp006.ptx	ptx	2	『クロマパズル』\nに決まりました{00}
+romdata/PUD/multiplay/text/ja/mp006.ptx	ptx	3	『ラグナロクレース』\nに決まりました{00}
+romdata/PUD/multiplay/text/ja/mp006.ptx	ptx	4	『シロマタワー』\nに決まりました{00}
+romdata/PUD/multiplay/text/ja/mp007.ptx	ptx	0	ｶｰﾄﾞが１５枚組み込まれたﾃﾞｯｷがないので\nポップアップデュエルでは遊べません{00}
+romdata/PUD/multiplay/text/ja/na0.txt	u16z	0	さんかできません
+romdata/PUD/multiplay/text/ja/search0.txt	u16z	0	けんさくちゅう
+romdata/PUD/multiplay/text/ja/search1.txt	u16z	0	けんさくちゅう.
+romdata/PUD/multiplay/text/ja/search2.txt	u16z	0	けんさくちゅう..
+romdata/PUD/multiplay/text/ja/search3.txt	u16z	0	けんさくちゅう...
+romdata/PUD/multiplay/text/jc/gather0.txt	u16z	0	ぼしゅうちゅう
+romdata/PUD/multiplay/text/jc/gather1.txt	u16z	0	ぼしゅうちゅう.
+romdata/PUD/multiplay/text/jc/gather2.txt	u16z	0	ぼしゅうちゅう..
+romdata/PUD/multiplay/text/jc/gather3.txt	u16z	0	ぼしゅうちゅう...
+romdata/PUD/multiplay/text/jc/mp001.ptx	ptx	0	メニューからせんたくしてください{00}
+romdata/PUD/multiplay/text/jc/mp002.ptx	ptx	0	グループをえらんでください\nグループがひとつもないときや\n新しく作りたいときは\n『ぼしゅう』をえらんでください{00}
+romdata/PUD/multiplay/text/jc/mp003.ptx	ptx	0	たいせんあいてをぼしゅうしています\n『しめきる』をおすと先にすすみます{00}
+romdata/PUD/multiplay/text/jc/mp003.ptx	ptx	1	おやきのたいおうをまっています\nしばらくおまちください{00}
+romdata/PUD/multiplay/text/jc/mp004.ptx	ptx	0	キャラクターをせんたくしてください{00}
+romdata/PUD/multiplay/text/jc/mp005.ptx	ptx	0	COMのにんずうと\nつよさをせんたくしてください{00}
+romdata/PUD/multiplay/text/jc/mp006.ptx	ptx	0	あそびたい絵本ゲームを\nえらんでください{00}
+romdata/PUD/multiplay/text/jc/mp006.ptx	ptx	1	『ヴォルグバトル』\nにきまりました{00}
+romdata/PUD/multiplay/text/jc/mp006.ptx	ptx	2	『クロマパズル』\nにきまりました{00}
+romdata/PUD/multiplay/text/jc/mp006.ptx	ptx	3	『ラグナロクレース』\nにきまりました{00}
+romdata/PUD/multiplay/text/jc/mp006.ptx	ptx	4	『シロマタワー』\nにきまりました{00}
+romdata/PUD/multiplay/text/jc/mp007.ptx	ptx	0	ｶｰﾄﾞが１５枚くみこまれたﾃﾞｯｷがないので\nポップアップデュエルではあそべません{00}
+romdata/PUD/multiplay/text/jc/na0.txt	u16z	0	さんかできません
+romdata/PUD/multiplay/text/jc/search0.txt	u16z	0	けんさくちゅう
+romdata/PUD/multiplay/text/jc/search1.txt	u16z	0	けんさくちゅう.
+romdata/PUD/multiplay/text/jc/search2.txt	u16z	0	けんさくちゅう..
+romdata/PUD/multiplay/text/jc/search3.txt	u16z	0	けんさくちゅう...
+romdata/PUD/skb/ja/deck.txt	u16z	0	カードデッキ%dの名前を入力してください
+romdata/PUD/skb/ja/savedata.txt	u16z	0	プレイヤー名を入力してください
