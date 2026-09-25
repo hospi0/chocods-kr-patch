@@ -39,7 +39,8 @@ PER_STRING = ('SYSMSG',)   # 창이 제각각 → 그 문자열 원문 최대 �
 ICON_OK = {('dt_SYSMSG.txtbin', 14),   # 「АБВГДЕ」 = だいじなもの 전용 글리프 → 한글로 바꿈(docs §13)
            ('dt_SYSMSG.txtbin', 191), ('dt_SYSMSG.txtbin', 429), ('dt_SYSMSG.txtbin', 430),   # ┣┳ = 좁은 「ギル」 → 길
            ('dt_SYSMSG.txtbin', 420), ('dt_SYSMSG.txtbin', 421),   # ┷┿┝ム┰ず┥る = 좁은 「アイテムあずける/うけとる」
-           ('dt_UIRCHRMSG.txtbin', 16), ('dt_ITEM_ALL_TXT1.txtbin', 497)}   # ⑮ = 「転」 글리프 → 전생의 불꽃
+           ('dt_UIRCHRMSG.txtbin', 16), ('dt_ITEM_ALL_TXT1.txtbin', 497),
+           ('dt_EVTMSG0.txtbin', 322), ('dt_EVTMSG0.txtbin', 324)}   # ⑮ = 「転」 글리프 → 전생의 불꽃
 
 # 편지(ITEM_ALL_TXT1 456‥496)의 분홍 글자({ESC}PK}1~)를 이어 읽으면 합언어(DT_UIRWW) — 합언어는 일본어 자판 그대로라
 # 한국어 편지에선 분홍 음절이 합언어의 한글 발음이 되게 쓴다(つ=쓰, か·た행 거센소리, 장음 う 는 「우」). 분홍 태그 개수는 원문과 달라도 된다.
@@ -227,6 +228,8 @@ def main():
             jp_pages, ko_pages = pages(jp), pages(squeeze(ko))
             max_lines = max(len(pg) for pg in jp_pages)
             bud = budget_of(inner, jp)
+            if bud is not None and 'EVTMSG' in inner:     # 원문부터 넓게 쓴 창(주크박스 곡 이름 등)
+                bud = max(bud, max(width(ln) for pg in jp_pages for ln in pg))
             if bud is None:
                 if any(k in inner for k in PER_STRING):   # 버튼({15}CT/RT)은 원문 폭, 로그·도움말은 창이 넓다(최소 18)
                     bud = max(width(ln) for pg in jp_pages for ln in pg)
