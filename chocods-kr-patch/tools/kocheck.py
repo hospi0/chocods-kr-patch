@@ -225,7 +225,7 @@ def main():
             if ko.count('{13}') != jp.count('{13}'):
                 e.append('쪽 수 %d → %d' % (jp.count('{13}'), ko.count('{13}')))
             bad, cur = color_state(ko)
-            e += bad
+            e += [b for b in bad if b not in color_state(jp)[0]]   # 원문부터 연달아 여는 줄(크레디트)은 봐줌
             if cur and not color_state(jp)[1]:
                 e.append('색 %s 안 닫힘' % cur)
             if ko.endswith('\\n') != jp.endswith('\\n'):
@@ -276,7 +276,7 @@ def main():
         todo = Counter()
         tot = Counter()
         for key, t in src.items():
-            if KANA_KANJI.search(t):
+            if KANA_KANJI.search(t) and t != 'ダミー':     # ダミー = 안 쓰는 자리
                 tot[key[1]] += 1
                 if key not in done:
                     todo[key[1]] += 1
