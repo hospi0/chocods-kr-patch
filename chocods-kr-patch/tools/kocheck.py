@@ -39,7 +39,16 @@ PER_STRING = ('SYSMSG',)   # 창이 제각각 → 그 문자열 원문 최대 �
 ICON_OK = {('dt_SYSMSG.txtbin', 14),   # 「АБВГДЕ」 = だいじなもの 전용 글리프 → 한글로 바꿈(docs §13)
            ('dt_SYSMSG.txtbin', 191), ('dt_SYSMSG.txtbin', 429), ('dt_SYSMSG.txtbin', 430),   # ┣┳ = 좁은 「ギル」 → 길
            ('dt_SYSMSG.txtbin', 420), ('dt_SYSMSG.txtbin', 421),   # ┷┿┝ム┰ず┥る = 좁은 「アイテムあずける/うけとる」
-           ('dt_UIRCHRMSG.txtbin', 16)}   # ⑮ = 「転」 글리프 → 전생의 불꽃
+           ('dt_UIRCHRMSG.txtbin', 16), ('dt_ITEM_ALL_TXT1.txtbin', 497)}   # ⑮ = 「転」 글리프 → 전생의 불꽃
+
+# 편지(ITEM_ALL_TXT1 456‥496)의 분홍 글자({ESC}PK}1~)를 이어 읽으면 합언어(DT_UIRWW) — 합언어는 일본어 자판 그대로라
+# 한국어 편지에선 분홍 음절이 합언어의 한글 발음이 되게 쓴다(つ=쓰, か·た행 거센소리, 장음 う 는 「우」). 분홍 태그 개수는 원문과 달라도 된다.
+HIDDEN = {456: '오모이데가이타이', 457: '보우켄노하지마리다', 458: '아케노묘우조우', 459: '키이로이텐시',
+          461: '사리게나이이노리', 462: '만게쓰노요루', 463: '이치린노하나', 464: '카가미노우미', 465: '타이세쓰나히토',
+          466: '아이스루코코로', 468: '보쿠노이모우토', 469: '아타시노아니키', 470: '쓰타에타이아이',
+          471: '쓰요쿠케다카쿠', 472: '세카이노히호우', 475: '키보우노호시', 476: '코코요리토와니', 477: '나쓰노소라',
+          478: '아나타토와타시', 479: '코오레루토키', 480: '메데타이아타마', 481: '코코로노테키', 496: '로만노세카이'}
+ACROSTIC = {504: '기관차조사해보라고요'}   # 줄 첫 글자(원문 きかんしゃしらべろよ = 기관차를 조사해 봐)
 
 TAG = re.compile(r'\{ESC\}[A-Z]{2}\}\d~|\{[0-9A-Fa-f]{2}\}(?:[A-Z]{2}\}\d~|\}\d~)?|%[0-9]*[dsxc]|\\n')
 KANA_KANJI = re.compile(r'[ぁ-ヺヽ-ヿ㐀-鿿ｦ-ﾟ々〆]')   # ・ー 는 부호
@@ -106,7 +115,7 @@ def icons(s):
     for k in JOSA:
         s = s.replace(k, '')
     return Counter(c for c in s if ord(c) > 0x7E and not hangul(c) and not KANA_KANJI.match(c)
-                   and c not in '·　！？、。「」『』（）…・～ー―：；，．＋－％／＝＆＊＃＠＜＞【】［］｛｝〜×→←↑↓☆★○●◎◇◆□■△▲▽▼♪♥“”‘’　０１２３４５６７８９'
+                   and c not in '〇·　！？、。「」『』（）…・～ー―：；，．＋－％／＝＆＊＃＠＜＞【】［］｛｝〜×→←↑↓☆★○●◎◇◆□■△▲▽▼♪♥“”‘’　０１２３４５６７８９'
                    and not ('Ａ' <= c <= 'ｚ'))
 
 
@@ -167,9 +176,20 @@ def main():
             done[key] = loc
             jp = src[key]
             e = []
-            if Counter(TAG.findall(jp)) - Counter(TAG.findall(ko)) - Counter({'\\n': 99}) or \
-               Counter(TAG.findall(ko)) - Counter(TAG.findall(jp)) - Counter({'\\n': 99}):
-                a = Counter(TAG.findall(jp)); b = Counter(TAG.findall(ko))
+            letter = inner.endswith('dt_ITEM_ALL_TXT1.txtbin') and (int(i) in HIDDEN or int(i) in ACROSTIC)
+            if letter:
+                pink = ''.join(re.findall(r'\{ESC\}PK\}1~(.*?)\{ESC\}WT\}1~', ko.replace('\\n', '')))
+                want = HIDDEN.get(int(i), '')
+                if pink != want:
+                    e.append('분홍 글자 「%s」 ≠ 합언어 발음 「%s」' % (pink, want))
+                if int(i) in ACROSTIC:
+                    head = ''.join(ln.strip()[:1] for ln in ko.split('\\n'))
+                    if head != ACROSTIC[int(i)]:
+                        e.append('줄 첫 글자 「%s」 ≠ 「%s」' % (head, ACROSTIC[int(i)]))
+            strip_pk = (lambda t: t.replace('{ESC}PK}1~', '').replace('{ESC}WT}1~', '')) if letter else (lambda t: t)
+            if Counter(TAG.findall(strip_pk(jp))) - Counter(TAG.findall(strip_pk(ko))) - Counter({'\\n': 99}) or \
+               Counter(TAG.findall(strip_pk(ko))) - Counter(TAG.findall(strip_pk(jp))) - Counter({'\\n': 99}):
+                a = Counter(TAG.findall(strip_pk(jp))); b = Counter(TAG.findall(strip_pk(ko)))
                 a.pop('\\n', None); b.pop('\\n', None)
                 e.append('태그 다름 원문%s 번역%s' % (dict(a - b), dict(b - a)))
             if icons(jp) != icons(ko) and (inner.split('/')[-1], int(i)) not in ICON_OK:
