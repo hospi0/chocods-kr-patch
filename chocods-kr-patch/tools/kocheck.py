@@ -81,11 +81,33 @@ def load(path):
         yield n, (cur + p if len(p) == 2 and cur else p)
 
 
+ENC = {}                  # (파일, 안쪽 경로) → 원문 인코딩(utf-8 / cp932)
+
+
 def source():
     src = {}
     for _, p in load(SRC):
         src[(p[0], p[1], int(p[2]))] = p[4]
+        ENC[(p[0], p[1])] = p[3]
     return src
+
+
+def sjis_bad(s):
+    """SJIS 표에 못 싣는 글자(한글은 변환 표 칸, 나머지는 cp932 — sjiskr.encode 와 같은 기준)"""
+    out = []
+    for c in s:
+        if hangul(c) or 0xE000 <= ord(c) <= 0xE0FF:
+            continue
+        try:
+            c.encode('cp932')
+        except UnicodeEncodeError:
+            out.append(c)
+    return out
+
+
+def unesc(s):
+    s = s.replace('\\n', '\n').replace('{ESC}', '\x1b').replace('{13}', '\x13')
+    return re.sub(r'\{([0-9A-Fa-f]{2})\}', lambda m: chr(int(m.group(1), 16)), s)
 
 
 def squeeze(s):
@@ -217,6 +239,8 @@ def main():
                 for ln in pg:
                     if width(ln) > bud:
                         e.append('줄 폭 %.1f > %.1f 「%s」' % (width(ln), bud, ln.strip()))
+            if ENC.get((f, inner)) == 'cp932' and sjis_bad(unesc(ko)):
+                e.append('Shift-JIS 로 못 쓰는 글자 %s' % ''.join(sorted(set(sjis_bad(unesc(ko))))))
             kk = KANA_KANJI.findall(TAG.sub('', ko))
             if kk:
                 e.append('가나·한자 남음 %s' % ''.join(kk))
