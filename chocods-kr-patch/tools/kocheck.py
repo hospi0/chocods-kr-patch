@@ -215,7 +215,10 @@ def main():
                 a = Counter(TAG.findall(strip_pk(jp))); b = Counter(TAG.findall(strip_pk(ko)))
                 a.pop('\\n', None); b.pop('\\n', None)
                 e.append('태그 다름 원문%s 번역%s' % (dict(a - b), dict(b - a)))
-            if icons(jp) != icons(ko) and (inner.split('/')[-1], int(i)) not in ICON_OK:
+            ji = icons(jp)
+            if '길' in ko:                                   # ┣┳ = 좁은 「ギル」 글리프 → 「길」 로 바꿔 써도 된다
+                ji -= Counter({'┣': 9, '┳': 9})
+            if ji != icons(ko) and (inner.split('/')[-1], int(i)) not in ICON_OK:
                 e.append('아이콘 다름 원문%s 번역%s' % (dict(icons(jp) - icons(ko)), dict(icons(ko) - icons(jp))))
             if ko.count('{13}') != jp.count('{13}'):
                 e.append('쪽 수 %d → %d' % (jp.count('{13}'), ko.count('{13}')))
